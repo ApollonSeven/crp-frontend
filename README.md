@@ -1,46 +1,35 @@
-# Getting Started with Create React App
+# Frontend California RP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Принципы разработки
 
-## Available Scripts
+Все компоненты разрабатываются в сторибуке
 
-In the project directory, you can run:
+## Структура файлов
 
-### `yarn start`
+- `components/Button/Button.tsx` - файл компонента
+- `__mocks__/preview.ts` - моки для показа в сторибуке, в папку можно добавлять доп моки
+- `assets` - статичные фалы, картинки, шрифты и т.д.
+- `utils` - утилиты для компонента
+- `hooks` - хуки компонента (функции использующие хуки состояния или жизненного цикла)
+- `Button.typings.ts` - файл типов компонента
+- `Button.stories.tsx` - стори компонента
+- `Button.modules.scss` - стили компонента
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Если какой-то код переиспользуется он выносится на уровень выше в папки utils, styles, assets, typings и т.д.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Конвенция по коммитам
+Сообщения к коммитам следует делать согласно [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/),
+в описании коммита требуется указывать номер задачи в виде `[CRP-123]`
 
-### `yarn test`
+Тип может быть одним из
+* **build**: Изменения билда, npm скрипты, обновление зависимостей
+* **ci**: Изменения в файлах CI (gitlab-ci, k8s)
+* **docs**: Если изменилась только документация
+* **feat**: Новая фича
+* **fix**: Исправление бага
+* **perf**: Изменения, которые улучшают производительность
+* **refactor**: Если ваши изменения это не баг и не фича
+* **style**: Изменения, которые не влияют на код (форматирование, пробелы, точки с запятой, и тд)
+* **test**: Добавление или правки тестов
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Оригинал: [Angular Commit Notification Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#type)
