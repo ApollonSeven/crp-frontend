@@ -7,7 +7,7 @@ module.exports = {
             onlyFromPages: ['Icons'],
             outputters: [
                 require('@figma-export/output-components-as-svgr')({
-                    output: './src/icons',
+                    output: './src/shared/icons/generated',
                     getFileExtension: () => '.tsx',
                     getDirname: () => ``,
                     getSvgrConfig: () => ({
