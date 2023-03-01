@@ -1,0 +1,4 @@
+import * as React from "react";
+import { SVGProps } from "react";
+const Time = (props: SVGProps<SVGSVGElement>) => <svg width="1em" height="1em" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}><g id="time"><g id="time_2"><path d="M15 0C6.72915 0 0 6.72915 0 15C0 23.2709 6.72915 30 15 30C23.2709 30 30 23.2709 30 15C30 6.72915 23.2709 0 15 0ZM15 28.125C7.76275 28.125 1.87501 22.2373 1.87501 15C1.87501 7.76275 7.76275 1.87501 15 1.87501C22.2373 1.87501 28.125 7.76275 28.125 15C28.125 22.2373 22.2373 28.125 15 28.125Z" fill={props.color} /><path d="M15.6427 5.76923H13.8462V15.1192L19.499 20.7692L20.7692 19.4996L15.6427 14.3757V5.76923Z" fill={props.color} /></g></g></svg>;
+export default Time;

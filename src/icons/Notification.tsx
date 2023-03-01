@@ -1,0 +1,4 @@
+import * as React from "react";
+import { SVGProps } from "react";
+const Notification = (props: SVGProps<SVGSVGElement>) => <svg width="1em" height="1em" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}><g id="notification"><path id="Vector" d="M14.9999 30C16.5678 30 17.8506 28.65 17.8506 27H12.1492C12.1492 28.65 13.432 30 14.9999 30ZM24.2646 21V12.75C24.2646 8.1 21.2714 4.35 17.1379 3.3V2.25C17.1379 1.05 16.1402 0 14.9999 0C13.8596 0 12.8619 1.05 12.8619 2.25V3.3C8.72841 4.35 5.7352 8.1 5.7352 12.75V21L2.88452 24V25.5H27.1153V24L24.2646 21Z" fill={props.color} /></g></svg>;
+export default Notification;
