@@ -1,0 +1,4 @@
+import * as React from "react";
+import { SVGProps } from "react";
+const SendMessage = (props: SVGProps<SVGSVGElement>) => <svg width="1em" height="1em" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}><g id="send-message"><path id="send-message_2" d="M12.1641 17.1357L11.6513 24.3949C12.385 24.3949 12.7028 24.0777 13.0838 23.6968L16.5236 20.3883L23.6512 25.6416C24.9584 26.3748 25.8794 25.9887 26.232 24.4313L30.9106 2.36782L30.9118 2.36651C31.3265 0.421725 30.213 -0.338771 28.9394 0.138326L1.43918 10.7346C-0.437656 11.4678 -0.409238 12.5208 1.12013 12.9979L8.15084 15.1987L24.4818 4.9145C25.2503 4.4023 25.9491 4.6857 25.3743 5.1979L12.1641 17.1357Z" fill={props.color} /></g></svg>;
+export default SendMessage;

@@ -1,0 +1,4 @@
+import * as React from "react";
+import { SVGProps } from "react";
+const Trade = (props: SVGProps<SVGSVGElement>) => <svg width="1em" height="1em" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}><g id="trade" clipPath="url(#clip0_453_176)"><g id="Group"><path id="Vector" d="M-2.95802e-07 7.55572L9.62519 0.146289L9.62519 3.87426L19.5655 3.87426L29.135 11.2438L9.62519 11.2438L9.62519 14.9718L-2.95802e-07 7.55572Z" fill={props.color} /><path id="Vector_2" d="M20.3748 17.2975L30 24.707L20.3748 32.123L20.3748 28.3951L10.4346 28.3951L0.86499 21.0255L20.3748 21.0255L20.3748 17.2975Z" fill={props.color} /></g></g><defs><clipPath id="clip0_453_176"><rect width={32.2693} height={30} fill="white" transform="translate(0 32.2693) rotate(-90)" /></clipPath></defs></svg>;
+export default Trade;

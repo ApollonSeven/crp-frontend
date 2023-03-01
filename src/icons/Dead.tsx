@@ -1,0 +1,4 @@
+import * as React from "react";
+import { SVGProps } from "react";
+const Dead = (props: SVGProps<SVGSVGElement>) => <svg width="1em" height="1em" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}><g id="dead"><path id="dead_2" d="M16.2332 6.06689H10.1225V0.760805C10.1225 0.340641 9.77921 0 9.35572 0H7.64428C7.22079 0 6.87746 0.340641 6.87746 0.760805V6.06689H0.76682C0.343331 6.06689 0 6.40753 0 6.82769V8.52571C0 8.94588 0.343331 9.28652 0.76682 9.28652H6.87746V25.2392C6.87746 25.6594 7.22079 26 7.64428 26H9.35572C9.77921 26 10.1225 25.6594 10.1225 25.2392V9.28652H16.2332C16.6567 9.28652 17 8.94588 17 8.52571V6.82769C17 6.40753 16.6567 6.06689 16.2332 6.06689Z" fill={props.color} /></g></svg>;
+export default Dead;

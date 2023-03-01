@@ -1,0 +1,4 @@
+import * as React from "react";
+import { SVGProps } from "react";
+const Key = (props: SVGProps<SVGSVGElement>) => <svg width="1em" height="1em" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}><g id="key"><path id="key_2" d="M29.5607 4.59884C28.9749 4.02272 28.0252 4.02272 27.4393 4.59884L9.46842 22.2724L2.56069 15.479C1.97493 14.9029 1.02524 14.903 0.439365 15.479C-0.146455 16.0551 -0.146455 16.9891 0.439365 17.5652L8.40775 25.4015C8.99334 25.9776 9.94373 25.9772 10.5291 25.4015L29.5607 6.68504C30.1465 6.10898 30.1464 5.17496 29.5607 4.59884Z" fill={props.color} /></g></svg>;
+export default Key;

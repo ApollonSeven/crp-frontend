@@ -1,0 +1,4 @@
+import * as React from "react";
+import { SVGProps } from "react";
+const CarouselArrow = (props: SVGProps<SVGSVGElement>) => <svg width="1em" height="1em" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}><g id="carousel-arrow"><path id="arrow" d="M22.1835 14.1768L9.33715 0.33925C8.91625 -0.113854 8.23481 -0.113092 7.81462 0.341594C7.39475 0.796221 7.39584 1.53268 7.81679 1.98614L19.8985 15.0001L7.81635 28.0139C7.39546 28.4674 7.39437 29.2034 7.81418 29.6581C8.02482 29.886 8.30077 30 8.57672 30C8.85197 30 9.12683 29.8868 9.33709 29.6604L22.1835 15.8233C22.3862 15.6054 22.5 15.309 22.5 15.0001C22.5 14.6912 22.3859 14.395 22.1835 14.1768Z" fill={props.color} /></g></svg>;
+export default CarouselArrow;

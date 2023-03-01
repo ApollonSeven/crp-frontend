@@ -1,0 +1,4 @@
+import * as React from "react";
+import { SVGProps } from "react";
+const PlusFill = (props: SVGProps<SVGSVGElement>) => <svg width="1em" height="1em" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}><g id="plus-fill"><path id="plus" d="M0 17.533V12.467C0 11.9529 0.417708 11.5245 0.942521 11.5245H11.5352V0.94252C11.5352 0.428418 11.9529 0 12.4777 0H17.5437C18.0578 0 18.4755 0.417707 18.4755 0.94252V11.5352H29.0575C29.5716 11.5352 30 11.9529 30 12.4777V17.5437C30 18.0578 29.5823 18.4755 29.0575 18.4755H18.4648V29.0575C18.4648 29.5716 18.0471 30 17.533 30H12.467C11.9529 30 11.5245 29.5823 11.5245 29.0575V18.4648H0.942521C0.417708 18.4755 0 18.0471 0 17.533Z" fill={props.color} /></g></svg>;
+export default PlusFill;

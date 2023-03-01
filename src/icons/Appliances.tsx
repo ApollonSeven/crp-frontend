@@ -1,0 +1,4 @@
+import * as React from "react";
+import { SVGProps } from "react";
+const Appliances = (props: SVGProps<SVGSVGElement>) => <svg width="1em" height="1em" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}><g id="appliances"><g id="Group"><path id="Vector" d="M15.2014 0H0V8.17998H15.2014V0ZM4.44892 5.49427H2.6911V2.70709H4.44892V5.49427Z" fill={props.color} /><path id="Vector_2" d="M21.8499 26.4759H18.5772V28.2423H16.8193V26.4759H8.66921V12.5964H15.2014V9.93799H0V30.0001H24.9523V28.2423H21.8499V26.4759ZM4.44892 18.2407H2.6911V12.6237H4.44892V18.2407Z" fill={props.color} /><path id="Vector_3" d="M10.427 14.354H30.0001V24.7179H10.427V14.354Z" fill={props.color} /></g></g></svg>;
+export default Appliances;
