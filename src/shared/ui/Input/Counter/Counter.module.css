@@ -1,0 +1,27 @@
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Brutal Type';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+}
+
+.btn {
+  width: 25px;
+  height: 25px;
+  background: #3e3d3d;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.value {
+  margin: 0 7px;
+}
