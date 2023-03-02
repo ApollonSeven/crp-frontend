@@ -1,16 +1,19 @@
-import { Meta, Story } from '@storybook/react';
-import {Props} from "shared/ui/Stepper/Stepper.typings";
-import {Stepper} from "shared/ui/Stepper/Stepper";
+import { Meta, Story } from '@storybook/react'
+import { Props } from 'shared/ui/Stepper/Stepper.typings'
+import { Stepper } from 'shared/ui/Stepper/Stepper'
+import React from 'react'
 
 const defaultArgs: Partial<Props> = {
     steps: 5,
-    currentStep: 1
-};
+    currentStep: 1,
+}
 
 export default {
     title: 'crp-kit/Stepper',
     component: Stepper,
-} as Meta<Props>;
+} as Meta<Props>
 
-export const Default: Story<Props> = (args) => <Stepper {...args}>Title</Stepper>;
-Default.args = defaultArgs;
+export const Default: Story<Props> = (args) => (
+    <Stepper {...args}>Title</Stepper>
+)
+Default.args = defaultArgs

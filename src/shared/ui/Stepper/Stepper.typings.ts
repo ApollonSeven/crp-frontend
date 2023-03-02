@@ -1,4 +1,4 @@
 export type Props = {
-  steps: number;
-  currentStep: number;
-};
+    steps: number
+    currentStep: number
+}
