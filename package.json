@@ -26,7 +26,7 @@
         "build-storybook": "build-storybook -s public",
         "lint": "eslint .",
         "lint:fix": "eslint --fix",
-        "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,json}'",
+        "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
         "figma:export": "dotenv npx figma-export use-config scripts/.figmaexportrc.js"
     },
     "eslintConfig": {
@@ -44,12 +44,6 @@
                 }
             }
         ]
-    },
-    "prettier": {
-        "trailingComma": "es5",
-        "tabWidth": 4,
-        "semi": false,
-        "singleQuote": true
     },
     "browserslist": {
         "production": [
