@@ -1,0 +1,85 @@
+.btn {
+  padding: 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  width: auto;
+  overflow: visible;
+  font: inherit;
+  line-height: normal;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0px;
+  color: #121212;
+}
+
+.btnPrimary {
+  background-color: #FFD80E;
+  color: #121212;
+}
+
+.btnSecondary {
+  background-color: #219A43;
+  color: #FFFFFF;
+}
+
+.btnTertiary {
+  background-color: #E44747;
+  color: #FFFFFF;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:active {
+  opacity: 0.5;
+}
+
+.sizeXS {
+  border-radius: 6px;
+  width: 101px;
+  height: 23px;
+
+  font-size: 11px;
+}
+
+.sizeS {
+  border-radius: 8px;
+  width: 134px;
+  height: 31px;
+
+  font-size: 14px;
+}
+
+.sizeM {
+  border-radius: 10px;
+  width: 168px;
+  height: 39px;
+
+  font-size: 18px;
+}
+
+.sizeL {
+  border-radius: 12px;
+  width: 201px;
+  height: 47px;
+
+  font-size: 22px;
+}
+
+.full {
+  width: 100%;
+}
+
+.disabled {
+  background-color: #D1D5D8;
+  color: #939393;
+}
