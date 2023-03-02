@@ -4,9 +4,9 @@ import stylesBase from 'shared/ui/Button/Button.module.css';
 import cn from 'classnames';
 import {mergeStyles} from "shared/utils/mergeStyles";
 
-export type ButtonProps = {} & Props & React.ButtonHTMLAttributes<HTMLButtonElement>;
+export interface ButtonProps extends Props, React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
-const Button: React.FC<ButtonProps> = ({
+export const Button: React.FC<ButtonProps> = ({
   size = 'S',
   disabled,
   children,
@@ -28,5 +28,3 @@ const Button: React.FC<ButtonProps> = ({
     </button>
   );
 };
-
-export default Button;

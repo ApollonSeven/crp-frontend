@@ -1,5 +1,5 @@
 import { Meta, Story } from '@storybook/react';
-import Button from './Button';
+import {Button} from './Button';
 import { Props } from './Button.typings';
 
 const defaultArgs: Partial<Props> = {
