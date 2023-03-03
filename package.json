@@ -26,8 +26,21 @@
         "build-storybook": "build-storybook -s public",
         "lint": "eslint .",
         "lint:fix": "eslint --fix",
-        "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+        "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}'",
         "figma:export": "dotenv npx figma-export use-config scripts/.figmaexportrc.js"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*": [
+            "prettier --ignore-unknown --write"
+        ],
+        "*.{js,ts,jsx,tsx}": [
+            "eslint --fix"
+        ]
     },
     "eslintConfig": {
         "extends": [
@@ -77,6 +90,8 @@
         "dotenv-cli": "^7.0.0",
         "eslint": "^8.35.0",
         "eslint-plugin-react": "^7.32.2",
+        "husky": "^8.0.3",
+        "lint-staged": "^13.1.2",
         "prettier": "2.8.4",
         "prop-types": "^15.8.1",
         "webpack": "^5.75.0"
