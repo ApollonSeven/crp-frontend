@@ -24,7 +24,7 @@ export const Button: React.FC<ButtonProps> = ({
             type={type}
             className={cn(
                 css.btn,
-                css[`size${size}`],
+                css[`btn${size}`],
                 disabled && css.disabled,
                 css[`btn${variant}`]
             )}

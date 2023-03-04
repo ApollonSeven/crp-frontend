@@ -1,3 +1,7 @@
+@import "src/shared/styles/pxToRem";
+
+$scale: 2;
+
 .counter {
     display: flex;
     align-items: center;
@@ -5,16 +9,16 @@
     font-family: 'Brutal Type';
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: pxToRem(14px, $scale);
+    line-height: pxToRem(17px, $scale);
     color: #fff;
 }
 
 .btn {
-    width: 25px;
-    height: 25px;
+    width: pxToRem(25px, $scale);
+    height: pxToRem(25px, $scale);
     background: #3e3d3d;
-    border-radius: 2px;
+    border-radius: pxToRem(2px, $scale);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,5 +27,5 @@
 }
 
 .value {
-    margin: 0 7px;
+    margin: 0 pxToRem(7px, $scale);
 }

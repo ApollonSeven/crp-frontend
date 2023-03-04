@@ -15,11 +15,11 @@ const Radio = ({
     const css = mergeStyles(stylesBase, styles)
 
     return (
-        <div className={classNames(css.container, css[`radio${variant}`])}>
+        <div className={classNames(css.radio, css[`radio${variant}`])}>
             <button
                 className={classNames(
-                    css.radio,
-                    value === valueName && css.checked
+                    css.btn,
+                    value === valueName && css.radioChecked
                 )}
                 onClick={() => onChange(valueName)}
             ></button>

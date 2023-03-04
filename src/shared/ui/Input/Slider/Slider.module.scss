@@ -1,3 +1,7 @@
+@import "src/shared/styles/pxToRem";
+
+$scale: 2;
+
 .progress {
     background: linear-gradient(
         to right,
@@ -6,25 +10,25 @@
         #393939 40%,
         #393939 100%
     );
-    height: 5px;
-    width: 398px;
+    height: pxToRem(5px, $scale);
+    width: pxToRem(398px, $scale);
     outline: none;
     transition: background 450ms ease-in;
     -webkit-appearance: none;
-}
 
-.progress::-webkit-slider-thumb {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    -webkit-appearance: none;
-    cursor: ew-resize;
-    background: #fff;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-}
+    &::-webkit-slider-thumb {
+        width: pxToRem(15px, $scale);
+        height: pxToRem(15px, $scale);
+        border-radius: 50%;
+        -webkit-appearance: none;
+        cursor: ew-resize;
+        background: #fff;
+        box-shadow: 0 0 pxToRem(4px, $scale) rgba(0, 0, 0, 0.25);
+    }
 
-.progressSmall {
-    width: 194px;
-    height: 3px;
-    border-radius: 3px;
+    &Small {
+        width: pxToRem(194px, $scale);
+        height: pxToRem(3px, $scale);
+        border-radius: pxToRem(3px, $scale);
+    }
 }
