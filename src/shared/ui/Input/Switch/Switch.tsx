@@ -1,5 +1,5 @@
 import { InputProps } from '../Input.typings'
-import styles from 'shared/ui/Input/Switch/Switch.module.css'
+import styles from 'shared/ui/Input/Switch/Switch.module.scss'
 import React from 'react'
 
 const Switch = ({ value = false, onChange }: InputProps<boolean>) => {

@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import stylesBase from 'shared/ui/Input/Radio/Radio.module.css'
+import stylesBase from 'shared/ui/Input/Radio/Radio.module.scss'
 import { Props } from './Radio.typings'
 import { mergeStyles } from 'shared/utils/mergeStyles'
 import React from 'react'

@@ -1,7 +1,7 @@
 import cn from 'classnames'
 import React from 'react'
 import { Props } from './Toast.typings'
-import stylesBase from './Toast.module.css'
+import stylesBase from 'shared/ui/Toast/Toast.module.scss'
 import { mergeStyles } from 'shared/utils/mergeStyles'
 
 export const Toast: React.FC<Props> = ({

@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import styles from './Stepper.module.css'
+import styles from 'shared/ui/Stepper/Stepper.module.scss'
 import { Props } from './Stepper.typings'
 import React from 'react'
 

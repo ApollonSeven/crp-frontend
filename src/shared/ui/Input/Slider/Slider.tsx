@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import styles from 'shared/ui/Input/Slider/Slider.module.css'
+import styles from 'shared/ui/Input/Slider/Slider.module.scss'
 import { Props } from './Slider.typings'
 import React from 'react'
 

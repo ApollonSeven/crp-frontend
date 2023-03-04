@@ -1,5 +1,5 @@
 import { Props } from './Counter.typings'
-import stylesBase from 'shared/ui/Input/Counter/Counter.module.css'
+import stylesBase from 'shared/ui/Input/Counter/Counter.module.scss'
 import { mergeStyles } from 'shared/utils/mergeStyles'
 import React from 'react'
 

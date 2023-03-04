@@ -1,6 +1,6 @@
 import React from 'react'
 import { Props } from './Button.typings'
-import stylesBase from 'shared/ui/Button/Button.module.css'
+import stylesBase from 'shared/ui/Button/Button.module.scss'
 import cn from 'classnames'
 import { mergeStyles } from 'shared/utils/mergeStyles'
 
