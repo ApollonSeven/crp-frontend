@@ -1,8 +1,11 @@
+require('dotenv').config()
+
+const fileRegex = process.env.STORYBOOK_SCOPE
+    ? `@(${process.env.STORYBOOK_SCOPE})`
+    : '*'
+
 module.exports = {
-    stories: [
-        '../src/**/*.stories.mdx',
-        '../src/**/*.stories.@(js|jsx|ts|tsx)',
-    ],
+    stories: [`../src/**/${fileRegex}.stories.@(js|jsx|ts|tsx)`],
     addons: [
         '@storybook/addon-links',
         '@storybook/addon-essentials',
@@ -12,5 +15,8 @@ module.exports = {
     framework: '@storybook/react',
     core: {
         builder: '@storybook/builder-webpack5',
+    },
+    features: {
+        storyStoreV7: true,
     },
 }
