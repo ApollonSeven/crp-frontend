@@ -9,5 +9,8 @@ STORYBOOK_SCOPE=Button
 
 // Для нескольких файлов
 STORYBOOK_SCOPE=Button|Stepper
+
+// Для всех файлов
+STORYBOOK_SCOPE=
 ```
 3. После этого при запуске сторибука он должен отрендерить только те файлы, что вы указали в `.env`
