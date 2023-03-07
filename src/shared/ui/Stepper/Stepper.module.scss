@@ -1,0 +1,49 @@
+@import "src/shared/styles/pxToRem";
+
+$scale: 1.5;
+
+.stepper {
+    display: flex;
+    font-family: 'Roboto';
+}
+
+.step {
+    box-sizing: border-box;
+    background: #e5e5e5;
+    height: pxToRem(58px, $scale);
+    width: pxToRem(58px, $scale);
+    font-style: normal;
+    font-weight: 400;
+    font-size: pxToRem(24px, $scale);
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    position: relative;
+    margin: 0 0;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.dots {
+    width: pxToRem(17px, $scale);
+    height: pxToRem(5px, $scale);
+    background: #e5e5e5;
+}
+
+.margin {
+    margin-left: pxToRem(3px, $scale);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.active {
+    height: pxToRem(98px, $scale);
+    width: pxToRem(98px, $scale);
+    font-size: pxToRem(30px, $scale);
+    background: #ffd80e;
+    border: pxToRem(11px, $scale) solid #7a6937;
+}

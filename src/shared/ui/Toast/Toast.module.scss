@@ -1,0 +1,74 @@
+@import "src/shared/styles/pxToRem";
+
+$scale: 1.8;
+
+.toast {
+    position: relative;
+    border-radius: pxToRem(3px, $scale);
+    width: pxToRem(350px, $scale);
+    min-height: pxToRem(66px, $scale);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    padding: pxToRem(13px, $scale) pxToRem(20px, $scale);
+    overflow: hidden;
+    font-size: pxToRem(14px, $scale);
+    background: linear-gradient(
+        91.24deg,
+        rgba(17, 17, 17, 0.4) 2.96%,
+        rgba(17, 17, 17, 0.74) 48.34%,
+        rgba(17, 17, 17, 0.16) 90.97%
+    );
+    color: #fff;
+
+    &Info {
+        background: linear-gradient(
+                        91.24deg,
+                        rgba(17, 17, 17, 0.4) 2.96%,
+                        rgba(17, 17, 17, 0.74) 48.34%,
+                        rgba(17, 17, 17, 0.16) 90.97%
+        );
+    }
+
+    &Warning {
+        background: linear-gradient(
+                        91.24deg,
+                        rgba(220, 165, 59, 0.4) 2.96%,
+                        rgba(220, 165, 59, 0.74) 48.34%,
+                        rgba(220, 165, 59, 0.16) 90.97%
+        );
+    }
+
+    &Error {
+        background: radial-gradient(
+                        84.62% 2115.88% at 6.38% 50%,
+                        rgba(167, 76, 62, 0.53) 0%,
+                        rgba(167, 76, 62, 0.74) 51.56%,
+                        rgba(167, 76, 62, 0.16) 100%
+        );
+    }
+
+    &Success {
+        background: radial-gradient(
+                        84.62% 2115.88% at 6.38% 50%,
+                        rgba(27, 90, 30, 0.53) 0%,
+                        rgba(27, 90, 30, 0.74) 51.56%,
+                        rgba(27, 90, 30, 0.16) 100%
+        );
+    }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.icon {
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: pxToRem(15px, $scale);
+}
