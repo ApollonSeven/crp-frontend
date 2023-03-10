@@ -3,18 +3,18 @@ export interface IDCardProps {
   state: string;
   id: string;
   expireDate: string;
-  familyName: string;
+  firstName: string;
   lastName: string;
   street: string;
-  dateofBirth: string;
+  birthDate: string;
   photoURL: string;
   donor: boolean;
   sex?: 'M' | 'F';
   height: string;
-  hair?: 'BRN' | 'BLD' | 'GNG' | 'WHT' | 'BLK';
+  hair?: string;
   weight: number;
-  eyes?: 'BRN' | 'BLK' | 'WHT' | 'GRN' | 'GRY' | 'BLU';
+  eyes?: string;
   issued: string;
-  documentD11r: string;
+  DocDiscriminator: string;
   signature: string;
 }
