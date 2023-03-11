@@ -1,9 +1,8 @@
 /* eslint-disable react/jsx-filename-extension */
 import { Meta, Story } from '@storybook/react'
 import { IDCardProps } from 'shared/ui/IDCard/IDCard.typings'
-import IDCard from "shared/ui/IDCard/IDCard"
+import IDCard from 'shared/ui/IDCard/IDCard'
 import React from 'react'
-
 
 const defaultArgs: Partial<IDCardProps> = {
     state: 'CALIFORNIA',
@@ -20,8 +19,10 @@ const defaultArgs: Partial<IDCardProps> = {
     eyes: 'BRN',
     issued: '02/13/18',
     DocDiscriminator: '02/25/231250641/YYGMD/63',
-    photoURL: 'https://i.pinimg.com/474x/82/bd/43/82bd43eedbbd2fda2945aa9de9e5dd9c.jpg',
-    signature: 'https://i.psacard.com/autographfacts/michael-jordan-signed-photo-1244.jpg?h=400'
+    photoURL:
+        'https://i.pinimg.com/474x/82/bd/43/82bd43eedbbd2fda2945aa9de9e5dd9c.jpg',
+    signature:
+        'https://i.postimg.cc/pVCsBLzv/image.png',
 }
 
 export default {
