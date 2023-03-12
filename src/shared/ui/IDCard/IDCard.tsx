@@ -1,28 +1,6 @@
-/* eslint-disable react/jsx-filename-extension */
 import React from 'react'
 import styles from './IDCard.module.css'
-
-interface IDCardProps {
-    state: string
-    id: string
-    expireDate: string
-    firstName: string
-    lastName: string
-    street: string
-    birthDate: string
-    photoURL: string
-    donor: boolean
-    sex?: 'M' | 'F'
-    height: string
-    hair?: string
-    weight: number
-    eyes?: string
-    issued: string
-    DocDiscriminator: string
-    signature: string
-}
-
-//const css = mergeStyles(styles, styles)
+import { IDCardProps } from './IDCard.typings'
 const IDCard: React.FC<IDCardProps> = ({
     expireDate,
     lastName,
@@ -42,32 +20,32 @@ const IDCard: React.FC<IDCardProps> = ({
     state,
 }) => {
     return (
-        <div className={styles['idcard-container']}>
+        <div className={styles['container']}>
             <div className={styles.state}>{`${state}`} </div>
 
             <div className={styles.info}>
-                <div className={styles.idbox}>
-                    <span className={styles.bluetext}>{'ID'}</span>
+                <div className={styles.idBox}>
+                    <span className={styles.blueText}>{'ID'}</span>
                     <span className={styles.id}>{`${id}`}</span>
                 </div>
-                <div className={styles.expbox}>
-                    <span className={styles.bluetext}>{'EXP'}</span>
-                    <span className={styles.redtext}>{`${expireDate}`}</span>
+                <div className={styles.expBox}>
+                    <span className={styles.blueText}>{'EXP'}</span>
+                    <span className={styles.redText}>{`${expireDate}`}</span>
                 </div>
                 <div>
-                    <span className={styles.bluetext}>{'LN'}</span>
+                    <span className={styles.blueText}>{'LN'}</span>
                     <span className={styles.text}>{`${lastName}`}</span>
                 </div>
                 <div>
-                    <span className={styles.bluetext}>{'FN'}</span>
+                    <span className={styles.blueText}>{'FN'}</span>
                     <span className={styles.text}>{`${firstName}`}</span>
                 </div>
                 <div>
                     <span className={styles.text}>{`${street}`}</span>
                 </div>
                 <div>
-                    <span className={styles.bluetext}>{'DOB'}</span>
-                    <span className={styles.redtext}>{`${birthDate}`}</span>
+                    <span className={styles.blueText}>{'DOB'}</span>
+                    <span className={styles.redText}>{`${birthDate}`}</span>
                 </div>
             </div>
 
@@ -75,7 +53,7 @@ const IDCard: React.FC<IDCardProps> = ({
                 <img src={photoURL} />
             </div>
 
-            <div className={styles.bwphoto}>
+            <div className={styles.bwPhoto}>
                 <img src={photoURL} />
             </div>
 
@@ -85,39 +63,39 @@ const IDCard: React.FC<IDCardProps> = ({
 
             <div className={styles.chars}>
                 <div>
-                    <span className={styles.bluetext}>{'SEX'}</span>
-                    <span className={styles.textsmall}>{`${sex}`}</span>
+                    <span className={styles.blueText}>{'SEX'}</span>
+                    <span className={styles.textSmall}>{`${sex}`}</span>
                 </div>
 
                 <div>
-                    <span className={styles.bluetext}>{'HGT'}</span>
-                    <span className={styles.textsmall}>{`${height}`}</span>
+                    <span className={styles.blueText}>{'HGT'}</span>
+                    <span className={styles.textSmall}>{`${height}`}</span>
                 </div>
 
                 <div>
-                    <span className={styles.bluetext}>{'HAIR'}</span>
-                    <span className={styles.textsmall}>{`${hair}`}</span>
+                    <span className={styles.blueText}>{'HAIR'}</span>
+                    <span className={styles.textSmall}>{`${hair}`}</span>
                 </div>
 
                 <div>
-                    <span className={styles.bluetext}>{'WGT'}</span>
-                    <span className={styles.textsmall}>{`${weight}`}</span>
+                    <span className={styles.blueText}>{'WGT'}</span>
+                    <span className={styles.textSmall}>{`${weight}`}</span>
                 </div>
 
                 <div>
-                    <span className={styles.bluetext}>{'EYES'}</span>
-                    <span className={styles.textsmall}>{`${eyes}`}</span>
+                    <span className={styles.blueText}>{'EYES'}</span>
+                    <span className={styles.textSmall}>{`${eyes}`}</span>
                 </div>
             </div>
-            <div className={styles.ddbox}>
-                <span className={styles.bluetext}>{'DD'}</span>
+            <div className={styles.ddBox}>
+                <span className={styles.blueText}>{'DD'}</span>
                 <span
-                    className={styles.textsmall}
+                    className={styles.textSmall}
                 >{`${DocDiscriminator}`}</span>
             </div>
-            <div className={styles.issbox}>
-                <span className={styles.bluetext}>{'ISS'}</span>{' '}
-                <span className={styles.textsmall}>{`${issued}`}</span>
+            <div className={styles.issBox}>
+                <span className={styles.blueText}>{'ISS'}</span>{' '}
+                <span className={styles.textSmall}>{`${issued}`}</span>
             </div>
         </div>
     )

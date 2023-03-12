@@ -41,52 +41,55 @@
     object-fit: cover;
 }
 
-.idcard-container {
+.container {
+    font-family: 'Roboto';
     position: absolute;
+    font-weight: 700;
     width: 450px;
     height: 280px;
     background-image: url('shared/images/id-card.dnot.png');
+    font-style: normal;
 }
 
-.bwphoto {
-  position: absolute;
-  width: 68.48px;
-  height: 83px;
-  left: 276px;
-  top: 163px;
+.bwPhoto {
+    position: absolute;
+    width: 68.48px;
+    height: 83px;
+    left: 276px;
+    top: 163px;
 }
 
-.bwphoto img {
-  width: 100%;
-  height: 100%;
-  opacity: 0.7;
-  object-fit: cover;
-  filter: grayscale(100%);
+.bwPhoto img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    object-fit: cover;
+    filter: grayscale(100%);
 }
 
 .signature {
-  position: absolute;
-  width: 94px;
-  height: 40px;
-  left: 40px;
-  top: 229px;
+    position: absolute;
+    width: 94px;
+    height: 40px;
+    left: 40px;
+    top: 229px;
 }
 
 .signature img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.idbox {
+.idBox {
     padding-bottom: 10px;
 }
 
-.expbox {
+.expBox {
     padding-bottom: 9px;
 }
 
-.ddbox {
+.ddBox {
     position: absolute;
     width: 25px;
     height: 12px;
@@ -95,7 +98,7 @@
     display: flex;
 }
 
-.issbox {
+.issBox {
     position: absolute;
     width: 16px;
     height: 13px;
@@ -121,10 +124,7 @@
     columns: 3 auto;
 }
 
-.bluetext {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
+.blueText {
     font-size: 10px;
     line-height: 12px;
     letter-spacing: 0.02em;
@@ -133,34 +133,20 @@
 }
 
 .text {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
     font-size: 13px;
     line-height: 14px;
     color: #232323;
 }
 
-.textsmall {
-    width: 123px;
-    height: 12px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
+.textSmall {
     font-size: 10px;
     line-height: 12px;
     color: #232323;
 }
 
-.redtext {
-    width: 86px;
-    height: 19px;
+.redText {
     margin-top: 10px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     color: #ad322d;
 }
-
