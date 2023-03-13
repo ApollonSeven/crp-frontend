@@ -1,0 +1,103 @@
+.container {
+    position: relative;
+    font-family: 'Inter';
+    font-style: normal;
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 5px;
+
+    width: 344px;
+    height: 213px;
+    background-color: #ffffff;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 13px;
+    border-radius: 10px;
+    border: #ffffff;
+}
+
+.info {
+    position: absolute;
+    width: 110px;
+    height: 13px;
+    left: 13px;
+    top: 75px;
+    display: inline-block;
+}
+
+.busCard {
+    position: absolute;
+    border-radius: 0px 0px 10px 10px;
+    width: 344px;
+    height: 93px;
+    left: 0px;
+    float: left;
+    top: 120px;
+    background-color: #a3b4da;
+}
+
+.cardIcon {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    left: 19px;
+    top: 15px;
+    background-image: url('shared/images/card-icon.png');
+}
+.rectangle {
+    position: absolute;
+    width: 291px;
+    height: 6px;
+    left: 0px;
+    top: 114px;
+    background: linear-gradient(90deg, #58afff 0%, #004584 100%);
+}
+
+.rectangle2 {
+    position: absolute;
+    width: 53px;
+    height: 6px;
+    left: 291px;
+    top: 114px;
+    background: #fba664;
+}
+
+.busCardText {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.date {
+    position: absolute;
+    width: 163px;
+    height: 13px;
+    left: 180px;
+    top: 99px;
+}
+
+.names {
+    position: absolute;
+    width: 110px;
+    height: 25px;
+    left: 64px;
+    top: 10px;
+}
+
+.bigText {
+    font-weight: 700;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+.bigRedText {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    color: #fe4545;
+    font-style: italic;
+}
+
+.text {
+    font-weight: bold;
+}
