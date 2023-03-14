@@ -20,5 +20,7 @@ export default {
     component: MedCard,
 } as Meta<MedCardProps>
 
-export const Default: Story<MedCardProps> = (args) => <MedCard {...args}></MedCard>
+export const Default: Story<MedCardProps> = (args) => (
+    <MedCard {...args}></MedCard>
+)
 Default.args = defaultArgs

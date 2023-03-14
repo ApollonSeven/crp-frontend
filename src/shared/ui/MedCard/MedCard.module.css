@@ -16,7 +16,7 @@
 
 .info {
     position: absolute;
-    width: 110px;
+    width: 150px;
     height: 13px;
     left: 13px;
     top: 75px;
@@ -71,9 +71,9 @@
 
 .date {
     position: absolute;
-    width: 163px;
+    width: 175px;
     height: 13px;
-    left: 180px;
+    left: 158px;
     top: 99px;
 }
 
@@ -113,6 +113,6 @@
 }
 
 .dateText {
-    font-size: 11px;
+    font-size: 9px;
     font-weight: bold;
 }
