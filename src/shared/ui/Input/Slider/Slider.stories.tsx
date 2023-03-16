@@ -14,7 +14,6 @@ export default {
 
 export const Primary: Story = () => {
     const [value, setValue] = useState(40)
-    console.log(value)
 
     return (
         <div
