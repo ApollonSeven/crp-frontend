@@ -1,0 +1,50 @@
+@import "src/shared/styles/pxToRem";
+
+$scale: 2;
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: pxToRem(36px, $scale);
+    height: pxToRem(16px, $scale);
+
+    & input {
+        display: none;
+    }
+
+    & input:checked + .slider {
+        background: #ffd80e;
+    }
+
+    & input:checked + .slider:before {
+        -webkit-transform: translateX(pxToRem(20px, $scale));
+        -moz-transform: translateX(pxToRem(20px, $scale));
+        transform: translateX(pxToRem(20px, $scale));
+    }
+
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #838383;
+    border-radius: pxToRem(40px, $scale);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+
+    &:before {
+        position: absolute;
+        content: '';
+        height: pxToRem(16px, $scale);
+        width: pxToRem(16px, $scale);
+        background: #fff;
+        border-radius: 50%;
+        left: 0;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+    }
+}

@@ -1,0 +1,34 @@
+@import "src/shared/styles/pxToRem";
+
+$scale: 2;
+
+.progress {
+    background: linear-gradient(
+        to right,
+        #ffd80e 0%,
+        #ffd80e 40%,
+        #393939 40%,
+        #393939 100%
+    );
+    height: pxToRem(5px, $scale);
+    width: pxToRem(398px, $scale);
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+
+    &::-webkit-slider-thumb {
+        width: pxToRem(15px, $scale);
+        height: pxToRem(15px, $scale);
+        border-radius: 50%;
+        -webkit-appearance: none;
+        cursor: ew-resize;
+        background: #fff;
+        box-shadow: 0 0 pxToRem(4px, $scale) rgba(0, 0, 0, 0.25);
+    }
+
+    &Small {
+        width: pxToRem(194px, $scale);
+        height: pxToRem(3px, $scale);
+        border-radius: pxToRem(3px, $scale);
+    }
+}

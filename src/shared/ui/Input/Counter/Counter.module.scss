@@ -1,0 +1,31 @@
+@import "src/shared/styles/pxToRem";
+
+$scale: 2;
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Brutal Type';
+    font-style: normal;
+    font-weight: 500;
+    font-size: pxToRem(14px, $scale);
+    line-height: pxToRem(17px, $scale);
+    color: #fff;
+}
+
+.btn {
+    width: pxToRem(25px, $scale);
+    height: pxToRem(25px, $scale);
+    background: #3e3d3d;
+    border-radius: pxToRem(2px, $scale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.value {
+    margin: 0 pxToRem(7px, $scale);
+}

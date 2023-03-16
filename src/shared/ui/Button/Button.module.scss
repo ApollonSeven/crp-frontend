@@ -1,0 +1,77 @@
+@import "src/shared/styles/pxToRem";
+
+@mixin buttonSize($scale: 1) {
+    $border-radius: 10px;
+    $width: 168px;
+    $height: 39px;
+    $font-size: 18px;
+
+    border-radius: pxToRem($border-radius, $scale);
+    width: pxToRem($width, $scale);
+    height: pxToRem($height, $scale);
+    font-size: pxToRem($font-size, $scale);
+}
+
+.btn {
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    width: auto;
+    overflow: visible;
+    font: inherit;
+    line-height: normal;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0;
+    color: #121212;
+
+    &XS {
+        @include buttonSize(0.8);
+    }
+    &S {
+        @include buttonSize(0.9);
+    }
+    &M {
+        @include buttonSize(1);
+    }
+    &L {
+        @include buttonSize(1.4);
+    }
+
+    &Primary{
+        background-color: #ffd80e;
+        color: #121212;
+    }
+    &Secondary {
+        background-color: #219a43;
+        color: #ffffff;
+    }
+    &Tertiary {
+        background-color: #e44747;
+        color: #ffffff;
+    }
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn:active {
+    opacity: 0.5;
+}
+
+.full {
+    width: 100%;
+}
+
+.disabled {
+    background-color: #d1d5d8;
+    color: #939393;
+}

@@ -1,4 +1,4 @@
-export type Props = {
-  steps: number;
-  currentStep: number;
-};
+export interface Props {
+    steps: number
+    currentStep: number
+}
