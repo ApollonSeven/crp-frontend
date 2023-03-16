@@ -2,7 +2,7 @@ export type ButtonSize = 'XS' | 'S' | 'M' | 'L'
 
 export type ButtonVariant = 'Primary' | 'Secondary' | 'Tertiary'
 
-export type Props = {
+export interface Props {
     size?: ButtonSize
     disabled?: boolean
     styles?: Record<string, string>

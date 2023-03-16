@@ -25,7 +25,7 @@
         "storybook": "start-storybook -p 6006 -s public",
         "build-storybook": "build-storybook -s public",
         "lint": "eslint .",
-        "lint:fix": "eslint --fix",
+        "lint:fix": "eslint ./src --fix",
         "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}'",
         "figma:export": "dotenv npx figma-export use-config scripts/.figmaexportrc.js"
     },
