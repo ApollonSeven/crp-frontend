@@ -1,0 +1,104 @@
+.container {
+  user-select: none;
+  width: 162px;
+  height: 41px;
+  color: #949494;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.select {
+  cursor: pointer;
+  line-height: 1;
+  outline: 0;
+  padding-left: 10px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  background-color: #1a1a1c;
+  justify-content: space-between;
+}
+
+.hasValue {
+  color: #fff;
+}
+
+.rounded {
+  .select, .wrapper, .options {
+    border-radius: 10px;
+  }
+}
+
+.wrapper {
+  box-sizing: border-box;
+  background: #222223;
+  overflow: hidden;
+  padding-right: 4px;
+  margin-top: 4px;
+}
+
+.options {
+  height: 0;
+  transition: 0.5s all ease;
+  overflow: scroll;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #fff;
+
+  .option {
+    padding-left: 10px;
+    background-color: #222223;
+    cursor: pointer;
+    border-bottom: 1px solid #313131;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s all;
+
+    &:hover {
+      color: #949494;
+    }
+  }
+
+  &::-webkit-scrollbar-thumb:vertical {
+    background: #aaaaaa;
+    height: 3px;
+    border-radius: 3px;
+    width: 0;
+  }
+
+  &::-webkit-scrollbar {
+    height: 0px;
+    width: 6px;
+    background: rgba(1, 1, 1, 0);
+  }
+
+  &::-webkit-scrollbar-track {
+    margin: 8px 0;
+  }
+}
+
+.arrow {
+  transition: 0.5s transform ease;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(90deg);
+}
+
+.clicked {
+  .arrow {
+    transform: rotate(270deg);
+  }
+  .options {
+    height: calc(27px * 4);
+  }
+}
+
+.activeOption {
+  background: #1c1c1c;
+}
