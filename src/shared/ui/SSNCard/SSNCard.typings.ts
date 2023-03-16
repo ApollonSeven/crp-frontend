@@ -1,7 +1,6 @@
 export interface SSNCardProps {
     docNumber: string
-    firstName: string
-    lastName: string
+    fullName: string
     signature: string
     givenDate: string
 }

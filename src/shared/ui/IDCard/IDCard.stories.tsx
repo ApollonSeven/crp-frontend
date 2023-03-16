@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
 import { Meta, Story } from '@storybook/react'
 import { IDCardProps } from 'shared/ui/IDCard/IDCard.typings'
 import IDCard from 'shared/ui/IDCard/IDCard'

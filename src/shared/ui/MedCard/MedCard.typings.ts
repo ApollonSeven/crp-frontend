@@ -1,5 +1,4 @@
 export interface MedCardProps {
-
     firstName: string
     lastName: string
     id: string
@@ -7,7 +6,6 @@ export interface MedCardProps {
     givenAddress: string
     phoneNumber: string
     medGroup: string
-    cardIcon: string
     corpName: string
     subName: string
 }

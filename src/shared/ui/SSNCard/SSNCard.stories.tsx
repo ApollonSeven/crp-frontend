@@ -5,9 +5,8 @@ import React from 'react'
 import { SSNCardProps } from './SSNCard.typings'
 
 const defaultArgs: Partial<SSNCardProps> = {
-    docNumber: '134-25-8352',
-    firstName: 'Robert',
-    lastName: 'Miller',
+    docNumber: '134-2235235235235',
+    fullName: 'Ro',
     signature: 'https://i.postimg.cc/pVCsBLzv/image.png',
     givenDate: '05/22/99',
 }
