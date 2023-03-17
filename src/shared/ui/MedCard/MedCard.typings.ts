@@ -1,6 +1,5 @@
 export interface MedCardProps {
-    firstName: string
-    lastName: string
+    fullName: string
     id: string
     effectiveDate: string
     givenAddress: string

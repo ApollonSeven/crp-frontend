@@ -5,8 +5,8 @@ import React from 'react'
 import { SSNCardProps } from './SSNCard.typings'
 
 const defaultArgs: Partial<SSNCardProps> = {
-    docNumber: '134-2235235235235',
-    fullName: 'Ro',
+    docNumber: '134-2235235',
+    fullName: 'Robert Miller',
     signature: 'https://i.postimg.cc/pVCsBLzv/image.png',
     givenDate: '05/22/99',
 }
@@ -16,5 +16,7 @@ export default {
     component: SSNCard,
 } as Meta<SSNCardProps>
 
-export const Default: Story<SSNCardProps> = (args) => <SSNCard {...args}></SSNCard>
+export const Default: Story<SSNCardProps> = (args) => (
+    <SSNCard {...args}></SSNCard>
+)
 Default.args = defaultArgs

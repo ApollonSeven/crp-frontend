@@ -3,8 +3,7 @@ import styles from './MedCard.module.css'
 import { MedCardProps } from './MedCard.typings'
 
 const MedCard: React.FC<MedCardProps> = ({
-    firstName,
-    lastName,
+    fullName,
     id,
     effectiveDate,
     givenAddress,
@@ -14,50 +13,40 @@ const MedCard: React.FC<MedCardProps> = ({
     subName,
 }) => {
     return (
-        <div className={styles['container']}>
+        <div className={styles.container}>
             <div className={styles.names}>
-                <span className={styles.titleText}> {`${corpName}`}</span>
-                <span className={styles.redTitleText}> {`${subName}`}</span>
+                <span className={styles.titleText}> {corpName}</span>
+                <span className={styles.redTitleText}> {subName}</span>
             </div>
 
             <div className={styles.date}>
-                {' '}
-                <span>{'Срок действия:'} </span>{' '}
-                <span className={styles.dateText}>{`${effectiveDate}`} </span>{' '}
+                {'Срок действия:'}
+                <span className={styles.dateText}>{effectiveDate} </span>
             </div>
             <div className={styles.info}>
                 <div className={styles.infoBlock}>
-                    {' '}
-                    <span>{'Имя:'} </span>{' '}
-                    <span className={styles.text}>
-                        {`${firstName}`} {`${lastName}`}{' '}
-                    </span>{' '}
+                    {'Имя:'}
+                    <span className={styles.text}>{fullName}</span>
                 </div>
-                <div className={styles.infoBlock}>
-                    {' '}
-                    <span>{'ID:'} </span>{' '}
-                    <span className={styles.text}>{`${id}`} </span>{' '}
+                <div className={styles.idBlock}>
+                    {'ID:'}
+                    <span className={styles.text}>{id} </span>
                 </div>
             </div>
 
             <div className={styles.busCard}>
                 <div className={styles.busCardText}>
                     <div className={styles.busBlock}>
-                        {' '}
-                        <span>{'Получено в:'} </span>{' '}
-                        <span className={styles.text}>
-                            {`${givenAddress}`}{' '}
-                        </span>{' '}
+                        {'Получено в:'}
+                        <span className={styles.text}>{givenAddress}</span>
                     </div>
                     <div className={styles.busBlock}>
-                        {' '}
-                        <span>{'Телефон:'} </span>{' '}
-                        <span className={styles.text}>{`${phoneNumber}`} </span>{' '}
+                        {'Телефон:'}
+                        <span className={styles.text}>{phoneNumber} </span>
                     </div>
                     <div className={styles.busBlock}>
-                        {' '}
-                        <span>{'Медицинская группа:'} </span>{' '}
-                        <span className={styles.text}>{`${medGroup}`} </span>{' '}
+                        {'Медицинская группа:'}
+                        <span className={styles.text}>{medGroup} </span>
                     </div>
                 </div>
             </div>

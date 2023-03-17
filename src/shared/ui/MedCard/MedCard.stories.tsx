@@ -4,12 +4,11 @@ import MedCard from 'shared/ui/MedCard/MedCard'
 import React from 'react'
 
 const defaultArgs: Partial<MedCardProps> = {
-    firstName: 'Ryu',
-    lastName: 'Hayabusa',
-    id: '2523627',
+    fullName: 'Ryu Hayabusa',
+    id: '252362723',
     effectiveDate: '22.05.98 - 23.08.12',
     givenAddress: 'SANDY-SHORES HOSPITAL',
-    phoneNumber: '(563)375-175-34',
+    phoneNumber: '(563)375-175-342',
     medGroup: 'любая группа',
     corpName: 'L.A. CARE',
     subName: 'Medi-Cal',

@@ -1,5 +1,6 @@
 .container {
     position: relative;
+    display: flex;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -11,12 +12,19 @@
     font-size: 11px;
     line-height: 13px;
     border-radius: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
     border: #ffffff;
 }
 
 .info {
     position: absolute;
-    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    width: 345px;
     height: 13px;
     left: 13px;
     top: 75px;
@@ -25,7 +33,19 @@
 
 .infoBlock {
     padding-bottom: 5px;
+    max-width: 327px;
+    text-overflow: clip;
+    overflow: hidden;
 }
+
+.idBlock {
+    padding-bottom: 5px;
+    max-width: 138px;
+    text-overflow: clip;
+    overflow: hidden;
+}
+
+
 
 .busCard {
     position: absolute;
@@ -40,6 +60,10 @@
 
 .busBlock {
     padding-bottom: 5px;
+    white-space: nowrap;
+    max-width: 320.5px;
+    text-overflow: clip;
+    overflow: hidden;
 }
 
 .cardIcon {

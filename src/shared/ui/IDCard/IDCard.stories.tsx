@@ -9,7 +9,7 @@ const defaultArgs: Partial<IDCardProps> = {
     expireDate: '25/09/2015',
     lastName: 'Arsenyi',
     firstName: 'Beznozhnikov',
-    street: 'Shluznaya 8 koshesi, Ablaktestky Rayoni',
+    street: 'Shluznaya 8 koshesi, Ablaktestky Rayoni street',
     birthDate: '18/02/99',
     sex: 'M',
     height: '1-79',

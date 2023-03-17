@@ -8,24 +8,21 @@ const SSNCard: React.FC<SSNCardProps> = ({
     givenDate,
 }) => {
     return (
-        <div className={styles['container']}>
+        <div className={styles.container}>
             <div className={styles.info}>
-                <span className={styles.text}>{`${docNumber}`}</span>
-                
-            <div className={styles.break}></div>
-            
-            <span
+            <span className={styles.text}>{`${docNumber}`}</span>
+
+                <div className={styles.break}></div>
+
+                <span
                 className={styles.text}
-                    >{`${fullName}`}</span> 
-    
-            
+                    >{fullName}</span> 
+  
             </div>
             <div className={styles.signature}>
-                    <img src={signature} />
-                </div>
-            <div className={styles.givenDate}>
-                <span className={styles.text}>{`${givenDate}`}</span>
+                <img src={signature} />
             </div>
+            <div className={styles.givenDate}>{givenDate}</div>
         </div>
     )
 }
