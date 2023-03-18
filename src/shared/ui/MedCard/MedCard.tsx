@@ -20,16 +20,16 @@ const MedCard: React.FC<MedCardProps> = ({
             </div>
 
             <div className={styles.date}>
-                {'Срок действия:'}
+                Срок действия:&nbsp;
                 <span className={styles.dateText}>{effectiveDate} </span>
             </div>
             <div className={styles.info}>
                 <div className={styles.infoBlock}>
-                    {'Имя:'}
+                    Имя:&nbsp;
                     <span className={styles.text}>{fullName}</span>
                 </div>
                 <div className={styles.idBlock}>
-                    {'ID:'}
+                    ID:&nbsp;
                     <span className={styles.text}>{id} </span>
                 </div>
             </div>
@@ -37,15 +37,15 @@ const MedCard: React.FC<MedCardProps> = ({
             <div className={styles.busCard}>
                 <div className={styles.busCardText}>
                     <div className={styles.busBlock}>
-                        {'Получено в:'}
+                        Получено в:&nbsp;
                         <span className={styles.text}>{givenAddress}</span>
                     </div>
                     <div className={styles.busBlock}>
-                        {'Телефон:'}
+                        Телефон:&nbsp;
                         <span className={styles.text}>{phoneNumber} </span>
                     </div>
                     <div className={styles.busBlock}>
-                        {'Медицинская группа:'}
+                        Медицинская группа:&nbsp;
                         <span className={styles.text}>{medGroup} </span>
                     </div>
                 </div>

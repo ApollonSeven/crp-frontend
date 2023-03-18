@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from './IDCard.module.css'
-import { IDCardProps } from './IDCard.typings'
-const IDCard: React.FC<IDCardProps> = ({
+import styles from './DriverLicense.module.css'
+import { DriverLicenseProps } from './DriverLicense.typings'
+const DriverLicense: React.FC<DriverLicenseProps> = ({
     expireDate,
     lastName,
     birthDate,
@@ -18,6 +18,9 @@ const IDCard: React.FC<IDCardProps> = ({
     docDiscriminator,
     signature,
     state,
+    restrictions,
+    driverClass,
+    endorsements,
 }) => {
     return (
         <div className={styles.container}>
@@ -46,8 +49,21 @@ const IDCard: React.FC<IDCardProps> = ({
                     <span className={styles.blueText}>{'DOB'}</span>
                     <span className={styles.redText}>{birthDate}</span>
                 </div>
+                <div>
+                    <span className={styles.blueText}>{'RSTR'}</span>
+                    <span className={styles.text}>{restrictions}</span>
+                </div>
             </div>
-
+            <div className={styles.driverType}>
+                <div>
+                    <span className={styles.blueText}>{'CLASS'}</span>
+                    <span className={styles.text}>{driverClass}</span>
+                </div>
+                <div>
+                    <span className={styles.blueText}>{'END'}</span>
+                    <span className={styles.text}>{endorsements}</span>
+                </div>
+            </div>
             <div className={styles.photoURL}>
                 <img src={photoURL} />
             </div>
@@ -102,4 +118,4 @@ const IDCard: React.FC<IDCardProps> = ({
     )
 }
 
-export default IDCard
+export default DriverLicense

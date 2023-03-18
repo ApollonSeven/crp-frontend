@@ -48,7 +48,7 @@
     font-weight: 700;
     width: 450px;
     height: 280px;
-    background: url('shared/images/id-card.dnot.png');
+    background: url('shared/images/driver-license.png');
     font-style: normal;
 }
 
@@ -118,6 +118,14 @@
     top: 51px;
     left: 163px;
     right: 148px;
+}
+
+.driverType {
+    position: absolute;
+    width: 32px;
+    height: 12px;
+    left: 333px;
+    top: 77px;
 }
 
 .streetBlock {

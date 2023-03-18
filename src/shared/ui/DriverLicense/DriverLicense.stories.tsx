@@ -1,9 +1,9 @@
 import { Meta, Story } from '@storybook/react'
-import { IDCardProps } from 'shared/ui/IDCard/IDCard.typings'
-import IDCard from 'shared/ui/IDCard/IDCard'
+import { DriverLicenseProps } from 'shared/ui/DriverLicense/DriverLicense.typings'
+import DriverLicense from 'shared/ui/DriverLicense/DriverLicense'
 import React from 'react'
 
-const defaultArgs: Partial<IDCardProps> = {
+const defaultArgs: Partial<DriverLicenseProps> = {
     state: 'CALIFORNIA',
     id: 'I1234561',
     expireDate: '25/09/2015',
@@ -20,12 +20,17 @@ const defaultArgs: Partial<IDCardProps> = {
     docDiscriminator: '02/25/231250641/YYGMD/63',
     photoURL: 'https://shikimori.one/system/characters/original/80.jpg',
     signature: 'https://i.postimg.cc/pVCsBLzv/image.png',
+    restrictions: 'NO',
+    driverClass: 'ARS',
+    endorsements: 'NO',
 }
 
 export default {
-    title: 'crp-kit/IDCard',
-    component: IDCard,
-} as Meta<IDCardProps>
+    title: 'crp-kit/DriverLicense',
+    component: DriverLicense,
+} as Meta<DriverLicenseProps>
 
-export const Default: Story<IDCardProps> = (args) => <IDCard {...args}></IDCard>
+export const Default: Story<DriverLicenseProps> = (args) => (
+    <DriverLicense {...args}></DriverLicense>
+)
 Default.args = defaultArgs

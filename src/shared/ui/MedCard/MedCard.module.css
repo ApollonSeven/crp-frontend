@@ -20,9 +20,6 @@
 .info {
     position: absolute;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     white-space: nowrap;
     width: 345px;
     height: 13px;
@@ -44,8 +41,6 @@
     text-overflow: clip;
     overflow: hidden;
 }
-
-
 
 .busCard {
     position: absolute;

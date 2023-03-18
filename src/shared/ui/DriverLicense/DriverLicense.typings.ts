@@ -1,4 +1,4 @@
-export interface IDCardProps {
+export interface DriverLicenseProps {
     state: string
     id: string
     expireDate: string
@@ -16,4 +16,7 @@ export interface IDCardProps {
     issued: string
     docDiscriminator: string
     signature: string
+    restrictions: string
+    driverClass: string
+    endorsements: string
 }
