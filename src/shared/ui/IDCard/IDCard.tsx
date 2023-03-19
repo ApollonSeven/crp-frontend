@@ -18,9 +18,10 @@ const IDCard: React.FC<IDCardProps> = ({
     docDiscriminator,
     signature,
     state,
+    donor
 }) => {
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} ${donor? styles['donor'] : ''}`} > 
             <div className={styles.state}>{state} </div>
             <div className={styles.info}>
                 <div className={styles.idBox}>

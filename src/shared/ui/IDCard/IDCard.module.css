@@ -52,6 +52,19 @@
     font-style: normal;
 }
 
+
+.donor {
+    font-family: 'Roboto';
+    position: absolute;
+    font-weight: 700;
+    width: 450px;
+    height: 280px;
+    background-image: url('shared/images/id-card.png');
+    font-style: normal;
+}
+
+
+
 .bwPhoto {
     position: absolute;
     width: 68.48px;

@@ -11,6 +11,7 @@ const defaultArgs: Partial<IDCardProps> = {
     firstName: 'Beznozhnikov',
     street: 'Shluznaya 8 koshesi, Ablaktestky Rayoni street',
     birthDate: '18/02/1999',
+    donor: false,
     sex: 'M',
     height: '1-79',
     hair: 'BRN',
