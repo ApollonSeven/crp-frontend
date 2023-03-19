@@ -48,7 +48,7 @@
     font-weight: 700;
     width: 450px;
     height: 280px;
-    background: url('shared/images/driver-license.png');
+    background-image: url('shared/images/driver-license.png');
     font-style: normal;
 }
 
