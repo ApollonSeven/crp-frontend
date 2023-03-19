@@ -7,7 +7,6 @@ export interface DriverLicenseProps {
     street: string
     birthDate: string
     photoURL: string
-    donor: boolean
     sex?: 'M' | 'F'
     height: string
     hair?: string
