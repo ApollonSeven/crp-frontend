@@ -66,7 +66,12 @@
 
 Оригинал: [Angular Commit Notification Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#type)
 
-## Дополнительно
+## Прочее
 - [Как верстать в резиновой верстке](./docs/flexible-layout.md)
 - [Как сгенерировать иконки](./docs/icons-gen.md)
 - [Как запустить определенные story-файлы](./docs/stories-scope.md)
+
+## TODO
+- [ ] Добавить скрипт генерации виджета
+- [ ] Настроить собственный сборщик
+- [ ] Добавить сервис переводов i18n
