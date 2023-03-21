@@ -49,6 +49,7 @@
     width: 450px;
     height: 280px;
     background-image: url('shared/images/driver-license.png');
+    background-size: 450px 280px;
     font-style: normal;
     border-radius: 15px;
 }
