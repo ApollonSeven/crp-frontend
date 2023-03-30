@@ -1,0 +1,79 @@
+.container {
+    background: #202020;
+    opacity: 0.6;
+    width: 410px;
+    height: 276px;
+    font-family: 'Roboto';
+    font-style: normal;
+    border: 10px solid rgba(0, 0, 0, 0.8);
+}
+
+.block1 {
+    position: relative;
+    top: 23px;
+    left: 15px;
+    right: 284px;
+    width: 390px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AAAAAA;
+    display: inline-block;
+}
+.age {
+    font-size: 16px;
+    line-height: 19px;
+    color: #949494;
+    float: right;
+    padding-right: 15px;
+}
+
+.fullName {
+    position: relative;
+    color: #FFD80E;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    white-space: nowrap;
+    margin-bottom: 14px;
+}
+
+.infoBlock{
+    max-width: fit-content;
+    display: inline-block;
+}
+
+.desc {
+    float: right;
+    padding-right: 15px;
+}
+
+.names {
+    margin-bottom: 14px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.earnings {
+    padding-top: 11px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color:#FFFFFF;
+}
+
+.cash {
+    float: right;
+    padding-right: 44px;
+}
+
+.card {
+    float: right;
+    padding-right: 15px;
+}
+
+.yellow {
+    color: #FFD80E;
+}
+
