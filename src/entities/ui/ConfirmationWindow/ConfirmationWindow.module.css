@@ -1,0 +1,31 @@
+.container {
+    background: #202020;
+    font-family: 'Roboto';
+    font-style: normal;
+    width: 365px;
+    height: 195px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: 10px solid rgba(0, 0, 0, 0.8);
+    opacity: 0.6;
+}
+
+.box {
+    padding-top: 55px;
+    padding-left: 36px;
+}
+
+.buttons {
+    margin-left: 68px;
+    padding-top: 25px;
+}
+
+.close {
+    cursor: pointer;
+    float: right;
+    padding-top: 10px;
+    padding-right: 9px;
+}

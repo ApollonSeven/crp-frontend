@@ -1,0 +1,26 @@
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    width: 194px;
+    height: 45px;
+
+}
+
+button {
+    background: #FFD80E;
+    border: 1px solid #FFD80E;
+    border-radius: 10px;
+    
+    padding: 14px 35px;
+    cursor: pointer;
+
+}

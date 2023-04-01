@@ -32,14 +32,6 @@
     outline: 1px solid #FFD80E;
 }
 
-.container:focus {
-    outline: 1px solid #FFD80E;
-}
-
-.container2:focus {
-    outline: 1px solid #FFD80E;
-}
-
 
 .desc {
     padding-left: 20px;
