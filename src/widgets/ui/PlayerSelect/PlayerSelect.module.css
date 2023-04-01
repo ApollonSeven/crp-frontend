@@ -1,0 +1,100 @@
+.container {
+    width: 410px;
+    height: 71px;
+    background: #202020;
+    opacity: 0.6;
+    font-family: 'Roboto';
+    font-style: normal;
+    border: 11px solid rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.container2 {
+    width: 410px;
+    height: 71px;
+    background: #202020;
+    opacity: 0.6;
+    font-family: 'Roboto';
+    font-style: normal;
+    border: 11px solid rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.container:active {
+    outline: 1px solid #FFD80E;
+}
+
+.container2:active {
+    outline: 1px solid #FFD80E;
+}
+
+.container:focus {
+    outline: 1px solid #FFD80E;
+}
+
+.container2:focus {
+    outline: 1px solid #FFD80E;
+}
+
+
+.desc {
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #949494;
+
+}
+
+.yellow {
+    color: #FFD80E;
+    padding-left: 20px;
+}
+
+.names {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding-top: 15px;
+}
+
+.age {
+    font-size: 16px;
+    line-height: 19px;
+    color: #949494;
+    float: right;
+    padding-right: 23px;
+}
+
+.id {
+    font-size: 16px;
+    line-height: 19px;
+    color: #949494;
+    float: right;
+    padding-right: 15px;
+}
+
+.button {
+    background: #000000;
+    opacity: 0.8;
+    width: 432px;
+    height: 91px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.plus {
+    padding-top: 36px;
+    padding-left: 207px;
+    width: 19px;
+    height: 19px;
+    font-size: 19pt;
+    color:white;
+    font-family: 'Roboto';
+    font-style: normal;
+}
