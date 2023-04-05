@@ -20,10 +20,10 @@ const PlayerInfo: React.FC<PlayerInfoProps> = ({ fullName,
             <div className={styles.block1}>
              
             <div className={styles.names}> <span className={styles.yellow}>{fullName}</span> <span className={styles.age}>{age}</span> </div>
-            <div> <span> Дата рождения: </span> <span className={styles.desc}> {birthDate} </span> </div>
-            <div> <span> Адрес: </span>  <span className={styles.desc}> {address} </span> </div>
-            <div> <span> Место работы: </span>  <span className={styles.desc}> {workPlace} </span> </div>
-            <div> <span> Должность: </span>  <span className={styles.desc}> {occupation} </span> </div>
+            <div className={styles.space}> <span> Дата рождения: </span> <span className={styles.desc}> {birthDate} </span> </div>
+            <div className={styles.space}> <span> Адрес: </span>  <span className={styles.desc}> {address} </span> </div>
+            <div className={styles.space}> <span> Место работы: </span>  <span className={styles.desc}> {workPlace} </span> </div>
+            <div className={styles.space}> <span> Должность: </span>  <span className={styles.desc}> {occupation} </span> </div>
     
             <div className={styles.earnings}> <span>Средства:</span>  
              <span className={styles.card}>{card}</span>  <span className={styles.cash}>{cash}</span> </div>
