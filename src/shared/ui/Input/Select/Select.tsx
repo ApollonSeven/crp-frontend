@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import cn from 'classnames'
 import React, { useMemo, useState } from 'react'
 import styles from './Select.module.scss'

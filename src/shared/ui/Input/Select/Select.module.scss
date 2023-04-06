@@ -1,6 +1,6 @@
 .container {
   user-select: none;
-  width: 162px;
+  width: 100px;
   height: 41px;
   color: #949494;
   font-family: 'Roboto';
@@ -18,7 +18,7 @@
   height: inherit;
   display: flex;
   align-items: center;
-  background-color: #1a1a1c;
+  background: rgba(0, 0, 0);
   justify-content: space-between;
 }
 
