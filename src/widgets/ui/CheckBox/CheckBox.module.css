@@ -1,5 +1,6 @@
 
 .container {
+    padding-top: 9px;
     width: fit-content;
     height: fit-content;
 }
