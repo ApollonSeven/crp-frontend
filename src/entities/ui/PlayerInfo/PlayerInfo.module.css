@@ -1,6 +1,5 @@
 .container {
-    background: #202020;
-    opacity: 0.6;
+    background: rgba(32, 32, 32, 0.9);
     width: 410px;
     height: 276px;
     font-family: 'Roboto';
@@ -10,18 +9,16 @@
 
 .block1 {
     position: relative;
-    top: 23px;
-    left: 15px;
-    right: 284px;
+    margin-top: 23px;
+    margin-left: 15px;
     width: 390px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #AAAAAA;
     display: inline-block;
-
-    
 }
+
 .age {
     font-size: 16px;
     line-height: 19px;
@@ -30,16 +27,10 @@
     padding-right: 15px;
 }
 
-.infoBlock{
-    max-width: fit-content;
-    display: inline-block;
-}
 
 .desc {
     float: right;
-}
-.space {
-    margin-right: 15px;
+    padding-right: 15px;
 }
 
 .names {
@@ -59,15 +50,60 @@
 
 .cash {
     float: right;
-    padding-right: 44px;
+    padding-right: 15px;
 }
 
 .card {
-    float: right;
     padding-right: 15px;
+    float: right;
 }
 
 .yellow {
     color: #FFD80E;
 }
 
+.cardIcon {
+    fill:  #FFFFFF;
+    float: right;
+    padding-right: 8px;
+    padding-top: 4px;
+}
+
+.walletIcon {
+   fill: #FFFFFF;
+   float: right;
+   padding-right: 8px;
+   padding-top: 3px;
+}
+
+.buttons {
+    padding-top: 22px;
+    padding-left: 16px;
+    display: grid;
+     grid-template-columns: 1fr 1fr;
+}
+
+.buttons :nth-child(1) {
+    margin-right: 10px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0px;
+}
+
+.buttons :nth-child(2) {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0px;
+    white-space: nowrap;
+}
+
+.customButton {
+
+width: 500px;
+height: 85px;
+
+}

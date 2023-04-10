@@ -5,7 +5,8 @@ import cn from 'classnames'
 import Select from 'shared/ui/Input/Select/Select'
 import FamilyTable from 'entities/ui/FamilyTable/FamilyTable'
 import FamilyRequestsTable from 'entities/ui/FamilyRequestsTable/FamilyRequestsTable'
-const FamilyWindow: React.FC<FamilyWindowProps> = () => {
+import { CrossOutline } from 'shared/icons/generated'
+const FamilyWindow: React.FC<FamilyWindowProps> = ({onClose}) => {
     enum Tab {
         Family = 0,
         Requests = 1,
@@ -44,6 +45,7 @@ const FamilyWindow: React.FC<FamilyWindowProps> = () => {
 
     return (
         <div className={styles.container}>
+            <CrossOutline className={styles.Cross} onClick={onClose}/>
             <div className={styles.tabs}>
                 <div
                     className={cn(

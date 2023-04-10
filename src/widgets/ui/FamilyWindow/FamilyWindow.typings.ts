@@ -1,3 +1,3 @@
 export interface FamilyWindowProps{
-    something:string;
+   onClose: () => void;
 }

@@ -45,6 +45,10 @@
         @include buttonSize(1.4);
     }
 
+    &Z {
+        @include buttonSize(1.7)
+    }
+
     &Primary{
         background-color: #ffd80e;
         color: #121212;

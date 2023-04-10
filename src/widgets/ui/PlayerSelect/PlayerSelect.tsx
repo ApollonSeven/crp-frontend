@@ -1,43 +1,40 @@
-import React, {useState} from 'react';
-import styles from './PlayerSelect.module.css'
+import React, { useState } from 'react'
 import { PlayerSelectProps } from './PlayerSelect.typings'
+import styles from './PlayerSelect.module.css'
 
-const PlayerSelect: React.FC<PlayerSelectProps> = ({ onChange, fullName, rank, age, id}) => 
-{ const [buttons, setButtons] = useState<number[]>([]);
+const PlayerSelect: React.FC<PlayerSelectProps> = ({ playerMembers, onChange }) => {
+  const [activeIndex, setActiveIndex] = useState(-1);
 
-    const addNewButton = () => {
-      const newButton = buttons.length + 1;
-      setButtons([...buttons, newButton]);
+  const handleClick = (index: number) => {
+    setActiveIndex(index === activeIndex ? -1 : index);
+    onChange();
+  };
 
-     
-      
-    };
-    return (
-        <div>
-        <div onClick={onChange} className={styles.container}>
-            <div className={styles.names}> <span className={styles.yellow}>{fullName}</span> <span className={styles.id}>#{id}</span> </div>
-            <div> <span className={styles.desc}> {age}, {rank} </span> </div>
+  return (
+    <div>
+      {playerMembers.map((member, index) => (
+        <div
+          onClick={() => handleClick(index)}
+          className={`${styles.box} ${activeIndex === index ? styles.active : ''}`}
+          key={index}
+        >
+          <div className={styles.names}>
+            <span className={styles.yellow}>{member.fullName}</span>
+            <span className={styles.id}>#{member.id}</span>
+          </div>
+          <div>
+            <span className={styles.desc}>
+              {member.age}, {member.rank}
+            </span>
+          </div>
         </div>
-
-       
-        {buttons.map((button) => (
-            <div key={button} onClick={onChange} className={styles.container2}>
-        <div className={styles.names}> <span className={styles.yellow}>{fullName}</span> <span className={styles.id}>#{id}</span> </div>
-        <div> <span className={styles.desc}> {age}, {rank} </span> </div>
-        </div>
-        
-      )
-      
-      )}
-
-    <div onClick={addNewButton} className={styles.button} > <div className={styles.plus}>+</div></div>
-
-
-
-
-        </div>
-    )
-    }
+      ))}
+      <div className={styles.button}>
+        <div className={styles.plus}>+</div>
+      </div>
+    </div>
+  )
+}
 
 export default PlayerSelect
 

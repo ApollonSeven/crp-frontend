@@ -1,0 +1,55 @@
+.container {
+    width: 1920px;
+    height: 1080px;
+    background-image: url('shared/images/bg-menu.png');
+    background-size: 1920px 1080px;
+    position: relative;
+}
+
+.box1 {
+    padding-left: 55px;
+    padding-top: 213px;
+    position: relative;
+    max-width: fit-content;
+}
+
+
+.box2 {
+    padding-top: 6px;
+    padding-left: 55px
+}
+
+.select {
+    float: right;
+    padding-top: 213px;
+    padding-right: 55px;
+}
+
+.title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.timer {
+    position: fixed;
+    left: 3.96%;
+    right: 87.34%;
+    top: 82.96%;
+    bottom: 14.81%;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.button {
+    position:absolute;
+    bottom:0;
+    right:0;
+    margin-right: 60px;
+    margin-bottom: 70px;
+}

@@ -1,4 +1,4 @@
 export interface TimerWidgetProps{ 
-    time: string;
+    time: number;
 }
 

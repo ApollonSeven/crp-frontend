@@ -1,7 +1,7 @@
 .container {
     width: 410px;
     height: 381px;
-    background-color: rgba(2,0,2,.5);
+    background: rgba(32, 32, 32, 0.9);
     font-family: 'Roboto';
     font-style: normal;
     border: 11px solid rgba(0, 0, 0, 0.8);
@@ -124,4 +124,14 @@
 .addbutton.active {
     background-color: transparent;
     color: #ffd80e;
+}
+
+.Cross {
+    fill: #FFD80E;
+    width: 12px;
+    height: 12px;
+    float: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    cursor: pointer;
 }

@@ -1,34 +1,16 @@
-.container {
+.box {
     width: 410px;
     height: 71px;
-    background: #202020;
-    opacity: 0.6;
+    background: rgba(32, 32, 32, 0.9);
     font-family: 'Roboto';
     font-style: normal;
     border: 11px solid rgba(0, 0, 0, 0.8);
     display: inline-block;
     cursor: pointer;
-
+    white-space: nowrap;
 }
 
-.container2 {
-    width: 410px;
-    height: 71px;
-    background: #202020;
-    opacity: 0.6;
-    font-family: 'Roboto';
-    font-style: normal;
-    border: 11px solid rgba(0, 0, 0, 0.8);
-    display: inline-block;
-    cursor: pointer;
-    margin-top: 6px;
-}
-
-.container:active {
-    outline: 1px solid #FFD80E;
-}
-
-.container2:active {
+.box.active {
     outline: 1px solid #FFD80E;
 }
 

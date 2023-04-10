@@ -1,4 +1,4 @@
-export type ButtonSize = 'XS' | 'S' | 'M' | 'L'
+export type ButtonSize = 'XS' | 'S' | 'M' | 'L' | 'Z'
 
 export type ButtonVariant = 'Primary' | 'Secondary' | 'Tertiary'
 

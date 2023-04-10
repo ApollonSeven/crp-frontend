@@ -2,12 +2,10 @@
 .timerWidget {
     font-family: 'Roboto';
     font-style: normal;
-    
-
     color: #AAAAAA;
 }
 
-div {
+.text {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -15,7 +13,7 @@ div {
 }
 
 
-h1 {
+.hours {
     margin-top: 14px;
     font-weight: 500;
     font-size: 36px;

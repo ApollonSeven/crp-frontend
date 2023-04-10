@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import styles from './TimerWidget.module.css';
 import { TimerWidgetProps } from './TimerWidget.typings';
 
-const TimerWidget: React.FC<TimerWidgetProps> = () => {
-  const [totalSeconds, setTotalSeconds] = useState<number>(86400);
+const TimerWidget: React.FC<TimerWidgetProps> = ( {time}) => {
+  const [totalSeconds, setTotalSeconds] = useState<number>(time);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -19,8 +19,8 @@ const TimerWidget: React.FC<TimerWidgetProps> = () => {
 
   return (
     <div className={styles.timerWidget}>
-      <div> Осталось времени до удаления персонажа:</div>
-      <h1>{hours.toString().padStart(2, '0')}:{minutes.toString().padStart(2, '0')}:{seconds.toString().padStart(2, '0')}</h1>
+      <div className={styles.text}> Осталось времени до удаления персонажа:</div>
+      <h1 className={styles.hours}>{hours.toString().padStart(2, '0')}:{minutes.toString().padStart(2, '0')}:{seconds.toString().padStart(2, '0')}</h1>
     </div>
   );
 };

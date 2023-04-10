@@ -4,10 +4,6 @@ import PlayerSelect from 'widgets/ui/PlayerSelect/PlayerSelect'
 import React from 'react'
 
 const defaultArgs: Partial<PlayerSelectProps> = {
-    fullName: 'Megaman X',
-    id: 'Infinity',
-    age: '18 лет',
-    rank: 'Maverick Hunter class B'
 }
 
 export default {
