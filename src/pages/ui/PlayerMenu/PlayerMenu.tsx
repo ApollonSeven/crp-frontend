@@ -20,6 +20,7 @@ const PlayerMenu: React.FC<PlayerMenuProps> = ({price}) => {
 
     const players = [
       { id: 235235, fullName: 'Megaman X', age: 18, rank: 'Class B' },
+      { id: 235235, fullName: 'Megaman X', age: 18, rank: 'Class B' }
     ];
    
   return (
@@ -33,7 +34,7 @@ const PlayerMenu: React.FC<PlayerMenuProps> = ({price}) => {
         </div>
          <div className={styles.box2}> <PlayerInfo {...playerInfoProps}/> </div>
          <div className={styles.timer}> <TimerWidget time={86590}/> </div>
-         <div className={styles.button}> <Button type='button' size='Z'> {price}</Button> </div>
+        <div className={styles.button}> <Button type='button' size='Z' > {price}</Button>  </div>
         
     </div>
   );

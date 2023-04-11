@@ -11,7 +11,7 @@ const PlayerSelect: React.FC<PlayerSelectProps> = ({ playerMembers, onChange }) 
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       {playerMembers.map((member, index) => (
         <div
           onClick={() => handleClick(index)}
