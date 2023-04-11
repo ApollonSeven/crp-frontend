@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{color:#000000; box-sizing: border-box; margin:0;	padding:0; border: 0;}
+
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+	font-size:inherit;
+}
+
+h2{font-size:16px; font-weight:600;margin:0;}
+
+h3{font-size:12px; font-weight:600;margin:0;}
+
+.cardShape{
+    position:relative;
+    width:260px;
+    height:416px;
+    background: #CFC5A8;
+    border-radius: 20px;
+    display:flex;
+    flex-flow:column nowrap;
+}
+
+.header{
+    position:relative;
+    display: flex;
+    flex-flow: row nowrap;
+    width:260px;
+    justify-content: space-between;
+}
+
+.photo{
+    position:relative;
+    display: block;
+    width:135px;
+    height:175px;
+    background:url(./photo.png) no-repeat;
+    background-size: contain;
+    margin:12px 0px 0px 12px;
+}
+
+.photo div{
+	display:block;
+	position:absolute;
+	bottom: 0px;
+	background:#7E765F;
+	text-align:center;
+	width:100%;
+    height:21px;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 500;
+    color:#B8B196;
+    padding: 3px 0px 0px 0px;
+}
+
+.logo h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 9px;
+    text-align: center;
+    color: #000000;
+}
+
+.logo h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    margin:8px 0px 0px 0px;
+}
+
+.logo h2:last-child{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #3CA62B;
+    margin:8px 0px 0px 0px;
+}
+
+.logo{
+	display:flex;
+	flex-flow:column nowrap;
+	width:84px;
+	margin:17px auto 0px;
+}
+
+.logo_pic{
+	width:84px;
+	height:84px;
+	background:url(./logo.png) no-repeat;
+	background-size:contain;
+    margin:8px 0px 0px 0px;
+}
+
+.name h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    margin:0px 0px 0px 12px;
+}
+
+.name h2:first-child{
+    margin:10px 0px 0px 12px;
+}
+
+.info{
+	display:flex;
+	flex-flow:row nowrap;
+	width:100%;
+	margin:6px 0px 0px 8px;
+	
+}
+
+.qr_pic{
+	width:53px;
+	height:137px;
+	background:url(./qr_pic.png);
+	background-size:cover;
+}
+
+.grade{
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content:space-between;
+	margin:0px 0px 0px 10px;
+    width:58px;
+    height:100%;
+    border:transparent;
+}
+
+.grade h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #000000;
+    margin: 3px 0px 0px 0px;
+}
+
+.sim_pic{
+	width:58px;
+	height:58px;
+	background:url(./sim.png) no-repeat center;
+	background-size:contain;
+}
+
+.rank{
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content:space-between;
+	margin:3px 0px 0px 12px;
+    height: 100%;
+}
+
+.rank h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #000000;
+    margin:0px 0px 0px 17px;
+    width:fit-content;
+}
+
+.date_date{
+	width:74px;
+	height:84px;
+	background:url(./date_date.png) no-repeat;
+	background-size:contain;
+    position: relative;
+}
+
+.date_date h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+}
+
+.date_date h2:first-child{
+    margin: 8px 0px 0px 0px;
+}
+
+.date_date h2:nth-child(2){
+    margin: 3px 0px 0px 0px;
+}
+
+.date_date h2:nth-child(3){
+    margin: 10px 0px 0px 0px;
+    width:100px;
+}
+
+.date_date h2:last-child{
+    margin: 3px 0px 0px 0px;
+}
+
+.grow{
+    flex-grow: 1;
+}
+
+.footer{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+    position: relative;
+    bottom:0px;
+    text-align: center;
+    margin:0px 0px 14px 0px;
+}
