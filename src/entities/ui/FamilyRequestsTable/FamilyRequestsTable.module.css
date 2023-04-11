@@ -17,7 +17,7 @@
   }
   
 
-  .fullname {
+  .fullName {
     margin-top: 16px;
     margin-right: 50px;
     grid-column: 1;
@@ -35,12 +35,6 @@
     grid-column: 3;
   }
 
-  CheckBox {
-    padding-top: 9px;
-    margin-bottom: 5px;
-    grid-column: 4;
-  }
-  
   .container::-webkit-scrollbar {
     width: 8px;
   }

@@ -19,16 +19,16 @@ const FamilyWindow: React.FC<FamilyWindowProps> = ({onClose}) => {
     }
 
     const familyMembers = [
-        { fullname: 'Маршал Гаритос', age: 41, role: 'Отец' },
-        { fullname: 'Маршал Гаритос', age: 41, role: 'Отец' },
-        { fullname: 'Маршал Гаритос', age: 41, role: 'Отец' },
-        { fullname: 'Маршал Гаритос', age: 41, role: 'Отец' },
-        { fullname: 'Маршал Гаритос', age: 41, role: 'Отец' },
-        { fullname: 'Маршал Гаритос', age: 41, role: 'Отец' },
-        { fullname: 'Маршал Гаритос', age: 41, role: 'Отец' },
-        { fullname: 'Маршал Гаритос', age: 41, role: 'Отец' },
-        { fullname: 'Маршал Гаритос', age: 41, role: 'Отец' },
-        { fullname: 'Маршал Гаритос', age: 41, role: 'Отец' },
+        { fullName: 'Маршал Гаритос', age: 41, role: 'Отец' },
+        { fullName: 'Маршал Гаритос', age: 41, role: 'Отец' },
+        { fullName: 'Маршал Гаритос', age: 41, role: 'Отец' },
+        { fullName: 'Маршал Гаритос', age: 41, role: 'Отец' },
+        { fullName: 'Маршал Гаритос', age: 41, role: 'Отец' },
+        { fullName: 'Маршал Гаритос', age: 41, role: 'Отец' },
+        { fullName: 'Маршал Гаритос', age: 41, role: 'Отец' },
+        { fullName: 'Маршал Гаритос', age: 41, role: 'Отец' },
+        { fullName: 'Маршал Гаритос', age: 41, role: 'Отец' },
+        { fullName: 'Маршал Гаритос', age: 41, role: 'Отец' },
     ]
 
     const options = [

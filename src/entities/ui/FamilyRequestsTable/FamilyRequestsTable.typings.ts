@@ -1,5 +1,5 @@
 interface FamilyMember {
-    fullname: string;
+    fullName: string;
     age: number;
     role: string;
   }
