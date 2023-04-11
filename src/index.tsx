@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from 'app'
 import reportWebVitals from 'reportWebVitals'
+import ArmyCard from 'shared/ui/ArmyCard/ArmyCard'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
     <React.StrictMode>
         <App />
+        <ArmyCard />
     </React.StrictMode>
 )
 
