@@ -4,12 +4,14 @@ import './index.css'
 import App from 'app'
 import reportWebVitals from 'reportWebVitals'
 import ArmyCard from 'shared/ui/ArmyCard/ArmyCard'
+import BoaterCard from 'shared/ui/BoaterCard/BoaterCard'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
     <React.StrictMode>
         <App />
-        <ArmyCard />
+        <ArmyCard number='№9891833' status='Active Duty' firstName='KEVIN' lastName='JOHN ADAMS' pavGrade='E-6' rank='SSG' issueDate='2014 DEC 18' expirationDate='2021 DEC 18'/>
+        <BoaterCard/>
     </React.StrictMode>
 )
 
