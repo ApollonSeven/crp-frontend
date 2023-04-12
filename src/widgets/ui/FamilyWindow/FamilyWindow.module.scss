@@ -43,9 +43,9 @@ $cross-width: 12px;
 $cross-height: 12px; 
 $cross-padding-right: 10px; 
 $cross-padding-top: 10px; 
-$searcButton-font: 16px;
+$searchButton-font: 16px;
 $tabdivpadding-left: 10px;
-
+$scale: 1;
 
 .container {
     width: pxToRem($container-width, $scale);
