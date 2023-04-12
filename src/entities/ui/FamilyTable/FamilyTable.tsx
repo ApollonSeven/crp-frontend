@@ -1,6 +1,6 @@
 import React from 'react'
 import { FamilyTableProps } from './FamilyTable.typings'
-import styles from './FamilyTable.module.css'
+import styles from './FamilyTable.module.scss'
 
 const FamilyTable: React.FC<FamilyTableProps> = ({ familyMembers }) => {
     return (

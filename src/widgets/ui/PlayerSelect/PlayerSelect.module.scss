@@ -1,0 +1,109 @@
+@import "src/shared/styles/pxToRem";
+
+$container-gap: 6px;
+$box-width: 410px;
+$box-height: 71px;
+$box-border: 11px;
+$box-desc-padding-left: 20px;
+$box-active-outline: 1px;
+$names-font-size: 18px;
+$names-line-height: 21px;
+$names-padding-top: 15px;
+$age-font-size: 16px;
+$age-line-height: 19px;
+$id-font-size: 16px;
+$id-line-height: 19px;
+$button-width: 432px;
+$button-height: 91px;
+$plus-padding-top: 36px;
+$plus-padding-left: 207px;
+$plus-width: 19px;
+$plus-height: 19px;
+$plus-font-size: 19pt;
+$desc-font-size: 14px;
+$desc-line-height: 16px;
+$names-margin-bottom: 5px;
+$age-padding-right: 23px;
+$id-padding-right: 15px;
+$yellow-padding-left: 20px;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: pxToRem($container-gap);
+}
+
+.box {
+  width: pxToRem($box-width);
+  height: pxToRem($box-height);
+  background: rgba(32, 32, 32, 0.9);
+  font-family: 'Roboto';
+  font-style: normal;
+  border: pxToRem($box-border) solid rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  cursor: pointer;
+  &.active {
+    outline: pxToRem($box-active-outline) solid #FFD80E;
+  }
+}
+
+.box:hover {
+  background: rgba(10, 10, 10, 0.7);
+}
+
+.desc {
+  padding-left: pxToRem($box-desc-padding-left);
+  font-weight: 400;
+  font-size: pxToRem($desc-font-size);
+  line-height: pxToRem($desc-line-height);
+  color: #949494;
+ 
+}
+
+.yellow {
+  color: #FFD80E;
+  padding-left: pxToRem($yellow-padding-left);
+}
+
+.names {
+  margin-bottom: pxToRem($names-margin-bottom);
+  font-weight: 400;
+  font-size: pxToRem($names-font-size);
+  line-height: pxToRem($names-line-height);
+  padding-top: pxToRem($names-padding-top);
+}
+
+.age {
+  font-size: pxToRem($age-font-size);
+  line-height: pxToRem($age-line-height);
+  color: #949494;
+  float: right;
+  padding-right: pxToRem($age-padding-right);
+}
+
+.id {
+  font-size: pxToRem($id-font-size);
+  line-height: pxToRem($id-line-height);
+  color: #949494;
+  float: right;
+  padding-right: pxToRem($id-padding-right);
+}
+
+.button {
+  background: #000000;
+  opacity: 0.8;
+  width: pxToRem($button-width);
+  height: pxToRem($button-height);
+  cursor: pointer;
+}
+
+.plus {
+  padding-top: pxToRem($plus-padding-top);
+  padding-left: pxToRem($plus-padding-left);
+  width: pxToRem($plus-width);
+  height: pxToRem($plus-height);
+  font-size: pxToRem($plus-font-size);
+  color: white;
+  font-family: 'Roboto';
+  font-style: normal;
+}

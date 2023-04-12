@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from './FamilyWindow.module.css'
+import styles from './FamilyWindow.module.scss'
 import { FamilyWindowProps } from './FamilyWindow.typings'
 import cn from 'classnames'
 import Select from 'shared/ui/Input/Select/Select'
@@ -45,7 +45,7 @@ const FamilyWindow: React.FC<FamilyWindowProps> = ({onClose}) => {
 
     return (
         <div className={styles.container}>
-            <CrossOutline className={styles.Cross} onClick={onClose}/>
+            <CrossOutline className={styles.cross} onClick={onClose}/>
             <div className={styles.tabs}>
                 <div
                     className={cn(

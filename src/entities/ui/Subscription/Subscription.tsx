@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Subscription.module.css'
+import styles from './Subscription.module.scss'
 import { SubscriptionProps } from './Subscription.typings'
 
 

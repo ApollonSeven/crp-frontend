@@ -1,6 +1,6 @@
 import React from 'react'
 import { FamilyRequestsTableProps } from './FamilyRequestsTable.typings'
-import styles from './FamilyRequestsTable.module.css'
+import styles from './FamilyRequestsTable.module.scss'
 import CheckBox from 'widgets/ui/CheckBox/CheckBox'
 
 const FamilyRequestsTable: React.FC<FamilyRequestsTableProps> = ({ familyMembers }) => {
@@ -13,7 +13,7 @@ const FamilyRequestsTable: React.FC<FamilyRequestsTableProps> = ({ familyMembers
                     <div className={styles.role}>{member.role}</div>
                     <CheckBox
                         onClick={function (): void {
-                            throw new Error('Function not implemented.')
+                            console.log('die')
                         }}
                 
                     />

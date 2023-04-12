@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from './PlayerInfo.module.css'
+import styles from './PlayerInfo.module.scss'
 import { PlayerInfoProps } from './PlayerInfo.typings'
 import { Wallet } from 'shared/icons/generated'
 import { Card } from 'shared/icons/generated'
@@ -43,11 +43,12 @@ const PlayerInfo: React.FC<PlayerInfoProps> = ({ fullName,
                 <span className={styles.cash}>{cash}</span> 
                 <Wallet className={styles.walletIcon}/> 
               </div>
-              <div className={styles.buttons}>
-                <Button type='button' size='Z' onClick={handleClick}>Родословная</Button>
-                <Button type='button' size='Z'>Отменить удаление</Button>
-              </div>
+              
             </div>  
+            <div className={styles.buttons}>
+                <Button type='button' size='M' onClick={handleClick}>Родословная</Button>
+                <Button type='button' size='M'>Отменить удаление</Button>
+              </div>
           </div>
         )
     }

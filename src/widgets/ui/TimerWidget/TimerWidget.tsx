@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from './TimerWidget.module.css';
+import styles from './TimerWidget.module.scss';
 import { TimerWidgetProps } from './TimerWidget.typings';
 
 const TimerWidget: React.FC<TimerWidgetProps> = ( {time}) => {

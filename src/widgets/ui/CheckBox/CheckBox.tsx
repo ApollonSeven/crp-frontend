@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './CheckBox.module.css'
+import styles from './CheckBox.module.scss'
 import { CheckBoxProps } from './CheckBox.typings'
 import { CrossOutline, Key } from 'shared/icons/generated'
 

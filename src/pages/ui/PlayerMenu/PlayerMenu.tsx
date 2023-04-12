@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './PlayerMenu.module.css';
+import styles from './PlayerMenu.module.scss';
 import { PlayerMenuProps } from './PlayerMenu.typings';
 import Subscription from 'entities/ui/Subscription/Subscription';
 import { PlayerInfoProps } from 'entities/ui/PlayerInfo/PlayerInfo.typings';
