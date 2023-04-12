@@ -4,11 +4,11 @@ import TimerWidget from 'widgets/ui/TimerWidget/TimerWidget'
 import React from 'react'
 
 const defaultArgs: Partial<TimerWidgetProps> = {
-    time: 86900
+    time: 86900,
 }
 
 export default {
-    title: 'crp-kit/TimerWidget',
+    title: 'shared/TimerWidget',
     component: TimerWidget,
 } as Meta<TimerWidgetProps>
 

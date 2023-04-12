@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Brutal Type';
+    src: url('../public/fonts/BrutalType-ExtraLight.eot');
+    src: local('Brutal Type Extra Light'), local('BrutalType-ExtraLight'),
+    url('../public/fonts/BrutalType-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/BrutalType-ExtraLight.woff2') format('woff2'),
+    url('../public/fonts/BrutalType-ExtraLight.woff') format('woff'),
+    url('../public/fonts/BrutalType-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OCR-B 10 BT";
+    src: url("../public/fonts/OCR-B 10 BT.ttf") format("opentype"), url("../public/fonts/OCR-B 10 BT.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Brutal Type';
+    src: url('../public/fonts/BrutalType-Medium.eot');
+    src: local('Brutal Type Medium'), local('BrutalType-Medium'),
+    url('../public/fonts/BrutalType-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/BrutalType-Medium.woff2') format('woff2'),
+    url('../public/fonts/BrutalType-Medium.woff') format('woff'),
+    url('../public/fonts/BrutalType-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brutal Type';
+    src: url('../public/fonts/BrutalType-Bold.eot');
+    src: local('Brutal Type Bold'), local('BrutalType-Bold'),
+    url('../public/fonts/BrutalType-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/BrutalType-Bold.woff2') format('woff2'),
+    url('../public/fonts/BrutalType-Bold.woff') format('woff'),
+    url('../public/fonts/BrutalType-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brutal Type';
+    src: url('../public/fonts/BrutalType-Thin.eot');
+    src: local('Brutal Type Thin'), local('BrutalType-Thin'),
+    url('../public/fonts/BrutalType-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/BrutalType-Thin.woff2') format('woff2'),
+    url('../public/fonts/BrutalType-Thin.woff') format('woff'),
+    url('../public/fonts/BrutalType-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brutal Type';
+    src: url('../public/fonts/BrutalType-ExtraBold.eot');
+    src: local('Brutal Type Extra Bold'), local('BrutalType-ExtraBold'),
+    url('../public/fonts/BrutalType-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/BrutalType-ExtraBold.woff2') format('woff2'),
+    url('../public/fonts/BrutalType-ExtraBold.woff') format('woff'),
+    url('../public/fonts/BrutalType-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brutal Type';
+    src: url('../public/fonts/BrutalType-Black.eot');
+    src: local('Brutal Type Black'), local('BrutalType-Black'),
+    url('../public/fonts/BrutalType-Black.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/BrutalType-Black.woff2') format('woff2'),
+    url('../public/fonts/BrutalType-Black.woff') format('woff'),
+    url('../public/fonts/BrutalType-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brutal Type';
+    src: url('../public/fonts/BrutalType-Light.eot');
+    src: local('Brutal Type Light'), local('BrutalType-Light'),
+    url('../public/fonts/BrutalType-Light.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/BrutalType-Light.woff2') format('woff2'),
+    url('../public/fonts/BrutalType-Light.woff') format('woff'),
+    url('../public/fonts/BrutalType-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brutal Type';
+    src: url('../public/fonts/BrutalType.eot');
+    src: local('Brutal Type'), local('BrutalType'),
+    url('../public/fonts/BrutalType.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/BrutalType.woff2') format('woff2'),
+    url('../public/fonts/BrutalType.woff') format('woff'),
+    url('../public/fonts/BrutalType.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

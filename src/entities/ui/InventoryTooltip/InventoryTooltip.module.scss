@@ -1,0 +1,60 @@
+@import "src/shared/styles/pxToRem";
+
+.wrapper {
+  font-family: 'Brutal Type';
+  font-style: normal;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #FFFFFF;
+}
+
+.title {
+  font-weight: 400;
+  font-size: pxToRem(10px);
+  line-height: pxToRem(12px);
+}
+
+.mainTitle {
+  font-weight: 500;
+  font-size: pxToRem(13px);
+  line-height: pxToRem(16px);
+}
+
+.description {
+  font-weight: 400;
+  font-size: pxToRem(10px);
+  line-height: pxToRem(12px);
+  margin-top: pxToRem(5px);
+}
+
+.divider {
+  border-color: rgba(165, 165, 165, 0.25);
+  margin-top: pxToRem(10px);
+  margin-bottom: pxToRem(8px);
+}
+
+.imageBlock {
+  background: #1A1A1C;
+  border: pxToRem(1px) solid rgba(165, 165, 165, 0.25);
+  width: pxToRem(30px);
+  height: pxToRem(30px);
+  margin-right: pxToRem(6px);
+  box-sizing: border-box;
+  padding: pxToRem(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.weightBlock {
+  display: flex;
+  justify-content: space-between;
+}

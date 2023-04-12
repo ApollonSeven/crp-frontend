@@ -24,7 +24,7 @@ const defaultArgs: Partial<IDCardProps> = {
 }
 
 export default {
-    title: 'crp-kit/IDCard',
+    title: 'shared/IDCard',
     component: IDCard,
 } as Meta<IDCardProps>
 

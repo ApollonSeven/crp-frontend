@@ -1,0 +1,25 @@
+@import "src/shared/styles/pxToRem";
+
+.wrapper {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  height: pxToRem(6px);
+  border: none;
+  min-width: pxToRem(50px);
+  width: 100%;
+  border-radius: pxToRem(2px);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background: #2a2b2c;
+  overflow: hidden;
+}
+
+.progress {
+  transition: all 0.5s ease-in-out;
+  height: pxToRem(6px);
+  border-radius: pxToRem(2px);
+  background: #ffffff;
+}

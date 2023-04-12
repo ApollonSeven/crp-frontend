@@ -15,7 +15,7 @@ const defaultArgs: Partial<MedCardProps> = {
 }
 
 export default {
-    title: 'crp-kit/MedCard',
+    title: 'shared/MedCard',
     component: MedCard,
 } as Meta<MedCardProps>
 

@@ -1,0 +1,28 @@
+@import "../../../shared/styles/pxToRem";
+
+.wrapper {
+  display: flex;
+  column-gap: pxToRem(43px);
+}
+
+.leftCol {
+  display: flex;
+  row-gap: pxToRem(47px);
+  flex-direction: column;
+}
+
+.rightCol {
+  background: rgba(17, 17, 17, 0.55);
+  backdrop-filter: blur(50px);
+  border-radius: pxToRem(2px);
+  padding: pxToRem(20px);
+  display: flex;
+  flex-direction: row;
+  column-gap: pxToRem(20px);
+}
+
+.inventoryAndWeapon {
+  display: flex;
+  flex-direction: column;
+  row-gap: pxToRem(20px);
+}

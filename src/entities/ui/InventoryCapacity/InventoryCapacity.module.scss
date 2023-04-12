@@ -1,0 +1,47 @@
+@import "src/shared/styles/pxToRem";
+
+$width: 332px;
+
+.wrapper {
+  background: rgba(17, 17, 17, 0.7);
+  border-radius: pxToRem(2px);
+  width: pxToRem($width);
+  height: pxToRem(75px);
+  font-family: 'Brutal Type';
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.title {
+  font-size: pxToRem(16px);
+  line-height: pxToRem(20px);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  position: absolute;
+  left: 4.52%;
+  top: 17.33%;
+}
+
+.capacity {
+  font-size: pxToRem(14px);
+  line-height: pxToRem(17px);
+  color: rgba(255, 255, 255, 0.8);
+
+  position: absolute;
+  right: 3.29%;
+  top: 18.67%;
+}
+
+
+.progressBar {
+  padding-top: pxToRem(8px);
+  position: absolute;
+  width: pxToRem($width * 0.92);
+  left: 4.49%;
+  right: 22.46%;
+  top: 54.67%;
+}

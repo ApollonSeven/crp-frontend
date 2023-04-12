@@ -1,0 +1,26 @@
+@import "src/shared/styles/pxToRem";
+
+.wrapper {
+  width: pxToRem(60px);
+  height: pxToRem(60px);
+  border-radius: pxToRem(2px);
+  background: rgba(17, 17, 17, 0.7);
+  mix-blend-mode: normal;
+  position: relative;
+}
+
+.number {
+  position: absolute;
+  left: pxToRem(6px);
+  top: pxToRem(4px);
+  font-family: 'Brutal Type';
+  font-style: normal;
+  font-weight: 500;
+  font-size: pxToRem(13px);
+  line-height: pxToRem(16px);
+
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  color: #FFFFFF;
+
+}

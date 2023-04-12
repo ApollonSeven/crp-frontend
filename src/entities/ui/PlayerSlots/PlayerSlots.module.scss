@@ -1,0 +1,21 @@
+@import "src/shared/styles/pxToRem";
+
+.wrapper {
+  width: pxToRem(332px);
+  row-gap: pxToRem(8px);
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.divider {
+  height: pxToRem(25px);
+}
+
+.last {
+  margin-top: pxToRem(33px);
+}

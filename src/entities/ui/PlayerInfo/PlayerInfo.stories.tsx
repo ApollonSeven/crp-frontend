@@ -11,11 +11,11 @@ const defaultArgs: Partial<PlayerInfoProps> = {
     occupation: 'Maverick Hunter',
     age: '18 лет',
     card: '$3000',
-    cash: '$5000'
+    cash: '$5000',
 }
 
 export default {
-    title: 'crp-kit/PlayerInfo',
+    title: 'shared/PlayerInfo',
     component: PlayerInfo,
 } as Meta<PlayerInfoProps>
 
