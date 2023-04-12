@@ -7,7 +7,7 @@ const defaultArgs: Partial<SpawnChoiceProps> = {
 }
 
 export default {
-    title: 'crp-kit/SpawnChoice',
+    title: 'pages/SpawnChoice',
     component: SpawnChoice,
 } as Meta<SpawnChoiceProps>
 

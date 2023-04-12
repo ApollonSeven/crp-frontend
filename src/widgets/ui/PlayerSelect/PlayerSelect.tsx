@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { PlayerSelectProps } from './PlayerSelect.typings'
 import styles from './PlayerSelect.module.scss'
-
 const PlayerSelect: React.FC<PlayerSelectProps> = ({ playerMembers, onChange }) => {
   const [activeIndex, setActiveIndex] = useState(-1);
 

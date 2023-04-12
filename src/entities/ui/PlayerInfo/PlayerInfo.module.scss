@@ -13,11 +13,11 @@ $desc-padding-right: 15px;
 $names-margin-bottom: 14px;
 $names-font-size: 18px;
 $names-line-height: 21px;
-$earnings-padding-top: 11px;
+$earnings-padding-top: 5px;
 $earnings-font-size: 16px;
 $earnings-line-height: 24px;
 $card-padding-right: 15px;
-$buttons-padding-top: 32px;
+$buttons-padding-top: 20px;
 $buttons-padding-left: 15px;
 $buttons-padding-right: 15px;
 $buttons-margin-right: 10px;
@@ -53,6 +53,11 @@ $scale: 1;
   display: inline-block;
   }
   
+  .spacing {
+    padding-bottom: pxToRem(6px, $scale);
+  }
+
+
   .age {
   font-size: pxToRem($age-font-size, $scale);
   line-height: pxToRem($age-line-height, $scale);
@@ -115,7 +120,7 @@ $scale: 1;
   padding-right: pxToRem($buttons-padding-right, $scale);
   display: grid;
   gap: pixToRem($buttons-gap, $scale);
-  grid-template-columns: 0.5fr 1fr;
+  grid-template-columns: 0.8fr 1fr;
   }
   
   .buttons :nth-child(2) {

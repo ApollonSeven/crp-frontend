@@ -11,12 +11,12 @@ const FamilyRequestsTable: React.FC<FamilyRequestsTableProps> = ({ familyMembers
                     <div className={styles.fullName}>{member.fullName}</div>
                     <div className={styles.age}>{member.age}</div>
                     <div className={styles.role}>{member.role}</div>
-                    <CheckBox
+                    <div className={styles.checkBox}><CheckBox
                         onClick={function (): void {
                             console.log('die')
-                        }}
-                
-                    />
+                        }} 
+                        
+                    /> </div>
                 </div>
             ))}
         </div>

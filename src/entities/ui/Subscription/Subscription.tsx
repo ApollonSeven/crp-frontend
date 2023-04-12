@@ -8,8 +8,9 @@ const Subscription: React.FC<SubscriptionProps> = ({ date
     return (
         <div className={styles.container}>
            <div className={styles.box}>Срок действия премиум подписки:
-           <div> {date} </div>
+           
            </div>
+           <div className={styles.date}> {date} </div>
         </div>
     )
     }

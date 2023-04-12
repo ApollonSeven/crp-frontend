@@ -26,4 +26,9 @@ $scale: 1;
 .box {
     padding-top: pxToRem($sub-box-padding-top, $scale);
     padding-left: pxToRem($sub-box-padding-left, $scale);
+    padding-bottom: pxToRem(6px, $scale);
+}
+
+.date {
+    padding-left: pxToRem(15px, $scale);
 }

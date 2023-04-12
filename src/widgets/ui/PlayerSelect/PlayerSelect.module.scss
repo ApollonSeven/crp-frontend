@@ -17,8 +17,8 @@ $button-width: 432px;
 $button-height: 91px;
 $plus-padding-top: 36px;
 $plus-padding-left: 207px;
-$plus-width: 19px;
-$plus-height: 19px;
+$plus-width: 35px;
+$plus-height: 35px;
 $plus-font-size: 19pt;
 $desc-font-size: 14px;
 $desc-line-height: 16px;
@@ -97,9 +97,14 @@ $scale: 1;
   cursor: pointer;
 }
 
+.button:hover {
+  background: rgba(10, 10, 10, 0.7);
+}
+
 .plus {
   padding-top: pxToRem($plus-padding-top, $scale);
   padding-left: pxToRem($plus-padding-left, $scale);
+  padding-bottom: pxToRem(36px, $scale);
   width: pxToRem($plus-width, $scale);
   height: pxToRem($plus-height, $scale);
   font-size: pxToRem($plus-font-size, $scale);

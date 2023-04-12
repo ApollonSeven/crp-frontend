@@ -46,7 +46,12 @@
     }
 
     &Z {
-        @include buttonSize(1.7)
+        $scale: 1;
+        width: pxToRem(156px, $scale);
+        height: pxToRem(47px, $scale);
+        border-radius: pxToRem(10px, $scale);
+        font-size: pxToRem(18px, $scale);
+
     }
 
     &Primary{

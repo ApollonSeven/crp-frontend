@@ -32,10 +32,10 @@ const PlayerInfo: React.FC<PlayerInfoProps> = ({ fullName,
                 <span className={styles.yellow}>{fullName}</span>
                 <span className={styles.age}>{age}</span>
               </div>
-              <div>Дата рождения:  <span className={styles.desc}>{birthDate}</span></div>
-              <div><span>Адрес:</span> <span className={styles.desc}>{address}</span></div>
-              <div><span>Место работы:</span> <span className={styles.desc}>{workPlace}</span></div>
-              <div><span>Должность:</span> <span className={styles.desc}>{occupation}</span></div>
+              <div className={styles.spacing}>Дата рождения:  <span className={styles.desc}>{birthDate}</span></div>
+              <div className={styles.spacing}><span>Адрес:</span> <span className={styles.desc}>{address}</span></div>
+              <div className={styles.spacing}><span>Место работы:</span> <span className={styles.desc}>{workPlace}</span></div>
+              <div className={styles.spacing}><span>Должность:</span> <span className={styles.desc}>{occupation}</span></div>
               <div className={styles.earnings}>
                 <span>Средства:</span>  
                 <span className={styles.card}>{card}</span> 
@@ -46,8 +46,8 @@ const PlayerInfo: React.FC<PlayerInfoProps> = ({ fullName,
               
             </div>  
             <div className={styles.buttons}>
-                <Button type='button' size='M' onClick={handleClick}>Родословная</Button>
-                <Button type='button' size='M'>Отменить удаление</Button>
+                <Button type='button' size='Z' onClick={handleClick}>Родословная</Button>
+                <Button type='button' size='Z'>Отменить удаление</Button>
               </div>
           </div>
         )

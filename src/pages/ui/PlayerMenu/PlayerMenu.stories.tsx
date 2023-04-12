@@ -8,7 +8,7 @@ const defaultArgs: Partial<PlayerMenuProps> = {
 }
 
 export default {
-    title: 'crp-kit/PlayerMenu',
+    title: 'pages/PlayerMenu',
     component: PlayerMenu,
 } as Meta<PlayerMenuProps>
 

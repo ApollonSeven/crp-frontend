@@ -11,7 +11,7 @@ $border1-border-bottom: 1px;
 $border2-width: 89px;
 $border2-border-bottom: 1px;
 $searchID-width: 135px;
-$searchID-height: 41px;
+$searchID-height: 37px;
 $searchID-font: 16px;
 $searchID-margin-left: 9px;
 $searchID-margin-right: 5px;
@@ -133,11 +133,13 @@ $scale: 1;
 }
 
 .addTab {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0px;
+    display: flex;
+    flex-direction: row;
     margin-top: pxToRem($addtab-margin-top, $scale);
+    margin-left: pxToRem(5px, $scale);
+    margin-right: pxToRem(5px, $scale);
 }
+
 
 .searchButton {
     margin-left: pxToRem($searchButton-margin-left, $scale);
