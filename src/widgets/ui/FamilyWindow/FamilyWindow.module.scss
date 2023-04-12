@@ -48,128 +48,123 @@ $tabdivpadding-left: 10px;
 
 
 .container {
-    width: pxToRem($container-width);
-    height: pxToRem($container-height);
+    width: pxToRem($container-width, $scale);
+    height: pxToRem($container-height, $scale);
     background: rgba(32, 32, 32, 0.9);
     font-family: 'Roboto';
     font-style: normal;
-    border: pxToRem($container-border) solid rgba(0, 0, 0, 0.8);
+    border: pxToRem($container-border, $scale) solid rgba(0, 0, 0, 0.8);
 }
 
-.tabdiv {
-    
+.tabdiv {   
     color: #FFFFFF;
     font-weight: 400;
-    font-size: pxToRem($tabdivfont);
-    line-height: pxToRem($tabdivline);
+    font-size: pxToRem($tabdivfont, $scale);
+    line-height: pxToRem($tabdivline, $scale);
     cursor: pointer;
     height: fit-content;
-    padding-top: pxToRem($tabdivpadding);
+    padding-top: pxToRem($tabdivpadding, $scale);
     width: fit-content;
-    padding-left: pxToRem($tabdivpadding-left);
+    padding-left: pxToRem($tabdivpadding-left, $scale);
 }
-
 
 .border {
     display: grid;
     grid-template-columns: repeat(2, 0fr);
     gap: 0px;
-    padding-bottom: pxToRem($borderpadding);
+    padding-bottom: pxToRem($borderpadding, $scale);
 }
 
 .border1 {
-    border-bottom: pxToRem($border1-border-bottom) solid  #565656;
-    width: pxToRem($border1-width);
-    margin-left: pxToRem($border1-margin-left);
+    border-bottom: pxToRem($border1-border-bottom, $scale) solid  #565656;
+    width: pxToRem($border1-width, $scale);
+    margin-left: pxToRem($border1-margin-left, $scale);
 }
 
 .border2 {
-    border-bottom: pxToRem($border2-border-bottom) solid  #565656; 
-    width: pxToRem($border2-width);
+    border-bottom: pxToRem($border2-border-bottom, $scale) solid  #565656; 
+    width: pxToRem($border2-width, $scale);
 }
 
-
 .border1.active {
-    border-bottom: pxToRem($border-bottom-active) solid #FFD80E;
-    width: pxToRem($border-bottom-active-width);
-    margin-left: pxToRem($border-bottom-active-margin);
+    border-bottom: pxToRem($border-bottom-active, $scale) solid #FFD80E;
+    width: pxToRem($border-bottom-active-width, $scale);
+    margin-left: pxToRem($border-bottom-active-margin, $scale);
 }
 
 .border2.active {
-    border-bottom:  pxToRem($border-bottom-active) solid #FFD80E;
-    width: pxToRem($border-bottom-active2-width);
+    border-bottom: pxToRem($border-bottom-active, $scale) solid #FFD80E;
+    width: pxToRem($border-bottom-active2-width, $scale);
 }
 
-
 .tabs {
-    padding-left: pxToRem($tabs-padding-left);
+    padding-left: pxToRem($tabs-padding-left, $scale);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .two-tabs {
-    padding-top: pxToRem($two-tabs-padding-top);
+    padding-top: pxToRem($two-tabs-padding-top, $scale);
 }
 
 .request {
-    padding-left: pxToRem($request-padding-left);;
+    padding-left: pxToRem($request-padding-left, $scale);
 }
 
 .searchContainer {
     display: flex;
     align-items: center;
     background: rgba(0, 0, 0);
-    border-radius: pxToRem($container-border);
-  }
-  
-  .searchID{
+    border-radius: pxToRem($container-border, $scale);
+}
+
+.searchID{
     flex: 1;
     border: none;
     text-align: center;
-    font-size: pxToRem($searchID-font);
-    margin-left: pxToRem($searchID-margin-left);
-    margin-right: pxToRem($searchButton-margin-right);
+    font-size: pxToRem($searchID-font, $scale);
+    margin-left: pxToRem($searchID-margin-left, $scale);
+    margin-right: pxToRem($searchButton-margin-right, $scale);
     background: rgba(0, 0, 0);
-    border-radius: pxToRem($container-border);
-    width: pxToRem($searchID-width);
-    height: pxToRem($searchID-height);
+    border-radius: pxToRem($container-border, $scale);
+    width: pxToRem($searchID-width, $scale);
+    height: pxToRem($searchID-height, $scale);
     color: #949494;
-  }
+}
 
-
-  .addTab {
+.addTab {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0px;
-    margin-top: pxToRem($addtab-margin-top);
-  }
-  
-  .searchButton {
-    margin-left: pxToRem($searchButton-margin-left);
-    margin-right: pxToRem($searchButton-margin-right);
-    width: pxToRem($searchButton-width);
-    height: pxToRem($searchButton-height);
-    font-size: pxToRem($searcButton-font);
+    margin-top: pxToRem($addtab-margin-top, $scale);
+}
+
+.searchButton {
+    margin-left: pxToRem($searchButton-margin-left, $scale);
+    margin-right: pxToRem($searchButton-margin-right, $scale);
+    width: pxToRem($searchButton-width, $scale);
+    height: pxToRem($searchButton-height, $scale);
+    font-size: pxToRem($searchButton-font, $scale);
     background: #FFD80E;
-    border-radius: pxToRem($container-border);
+    border-radius: pxToRem($container-border, $scale);
     cursor: pointer;
-  }
+}
 
 .addbutton {
     font-weight: 400;
-    font-size: pxToRem($addbutton-font-size);
-    line-height: pxToRem($addbutton-line-height);
+    font-size: pxToRem($addbutton-font-size, $scale);
+    line-height: pxToRem($addbutton-line-height, $scale);
     color: #000000;
     cursor: pointer;
     background-color: #ffd80e;
-    width: pxToRem($addbutton-width);
-    height: pxToRem($addbutton-height);
-    border-radius: pxToRem($container-border);
+    width: pxToRem($addbutton-width, $scale);
+    height: pxToRem($addbutton-height, $scale);
+    border-radius: pxToRem($container-border, $scale);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: pxToRem($addubtton-margin-top);
-    }
+    margin-top: pxToRem($addubtton-margin-top, $scale);
+}
 
 .addbutton.active {
     background-color: transparent;
@@ -178,10 +173,10 @@ $tabdivpadding-left: 10px;
 
 .cross {
     fill: #FFD80E;
-    width: pxToRem($Cross-width);
-    height: pxToRem($cross-height);
+    width: pxToRem($Cross-width, $scale);
+    height: pxToRem($cross-height, $scale);
     float: right;
-    padding-right: pxToRem($cross-padding-right);
-    padding-top: pxToRem($cross-padding-top);
+    padding-right: pxToRem($cross-padding-right, $scale);
+    padding-top: pxToRem($cross-padding-top, $scale);
     cursor: pointer;
 }

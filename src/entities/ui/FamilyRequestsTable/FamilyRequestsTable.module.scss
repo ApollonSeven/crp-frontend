@@ -14,60 +14,61 @@ $member-age-margin-right: 26px;
 $member-age-margin-top: 16px;
 $member-role-margin-top: 16px;
 $member-role-margin-right: 5px;
+$scale: 1;
 
 
    
    
-   .container {
-    height: pxToRem($container-height);
-    overflow-y: scroll;
+.container {
+  height: pxToRem($container-height, $scale);
+  overflow-y: scroll;
   }
   
   .member {
-    margin-top: pxToRem($member-margin-top);
-    margin-left: pxToRem($member-margin-left);
-    font-size: pxToRem($member-font-size);
-    line-height: pxToRem($member-line-height);
-    grid-gap: pxToRem($member-grid-gap);
-    white-space: nowrap;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    white-space: nowrap;
-    font-weight: 400;
-    color: #FFFFFF;
+  margin-top: pxToRem($member-margin-top, $scale);
+  margin-left: pxToRem($member-margin-left, $scale);
+  font-size: pxToRem($member-font-size, $scale);
+  line-height: pxToRem($member-line-height, $scale);
+  grid-gap: pxToRem($member-grid-gap, $scale);
+  white-space: nowrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  white-space: nowrap;
+  font-weight: 400;
+  color: #FFFFFF;
   }
   
   .fullName {
-    margin-top: pxToRem($member-fullName-margin-top);
-    margin-right: pxToRem($member-fullName-margin-right);
-    grid-column: 1;
+  margin-top: pxToRem($member-fullName-margin-top, $scale);
+  margin-right: pxToRem($member-fullName-margin-right, $scale);
+  grid-column: 1;
   }
   
   .age {
-    margin-top: pxToRem($member-age-margin-top);
-    margin-right: pxToRem($member-age-margin-right);
-    grid-column: 2;
+  margin-top: pxToRem($member-age-margin-top, $scale);
+  margin-right: pxToRem($member-age-margin-right, $scale);
+  grid-column: 2;
   }
   
   .role {
-    margin-top: pxToRem($member-role-margin-top);
-    margin-right: pxToRem($member-role-margin-right);
-    grid-column: 3;
+  margin-top: pxToRem($member-role-margin-top, $scale);
+  margin-right: pxToRem($member-role-margin-right, $scale);
+  grid-column: 3;
   }
   
   .container::-webkit-scrollbar {
-    width: pxToRem($container-scrollbar-width);
+  width: pxToRem($container-scrollbar-width, $scale);
   }
   
   .container::-webkit-scrollbar-track {
-    border-radius: pxToRem($container-scrollbar-border-radius);
+  border-radius: pxToRem($container-scrollbar-border-radius, $scale);
   }
   
   .container::-webkit-scrollbar-thumb {
-    background-color: #565656;
-    border-radius: pxToRem($container-scrollbar-border-radius);
+  background-color: #565656;
+  border-radius: pxToRem($container-scrollbar-border-radius, $scale);
   }
   
   .container::-webkit-scrollbar-thumb:hover {
-    background-color: #888;
+  background-color: #888;
   }

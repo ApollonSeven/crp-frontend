@@ -7,6 +7,7 @@ $hours-font: 36px;
 $hours-line-height: 42px;
 
 
+$scale: 1;
 
 .timerWidget {
     font-family: 'Roboto';
@@ -16,15 +17,15 @@ $hours-line-height: 42px;
 
 .text {
     font-weight: 400;
-    font-size: pxToRem($text-font);
-    line-height: pxToRem($text-line-height);
-    width: pxToRem($text-div-width);
+    font-size: pxToRem($text-font, $scale);
+    line-height: pxToRem($text-line-height, $scale);
+    width: pxToRem($text-div-width, $scale);
 }
 
 
 .hours {
-    margin-top: pxToRem($hours-margin-top);
+    margin-top: pxToRem($hours-margin-top, $scale);
     font-weight: 500;
-    font-size: pxToRem($hours-font);
-    line-height: pxToRem($hours-line-height);
+    font-size: pxToRem($hours-font, $scale);
+    line-height: pxToRem($hours-line-height, $scale);
 }

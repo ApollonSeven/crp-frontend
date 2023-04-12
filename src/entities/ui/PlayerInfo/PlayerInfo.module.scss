@@ -30,98 +30,99 @@ $wallet-icon-padding-right: 8px;
 $wallet-icon-padding-top: 3px;
 $button-child-font: 16px;
 $button-child-line-height: 19px;
+$scale: 1;
 
 .container {
-  width: pxToRem($container-width);
-  height: pxToRem($container-height);
+  width: pxToRem($container-width, $scale);
+  height: pxToRem($container-height, $scale);
   background: rgba(32, 32, 32, 0.9);
   font-family: 'Roboto';
   font-style: normal;
-  border: pxToRem($container-border) solid rgba(0, 0, 0, 0.8);
-}
-
-.block1 {
+  border: pxToRem($container-border, $scale) solid rgba(0, 0, 0, 0.8);
+  }
+  
+  .block1 {
   position: relative;
-  margin-top: pxToRem($block1-margin-top);
-  margin-left: pxToRem($block1-margin-left);
-  width: pxToRem($block1-width);
+  margin-top: pxToRem($block1-margin-top, $scale);
+  margin-left: pxToRem($block1-margin-left, $scale);
+  width: pxToRem($block1-width, $scale);
   font-weight: 400;
-  font-size: pxToRem($buttons-font-size);
-  line-height: pxToRem($buttons-line-height);
+  font-size: pxToRem($buttons-font-size, $scale);
+  line-height: pxToRem($buttons-line-height, $scale);
   color: #AAAAAA;
   display: inline-block;
-}
-
-.age {
-  font-size: pxToRem($age-font-size);
-  line-height: pxToRem($age-line-height);
+  }
+  
+  .age {
+  font-size: pxToRem($age-font-size, $scale);
+  line-height: pxToRem($age-line-height, $scale);
   color: #949494;
   float: right;
-  padding-right: pxToRem($desc-padding-right);
-}
-
-.desc {
+  padding-right: pxToRem($desc-padding-right, $scale);
+  }
+  
+  .desc {
   float: right;
-  padding-right: pxToRem($desc-padding-right);
-}
-
-.names {
-  margin-bottom: pxToRem($names-margin-bottom);
+  padding-right: pxToRem($desc-padding-right, $scale);
+  }
+  
+  .names {
+  margin-bottom: pxToRem($names-margin-bottom, $scale);
   font-weight: 400;
-  font-size: pxToRem($names-font-size);
-  line-height: pxToRem($names-line-height);
-}
-
-.earnings {
-  padding-top: pxToRem($earnings-padding-top);
+  font-size: pxToRem($names-font-size, $scale);
+  line-height: pxToRem($names-line-height, $scale);
+  }
+  
+  .earnings {
+  padding-top: pxToRem($earnings-padding-top, $scale);
   font-weight: 400;
-  font-size: pxToRem($earnings-font-size);
-  line-height: pxToRem($earnings-line-height);
+  font-size: pxToRem($earnings-font-size, $scale);
+  line-height: pxToRem($earnings-line-height, $scale);
   color:#FFFFFF;
-}
-
-.cash {
+  }
+  
+  .cash {
   float: right;
-  padding-right: pxToRem($desc-padding-right);
-}
-
-.card {
-  padding-right: pxToRem($card-padding-right);
+  padding-right: pxToRem($desc-padding-right, $scale);
+  }
+  
+  .card {
+  padding-right: pxToRem($card-padding-right, $scale);
   float: right;
-}
-
-.yellow {
-    color: #FFD80E;
-}
-
-.cardIcon {
+  }
+  
+  .yellow {
+  color: #FFD80E;
+  }
+  
+  .cardIcon {
   fill: #FFFFFF;
   float: right;
-  padding-right: pxToRem($card-icon-padding-right);
-  padding-top: pxToRem($card-icon-padding-top);
-}
-
-.walletIcon {
+  padding-right: pxToRem($card-icon-padding-right, $scale);
+  padding-top: pxToRem($card-icon-padding-top, $scale);
+  }
+  
+  .walletIcon {
   fill: #FFFFFF;
   float: right;
-  padding-right: pxToRem($wallet-icon-padding-right);
-  padding-top: pxToRem($wallet-icon-padding-top);
-}
-
-.buttons {
-  padding-top: pxToRem($buttons-padding-top);
-  padding-left: pxToRem($buttons-padding-left);
-  padding-right: pxToRem($buttons-padding-right);
+  padding-right: pxToRem($wallet-icon-padding-right, $scale);
+  padding-top: pxToRem($wallet-icon-padding-top, $scale);
+  }
+  
+  .buttons {
+  padding-top: pxToRem($buttons-padding-top, $scale);
+  padding-left: pxToRem($buttons-padding-left, $scale);
+  padding-right: pxToRem($buttons-padding-right, $scale);
   display: grid;
-  gap: pixToRem($buttons-gap);
+  gap: pixToRem($buttons-gap, $scale);
   grid-template-columns: 0.5fr 1fr;
-}
-
-.buttons :nth-child(2) {
-    width:auto;
-    height: auto;
-    white-space: nowrap;
-}
+  }
+  
+  .buttons :nth-child(2) {
+  width:auto;
+  height: auto;
+  white-space: nowrap;
+  }
 
 
 
