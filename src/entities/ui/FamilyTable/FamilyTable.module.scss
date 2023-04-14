@@ -1,0 +1,67 @@
+@import "src/shared/styles/pxToRem";
+
+$container-height: 300px;
+$container-scrollbar-width: 8px;
+$container-scrollbar-border-radius: 10px;
+$container-scrollbar-thumb-background: #565656;
+$container-scrollbar-thumb-hover-background: #888;
+$member-margin-top: 10px;
+$member-margin-left: 23px;
+$member-font-size: 16px;
+$member-line-height: 19px;
+$member-grid-gap: 10px;
+$member-fullName-margin-right: 62px;
+$member-age-margin-right: 72px;
+$member-role-grid-column: 3;
+$member-text-color: #FFFFFF;
+  $scale: 1;
+   
+.container {
+  height: pxToRem($container-height, $scale);
+  overflow-y: scroll;
+}
+
+.member {
+  margin-top: pxToRem($member-margin-top, $scale);
+  margin-left: pxToRem($member-margin-left, $scale);
+  font-size: pxToRem($member-font-size, $scale);
+  line-height: pxToRem($member-line-height, $scale);
+  grid-gap: pxToRem($member-grid-gap, $scale);
+  white-space: nowrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  white-space: nowrap;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.fullName {
+  margin-right: pxToRem($member-fullName-margin-right, $scale);
+  grid-column: 1;
+}
+
+.age {
+  margin-right: pxToRem($member-age-margin-right, $scale);
+  grid-column: 2;
+}
+
+.role {
+  grid-column: 3;
+}
+
+.container::-webkit-scrollbar {
+  width: pxToRem($container-scrollbar-width, $scale);
+}
+
+.container::-webkit-scrollbar-track {
+  border-radius: pxToRem($container-scrollbar-border-radius, $scale);
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #565656;
+  border-radius: pxToRem($container-scrollbar-border-radius, $scale);
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}

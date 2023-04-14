@@ -1,0 +1,184 @@
+@import "src/shared/styles/pxToRem";
+
+
+$container-width: 410px;
+$container-height: 381px;
+$container-border: 10px;
+$borderpadding: 3px;
+$border1-width: 144px;
+$border1-margin-left: 23px;
+$border1-border-bottom: 1px;
+$border2-width: 89px;
+$border2-border-bottom: 1px;
+$searchID-width: 135px;
+$searchID-height: 37px;
+$searchID-font: 16px;
+$searchID-margin-left: 9px;
+$searchID-margin-right: 5px;
+$searchButton-width: 135px;
+$searchButton-height: 41px;
+$searchButton-margin-left: 5px; 
+$searchButton-margin-right: 5px;
+$addbutton-width: 100px;
+$addbutton-height: 33px;
+$addbutton-font-size: 16px; 
+$addbutton-line-height: 19px; 
+$addubtton-margin-top: 11px; 
+$Cross-width: 12px;
+$Cross-height: 12px;
+$tabdivfont: 16px;
+$tabdivpadding: 14px;
+$tabdivline: 24px;
+$border-bottom-active: 3px;
+$border-active-margin: 23px;
+$border-bottom-active-width: 144px;
+$border-bottom-active-margin: 23px;
+$border-bottom-active2-width: 89px;
+$tabs-padding-left: 31px;
+$two-tabs-padding-top: 14px; 
+$request-padding-left: 25px; 
+$searchID-font-size: 16px; 
+$addtab-margin-top: 21px; 
+$cross-width: 12px; 
+$cross-height: 12px; 
+$cross-padding-right: 10px; 
+$cross-padding-top: 10px; 
+$searchButton-font: 16px;
+$tabdivpadding-left: 10px;
+$scale: 1;
+
+.container {
+    width: pxToRem($container-width, $scale);
+    height: pxToRem($container-height, $scale);
+    background: rgba(32, 32, 32, 0.9);
+    font-family: 'Roboto';
+    font-style: normal;
+    border: pxToRem($container-border, $scale) solid rgba(0, 0, 0, 0.8);
+}
+
+.tabdiv {   
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: pxToRem($tabdivfont, $scale);
+    line-height: pxToRem($tabdivline, $scale);
+    cursor: pointer;
+    height: fit-content;
+    padding-top: pxToRem($tabdivpadding, $scale);
+    width: fit-content;
+    padding-left: pxToRem($tabdivpadding-left, $scale);
+}
+
+.border {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 0px;
+    padding-bottom: pxToRem($borderpadding, $scale);
+}
+
+.border1 {
+    border-bottom: pxToRem($border1-border-bottom, $scale) solid  #565656;
+    width: pxToRem($border1-width, $scale);
+    margin-left: pxToRem($border1-margin-left, $scale);
+}
+
+.border2 {
+    border-bottom: pxToRem($border2-border-bottom, $scale) solid  #565656; 
+    width: pxToRem($border2-width, $scale);
+}
+
+.border1.active {
+    border-bottom: pxToRem($border-bottom-active, $scale) solid #FFD80E;
+    width: pxToRem($border-bottom-active-width, $scale);
+    margin-left: pxToRem($border-bottom-active-margin, $scale);
+}
+
+.border2.active {
+    border-bottom: pxToRem($border-bottom-active, $scale) solid #FFD80E;
+    width: pxToRem($border-bottom-active2-width, $scale);
+}
+
+.tabs {
+    padding-left: pxToRem($tabs-padding-left, $scale);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.two-tabs {
+    padding-top: pxToRem($two-tabs-padding-top, $scale);
+}
+
+.request {
+    padding-left: pxToRem($request-padding-left, $scale);
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0);
+    border-radius: pxToRem($container-border, $scale);
+}
+
+.searchID{
+    flex: 1;
+    border: none;
+    text-align: center;
+    font-size: pxToRem($searchID-font, $scale);
+    margin-left: pxToRem($searchID-margin-left, $scale);
+    margin-right: pxToRem($searchButton-margin-right, $scale);
+    background: rgba(0, 0, 0);
+    border-radius: pxToRem($container-border, $scale);
+    width: pxToRem($searchID-width, $scale);
+    height: pxToRem($searchID-height, $scale);
+    color: #949494;
+}
+
+.addTab {
+    display: flex;
+    flex-direction: row;
+    margin-top: pxToRem($addtab-margin-top, $scale);
+    margin-left: pxToRem(5px, $scale);
+    margin-right: pxToRem(5px, $scale);
+}
+
+
+.searchButton {
+    margin-left: pxToRem($searchButton-margin-left, $scale);
+    margin-right: pxToRem($searchButton-margin-right, $scale);
+    width: pxToRem($searchButton-width, $scale);
+    height: pxToRem($searchButton-height, $scale);
+    font-size: pxToRem($searchButton-font, $scale);
+    background: #FFD80E;
+    border-radius: pxToRem($container-border, $scale);
+    cursor: pointer;
+}
+
+.addbutton {
+    font-weight: 400;
+    font-size: pxToRem($addbutton-font-size, $scale);
+    line-height: pxToRem($addbutton-line-height, $scale);
+    color: #000000;
+    cursor: pointer;
+    background-color: #ffd80e;
+    width: pxToRem($addbutton-width, $scale);
+    height: pxToRem($addbutton-height, $scale);
+    border-radius: pxToRem($container-border, $scale);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: pxToRem($addubtton-margin-top, $scale);
+}
+
+.addbutton.active {
+    background-color: transparent;
+    color: #ffd80e;
+}
+
+.cross {
+    fill: #FFD80E;
+    width: pxToRem($Cross-width, $scale);
+    height: pxToRem($cross-height, $scale);
+    float: right;
+    padding-right: pxToRem($cross-padding-right, $scale);
+    padding-top: pxToRem($cross-padding-top, $scale);
+    cursor: pointer;
+}

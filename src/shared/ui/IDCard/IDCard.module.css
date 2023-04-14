@@ -1,0 +1,192 @@
+.state {
+    position: absolute;
+    width: 202px;
+    height: 34px;
+    left: 45px;
+    top: 10px;
+    font-family: 'Glamour Absolute';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0.05em;
+    color: #253f84;
+}
+
+.id {
+    width: 78px;
+    height: 21px;
+    left: 180px;
+    top: 51px;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ad322d;
+}
+
+.photoURL {
+    position: absolute;
+    width: 125px;
+    height: 167px;
+    left: 25px;
+    top: 55px;
+}
+
+.photoURL img {
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    font-family: 'Roboto';
+    position: absolute;
+    font-weight: 700;
+    width: 450px;
+    height: 280px;
+    background-image: url('shared/images/id-card.dnot.png');
+    background-size: 450px 280px;
+    font-style: normal;
+    border-radius: 15px;
+}
+
+
+.donor {
+    font-family: 'Roboto';
+    position: absolute;
+    font-weight: 700;
+    width: 450px;
+    height: 280px;
+    background-image: url('shared/images/id-card.png');
+    background-size: 450px 280px;
+    font-style: normal;
+    border-radius: 15px;
+}
+
+
+
+.bwPhoto {
+    position: absolute;
+    width: 68.48px;
+    height: 83px;
+    left: 276px;
+    top: 163px;
+}
+
+.bwPhoto img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    object-fit: cover;
+    filter: grayscale(100%);
+    mix-blend-mode: multiply;
+}
+
+.signature {
+    position: absolute;
+    width: 94px;
+    height: 40px;
+    left: 40px;
+    top: 229px;
+}
+
+.signature img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.idBox {
+    padding-bottom: 10px;
+}
+
+.expBox {
+    padding-bottom: 9px;
+}
+
+.ddBox {
+    position: absolute;
+    width: 25px;
+    height: 12px;
+    left: 205px;
+    top: 253px;
+    display: flex;
+}
+
+.issBox {
+    position: absolute;
+    width: 16px;
+    height: 13px;
+    left: 377px;
+    top: 240px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    top: 51px;
+    left: 163px;
+    right: 148px;
+}
+
+.streetBlock {
+    text-overflow: clip;
+    overflow: hidden;
+    max-height: 55px;
+}
+
+.chars {
+    position: absolute;
+    left: 205px;
+    right: 19px;
+    top: 224px;
+    bottom: 15px;
+    columns: 3 auto;
+}
+
+.blueText {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.02em;
+    margin-right: 7px;
+    color: #075492;
+}
+
+.text {
+    font-size: 13px;
+    line-height: 14px;
+    color: #232323;
+}
+
+.textSmall {
+    font-size: 10px;
+    line-height: 12px;
+    color: #232323;
+}
+
+.redText {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ad322d;
+}
+
+.grayText {
+    position: absolute;
+    width: 56px;
+    height: 14px;
+    left: 365px;
+    top: 187px;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.45);
+}

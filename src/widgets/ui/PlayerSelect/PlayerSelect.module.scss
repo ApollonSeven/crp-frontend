@@ -1,0 +1,114 @@
+@import "src/shared/styles/pxToRem";
+
+$container-gap: 6px;
+$box-width: 410px;
+$box-height: 71px;
+$box-border: 11px;
+$box-desc-padding-left: 20px;
+$box-active-outline: 1px;
+$names-font-size: 18px;
+$names-line-height: 21px;
+$names-padding-top: 15px;
+$age-font-size: 16px;
+$age-line-height: 19px;
+$id-font-size: 16px;
+$id-line-height: 19px;
+$button-width: 432px;
+$button-height: 91px;
+$plus-padding-top: 36px;
+$plus-padding-left: 207px;
+$plus-width: 35px;
+$plus-height: 35px;
+$plus-font-size: 19pt;
+$desc-font-size: 14px;
+$desc-line-height: 16px;
+$names-margin-bottom: 5px;
+$age-padding-right: 23px;
+$id-padding-right: 15px;
+$yellow-padding-left: 20px;
+$scale: 1;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: pxToRem($container-gap, $scale);
+}
+
+.box {
+  width: pxToRem($box-width, $scale);
+  height: pxToRem($box-height, $scale);
+  background: rgba(32, 32, 32, 0.9);
+  font-family: 'Roboto';
+  font-style: normal;
+  border: pxToRem($box-border, $scale) solid rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  cursor: pointer;
+  &.active {
+    outline: pxToRem($box-active-outline, $scale) solid #FFD80E;
+  }
+}
+
+.box:hover {
+  background: rgba(10, 10, 10, 0.7);
+}
+
+.desc {
+  padding-left: pxToRem($box-desc-padding-left, $scale);
+  font-weight: 400;
+  font-size: pxToRem($desc-font-size, $scale);
+  line-height: pxToRem($desc-line-height, $scale);
+  color: #949494;
+}
+
+.yellow {
+  color: #FFD80E;
+  padding-left: pxToRem($yellow-padding-left, $scale);
+}
+
+.names {
+  margin-bottom: pxToRem($names-margin-bottom, $scale);
+  font-weight: 400;
+  font-size: pxToRem($names-font-size, $scale);
+  line-height: pxToRem($names-line-height, $scale);
+  padding-top: pxToRem($names-padding-top, $scale);
+}
+
+.age {
+  font-size: pxToRem($age-font-size, $scale);
+  line-height: pxToRem($age-line-height, $scale);
+  color: #949494;
+  float: right;
+  padding-right: pxToRem($age-padding-right, $scale);
+}
+
+.id {
+  font-size: pxToRem($id-font-size, $scale);
+  line-height: pxToRem($id-line-height, $scale);
+  color: #949494;
+  float: right;
+  padding-right: pxToRem($id-padding-right, $scale);
+}
+
+.button {
+  background: #000000;
+  opacity: 0.8;
+  width: pxToRem($button-width, $scale);
+  height: pxToRem($button-height, $scale);
+  cursor: pointer;
+}
+
+.button:hover {
+  background: rgba(10, 10, 10, 0.7);
+}
+
+.plus {
+  padding-top: pxToRem($plus-padding-top, $scale);
+  padding-left: pxToRem($plus-padding-left, $scale);
+  padding-bottom: pxToRem(36px, $scale);
+  width: pxToRem($plus-width, $scale);
+  height: pxToRem($plus-height, $scale);
+  font-size: pxToRem($plus-font-size, $scale);
+  color: white;
+  font-family: 'Roboto';
+  font-style: normal;
+}

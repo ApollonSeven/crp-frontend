@@ -1,0 +1,134 @@
+
+@import "src/shared/styles/pxToRem";
+
+$container-width: 410px;
+$container-height: 276px;
+$container-border: 10px;
+$block1-margin-top: 23px;
+$block1-margin-left: 15px;
+$block1-width: 390px;
+$age-font-size: 16px;
+$age-line-height: 19px;
+$desc-padding-right: 15px;
+$names-margin-bottom: 14px;
+$names-font-size: 18px;
+$names-line-height: 21px;
+$earnings-padding-top: 5px;
+$earnings-font-size: 16px;
+$earnings-line-height: 24px;
+$card-padding-right: 15px;
+$buttons-padding-top: 20px;
+$buttons-padding-left: 15px;
+$buttons-padding-right: 15px;
+$buttons-margin-right: 10px;
+$buttons-font-size: 16px;
+$buttons-line-height: 19px;
+$buttons-gap: 10px;
+$card-icon-padding-right: 8px;
+$card-icon-padding-top: 4px;
+$wallet-icon-padding-right: 8px;
+$wallet-icon-padding-top: 3px;
+$button-child-font: 16px;
+$button-child-line-height: 19px;
+$scale: 1;
+
+.container {
+  width: pxToRem($container-width, $scale);
+  height: pxToRem($container-height, $scale);
+  background: rgba(32, 32, 32, 0.9);
+  font-family: 'Roboto';
+  font-style: normal;
+  border: pxToRem($container-border, $scale) solid rgba(0, 0, 0, 0.8);
+  }
+  
+  .block1 {
+  position: relative;
+  margin-top: pxToRem($block1-margin-top, $scale);
+  margin-left: pxToRem($block1-margin-left, $scale);
+  width: pxToRem($block1-width, $scale);
+  font-weight: 400;
+  font-size: pxToRem($buttons-font-size, $scale);
+  line-height: pxToRem($buttons-line-height, $scale);
+  color: #AAAAAA;
+  display: inline-block;
+  }
+  
+  .spacing {
+    padding-bottom: pxToRem(6px, $scale);
+  }
+
+
+  .age {
+  font-size: pxToRem($age-font-size, $scale);
+  line-height: pxToRem($age-line-height, $scale);
+  color: #949494;
+  float: right;
+  padding-right: pxToRem($desc-padding-right, $scale);
+  }
+  
+  .desc {
+  float: right;
+  padding-right: pxToRem($desc-padding-right, $scale);
+  }
+  
+  .names {
+  margin-bottom: pxToRem($names-margin-bottom, $scale);
+  font-weight: 400;
+  font-size: pxToRem($names-font-size, $scale);
+  line-height: pxToRem($names-line-height, $scale);
+  }
+  
+  .earnings {
+  padding-top: pxToRem($earnings-padding-top, $scale);
+  font-weight: 400;
+  font-size: pxToRem($earnings-font-size, $scale);
+  line-height: pxToRem($earnings-line-height, $scale);
+  color:#FFFFFF;
+  }
+  
+  .cash {
+  float: right;
+  padding-right: pxToRem($desc-padding-right, $scale);
+  }
+  
+  .card {
+  padding-right: pxToRem($card-padding-right, $scale);
+  float: right;
+  }
+  
+  .yellow {
+  color: #FFD80E;
+  }
+  
+  .cardIcon {
+  fill: #FFFFFF;
+  float: right;
+  padding-right: pxToRem($card-icon-padding-right, $scale);
+  padding-top: pxToRem($card-icon-padding-top, $scale);
+  }
+  
+  .walletIcon {
+  fill: #FFFFFF;
+  float: right;
+  padding-right: pxToRem($wallet-icon-padding-right, $scale);
+  padding-top: pxToRem($wallet-icon-padding-top, $scale);
+  }
+  
+  .buttons {
+  padding-top: pxToRem($buttons-padding-top, $scale);
+  padding-left: pxToRem($buttons-padding-left, $scale);
+  padding-right: pxToRem($buttons-padding-right, $scale);
+  display: grid;
+  gap: pixToRem($buttons-gap, $scale);
+  grid-template-columns: 0.8fr 1fr;
+  }
+  
+  .buttons :nth-child(2) {
+  width:auto;
+  height: auto;
+  white-space: nowrap;
+  }
+
+
+
+

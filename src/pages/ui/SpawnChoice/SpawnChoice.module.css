@@ -1,0 +1,31 @@
+.container {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    width: 1920px;
+    height: 1080px;
+    background-image: url('shared/images/bg-spawn.png');
+    background-size: 1920px 1080px;
+    
+}
+
+.cityBoxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 371px;
+    margin-top: 207px;
+}
+
+
+.title {
+    position: absolute;
+    width: 883px;
+    height: 35px;
+    left: 525px;
+    top: 95px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #ffd80e;
+}

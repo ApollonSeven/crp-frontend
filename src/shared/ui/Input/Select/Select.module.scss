@@ -1,24 +1,46 @@
+
+@import "src/shared/styles/pxToRem";
+
+$container-width: 100px;
+$container-height: 41px;
+$select-padding-left: 10px;
+$select-font-size: 16px;
+$select-line-height: 19px;
+$wrapper-margin-top: 4px;
+$wrapper-padding-right: 4px;
+$option-height: 29px;
+$options-height: calc(27px*4);
+$options-font: 10px;
+$arrow-margin-right: 10px;
+$select-wraper-options-padding: 10px;
+$option-border-bottom: 1px;
+$thumb-height: 3px;
+$thumb-border-radius: 3px;
+$scrollbar-width: 6px;
+$track-margin: 8px;
+$scale: 1;
+
 .container {
   user-select: none;
-  width: 162px;
-  height: 41px;
+  width: pxToRem($container-width, $scale);
+  height: pxToRem($container-height, $scale);
   color: #949494;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: pxToRem($select-font-size, $scale);
+  line-height: pxToRem($select-line-height, $scale);
 }
 
 .select {
   cursor: pointer;
   line-height: 1;
   outline: 0;
-  padding-left: 10px;
+  padding-left: pxToRem($select-padding-left, $scale);
   height: inherit;
   display: flex;
   align-items: center;
-  background-color: #1a1a1c;
+  background: rgba(0, 0, 0);
   justify-content: space-between;
 }
 
@@ -28,7 +50,7 @@
 
 .rounded {
   .select, .wrapper, .options {
-    border-radius: 10px;
+    border-radius: pxToRem($select-wraper-options-padding, $scale);
   }
 }
 
@@ -36,8 +58,8 @@
   box-sizing: border-box;
   background: #222223;
   overflow: hidden;
-  padding-right: 4px;
-  margin-top: 4px;
+  padding-right: pxToRem($wrapper-padding-right, $scale);
+  margin-top: pxToRem($wrapper-margin-top, $scale);
 }
 
 .options {
@@ -45,15 +67,15 @@
   transition: 0.5s all ease;
   overflow: scroll;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: pxToRem($options-font, $scale);
   color: #fff;
 
   .option {
-    padding-left: 10px;
+    padding-left: pxToRem($select-padding-left, $scale);
     background-color: #222223;
     cursor: pointer;
-    border-bottom: 1px solid #313131;
-    height: 29px;
+    border-bottom: pxToRem($option-border-bottom, $scale) solid #313131;
+    height: pxToRem($option-height, $scale);
     display: flex;
     align-items: center;
     transition: 0.3s all;
@@ -65,25 +87,25 @@
 
   &::-webkit-scrollbar-thumb:vertical {
     background: #aaaaaa;
-    height: 3px;
-    border-radius: 3px;
+    height: pxToRem($thumb-height, $scale);
+    border-radius: pxToRem($thumb-border-radius, $scale);
     width: 0;
   }
 
   &::-webkit-scrollbar {
     height: 0px;
-    width: 6px;
+    width: pxToRem($scrollbar-width, $scale);
     background: rgba(1, 1, 1, 0);
   }
 
   &::-webkit-scrollbar-track {
-    margin: 8px 0;
+    margin: pxToRem($track-margin, $scale) 0;
   }
 }
 
 .arrow {
   transition: 0.5s transform ease;
-  margin-right: 10px;
+  margin-right: pxToRem($arrow-margin-right, $scale);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,7 +117,7 @@
     transform: rotate(270deg);
   }
   .options {
-    height: calc(27px * 4);
+    height: pxToRem($options-height, $scale);
   }
 }
 
