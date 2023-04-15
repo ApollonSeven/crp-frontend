@@ -6,9 +6,9 @@ h1,h2,h3,h4,h5,h6{
 	font-size:inherit;
 }
 
-h2{font-size:16px; font-weight:600;margin:0;}
+.h2{font-size:16px; font-weight:600;margin:0;}
 
-h3{font-size:12px; font-weight:600;margin:0;}
+.h3{font-size:12px; font-weight:600;margin:0;}
 
 .cardShape{
     position:relative;
@@ -95,7 +95,7 @@ h3{font-size:12px; font-weight:600;margin:0;}
 .logo_pic{
 	width:84px;
 	height:84px;
-	background:url(./logo.png) no-repeat;
+	background:url(./logo.svg) no-repeat;
 	background-size:contain;
     margin:8px 0px 0px 0px;
 }
@@ -108,6 +108,7 @@ h3{font-size:12px; font-weight:600;margin:0;}
     line-height: 14px;
     color: #000000;
     margin:0px 0px 0px 12px;
+    text-align: left;
 }
 
 .name h2:first-child{
@@ -125,7 +126,7 @@ h3{font-size:12px; font-weight:600;margin:0;}
 .qr_pic{
 	width:53px;
 	height:137px;
-	background:url(./qr_pic.png);
+	background:url(./qr_pic.svg);
 	background-size:cover;
 }
 
