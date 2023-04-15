@@ -1,5 +1,5 @@
 import React from 'react'
-//import {Props} from './BoaterCard.typings'
+import {Props} from './FyingCard.typings'
 import stylesBase from './FlyingCard.module.scss'
 //import cn from 'classnames'
 import logo_left from "./logo_left.svg"
@@ -7,7 +7,7 @@ import logo_right from "./logo_right.svg"
 import photo from './photo.png'
 import sign from './sign.png'
 
-const FlyingCard = () =>{
+const FlyingCard = (props:Props) =>{
     return(
         <div className={stylesBase.cardShape}>
             <img src={logo_left} className={stylesBase.logo_left}></img>
@@ -24,7 +24,7 @@ const FlyingCard = () =>{
                 <div>FEDERAL AVIATION ADMINISTRATION</div>
             </div>
             <div className={stylesBase.headerName}>IV &nbsp; NAME</div>
-            <div className={stylesBase.name}>WEAZY B. PILOT</div>
+            <div className={stylesBase.name}>{props.name?.toUpperCase()}</div>
             <div className={stylesBase.address}>
                 <div>V &nbsp; ADDRESS</div>
                 <div>4727 N. KENMORE AVE<br/>CHICAGO IL 60640</div>
@@ -32,32 +32,32 @@ const FlyingCard = () =>{
             <div className={stylesBase.personData}>
                 <div>
                     <div>SEX</div>
-                    <div>M</div>
+                    <div>{props.sex?.toUpperCase()}</div>
                 </div>
                 <div>
                     <div>HEIGHT</div>
-                    <div>67</div>
+                    <div>{props.height}</div>
                 </div>
                 <div>
                     <div>WEIGHT</div>
-                    <div>200</div>
+                    <div>{props.weight}</div>
                 </div>
                 <div>
                     <div>HAIR</div>
-                    <div>BROWN</div>
+                    <div>{props.hair?.toUpperCase()}</div>
                 </div>
                 <div>
                     <div>EYES</div>
-                    <div>GREEN</div>
+                    <div>{props.eyes?.toUpperCase()}</div>
                 </div>
             </div>
             <div className={stylesBase.nationality}>
                 <div>VI &nbsp;NATIONALITY</div>
-                <div>AMERICAN</div>
+                <div>{props.nationality?.toUpperCase()}</div>
             </div>
             <div className={stylesBase.dob}>
                 <div>IVa &nbsp;D.O.B.</div>
-                <div>23 SEP 1999</div>
+                <div>{props.dob?.toUpperCase()}</div>
             </div>
             <div className={stylesBase.anyData}>IX &nbsp;HAS BEEN FOUND TO BE PROPERLY QUALIFIED TO EXERCISE THE PRIVILEGIES OF</div>
             <div className={stylesBase.info}>
@@ -67,11 +67,11 @@ const FlyingCard = () =>{
                 </div>
                 <div>
                     <div>VI CERTIFICATE NUMBER</div>
-                    <div>2549741</div>
+                    <div>{props.certNumber}</div>
                 </div>
                 <div>
                     <div>X &nbsp;DATE OF ISSUE</div>
-                    <div>24 OCT 2022</div>
+                    <div>{props.dateOfIssue?.toUpperCase()}</div>
                 </div>
             </div>
             <div className={stylesBase.sign}>

@@ -13,7 +13,7 @@ root.render(
         <App />
         <ArmyCard number='№9891833' status='Active Duty' firstName='KEVIN' lastName='JOHN ADAMS' pavGrade='E-6' rank='SSG' issueDate='2014 DEC 18' expirationDate='2021 DEC 18'/>
         <BoaterCard sex='M' eyes='BLUE' hair='BRN' dateOfBirth='23/09/1997' dateOfIssue='24/10/2022' boaterIdCard='002549741' />
-        <FlyingCard/>
+        <FlyingCard name='WEAZY B. PILOT' nationality='american' dob='23 SEP 1999' sex='M' height={67} weight={200} hair='brown' eyes='green' certNumber={2549741} dateOfIssue='24 OCT 2022' />
     </React.StrictMode>
 )
 
