@@ -11,8 +11,8 @@ const BoaterCard = (props:Props) =>{
             <div className={stylesBase.header}>
                 <img src={logo_left}></img>
                 <div>
-                    <h2 className={stylesBase.h2}>San Andreas</h2>
-                    <h1 className={stylesBase.h1}>BOATER CARD</h1>
+                    <div className={stylesBase.h2}>San Andreas</div>
+                    <div className={stylesBase.h1}>BOATER CARD</div>
                 </div>
                 <img src={logo_right}></img>
             </div>
