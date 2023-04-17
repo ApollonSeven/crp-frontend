@@ -1,3 +1,0 @@
-.Switch_switch__St8zj{position:relative;display:inline-block;width:4.5rem;height:2rem}.Switch_switch__St8zj input{display:none}.Switch_switch__St8zj input:checked+.Switch_slider__WnFOC{background:#ffd80e}.Switch_switch__St8zj input:checked+.Switch_slider__WnFOC:before{-webkit-transform:translateX(2.5rem);transform:translateX(2.5rem)}.Switch_slider__WnFOC{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background:#838383;border-radius:5rem;transition:.4s}.Switch_slider__WnFOC:before{position:absolute;content:"";height:2rem;width:2rem;background:#fff;border-radius:50%;left:0;transition:.4s}
-
-/*# sourceMappingURL=shared-ui-Input-Switch-Switch-stories.15e55003.chunk.css.map*/
