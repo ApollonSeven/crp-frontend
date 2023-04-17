@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-*{color:#000000; box-sizing: border-box; margin:0;	padding:0; border: 0;}
-
 .cardShape{
     position:relative;
     width:344px;
@@ -26,7 +24,7 @@
     height:48px;
 }
 
-.h2{
+.secondHeader{
     font-family: 'Satisfy';
     font-style: normal;
     font-weight: 400;
@@ -36,7 +34,7 @@
     text-align: center;
 }
 
-.h1{
+.mainHeader{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;

@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-*{color:#000000; box-sizing: border-box; margin:0;	padding:0; border: 0;}
 
-.h2{font-size:16px; font-weight:600;margin:0;}
+.largeText{font-size:16px; font-weight:600;margin:0;}
 
-.h3{font-size:12px; font-weight:600;margin:0;}
+.mediumText{font-size:12px; font-weight:600;margin:0;}
 
 .cardShape{
     position:relative;
@@ -48,7 +47,7 @@
     padding: 3px 0px 0px 0px;
 }
 
-.logo .h3{
+.logo .mediumText{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -58,7 +57,7 @@
     color: #000000;
 }
 
-.logo .h2{
+.logo .largeText{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -69,7 +68,7 @@
     margin:8px 0px 0px 0px;
 }
 
-.logo .h2:last-child{
+.logo .largeText:last-child{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -95,7 +94,7 @@
     margin:8px 0px 0px 0px;
 }
 
-.name .h2{
+.name .largeText{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -106,7 +105,7 @@
     text-align: left;
 }
 
-.name .h2:first-child{
+.name .largeText:first-child{
     margin:10px 0px 0px 12px;
 }
 
@@ -135,7 +134,7 @@
     border:transparent;
 }
 
-.grade .h3{
+.grade .mediumText{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -161,7 +160,7 @@
     height: 100%;
 }
 
-.rank .h3{
+.rank .mediumText{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -181,7 +180,7 @@
     position: relative;
 }
 
-.date_date .h2{
+.date_date .largeText{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -190,20 +189,20 @@
     color: #000000;
 }
 
-.date_date .h2:first-child{
+.date_date .largeText:first-child{
     margin: 8px 0px 0px 0px;
 }
 
-.date_date .h2:nth-child(2){
+.date_date .largeText:nth-child(2){
     margin: 3px 0px 0px 0px;
 }
 
-.date_date .h2:nth-child(3){
+.date_date .largeText:nth-child(3){
     margin: 10px 0px 0px 0px;
     width:100px;
 }
 
-.date_date .h2:last-child{
+.date_date .largeText:last-child{
     margin: 3px 0px 0px 0px;
 }
 

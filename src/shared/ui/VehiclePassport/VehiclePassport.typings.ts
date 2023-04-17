@@ -1,15 +1,15 @@
 export interface Props {
-    ID?: number
-    VEHICLE_ID_NUMBER?: string
-    MODEL?: string
-    MAKE?: string
-    PLATE_NUMBER?: string
-    BODY_TYPE_MODEL?:string
-    FUEL?: string
-    BUY_DATE?: string
-    FEES_PAID?: string
-    REG_DATE?: string
-    YR_1ST_SOLD?: string
-    MO?: string
-    ISSUE_DATE?:string
+    id?: number
+    vehicleIdNumber?: string
+    model?: string
+    make?: string
+    plateNumber?: string
+    bodyTypeModel?:string
+    fuel?: string
+    buyDate?: string
+    feesPaid?: string
+    regDate?: string
+    yr1stSold?: string
+    mo?: string
+    issueDate?:string
 }

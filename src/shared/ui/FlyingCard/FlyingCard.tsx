@@ -15,7 +15,7 @@ const FlyingCard = (props:Props) =>{
             <img src={photo} className={stylesBase.photo}></img>
             <div className={stylesBase.header}>
                 <div className={stylesBase.numbers}>I</div>
-                <div className={stylesBase.h1}>UNITED STATES OF AMERICA</div>
+                <div className={stylesBase.mainTitle}>UNITED STATES OF AMERICA</div>
                 <div className={stylesBase.numbers}>XI</div>
             </div>
             <div className={stylesBase.subHeader}>

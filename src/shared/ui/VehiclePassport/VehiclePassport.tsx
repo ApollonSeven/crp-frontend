@@ -8,7 +8,7 @@ const VehiclePassport = (props:Props) =>{
     return(
         <div className={stylesBase.cardShape}>
             <div className={stylesBase.mainTitle}>CERTIFICATE OF TITLE</div>
-            <div className={`${stylesBase.data} ${stylesBase.id}`}>{props.ID}</div>
+            <div className={`${stylesBase.data} ${stylesBase.id}`}>{props.id}</div>
             <div className={stylesBase.vehicleStory}>
                 <div className={stylesBase.header}>ИСТОРИЯ АВТОМОБИЛЯ</div>
                 <img src={Rectangle1}></img>
@@ -16,55 +16,55 @@ const VehiclePassport = (props:Props) =>{
             <div className={stylesBase.string1}>
                 <div>
                     <div className={stylesBase.header}>VIN</div>
-                    <div className={stylesBase.data}>{props.VEHICLE_ID_NUMBER}</div>
+                    <div className={stylesBase.data}>{props.vehicleIdNumber}</div>
                 </div>
                 <div>
                     <div className={stylesBase.header}>МОДЕЛЬ</div>
-                    <div className={stylesBase.data}>{props.MODEL}</div>
+                    <div className={stylesBase.data}>{props.model}</div>
                 </div>
                 <div>
                     <div className={stylesBase.header}>МАРКА</div>
-                    <div className={stylesBase.data}>{props.MAKE}</div>
+                    <div className={stylesBase.data}>{props.make}</div>
                 </div>
                 <div>
                     <div className={stylesBase.header}>НОМЕРНОЙ ЗНАК</div>
-                    <div className={stylesBase.data}>{props.PLATE_NUMBER}</div>
+                    <div className={stylesBase.data}>{props.plateNumber}</div>
                 </div> 
             </div>
             <div className={stylesBase.string2}>
                 <div>
                     <div className={stylesBase.header}>ТИП КУЗОВА</div>
-                    <div className={stylesBase.data}>{props.BODY_TYPE_MODEL}</div>
+                    <div className={stylesBase.data}>{props.bodyTypeModel}</div>
                 </div>
                 <div>
                     <div className={stylesBase.header}>ТИП ТОПЛИВА</div>
-                    <div className={stylesBase.data}>{props.FUEL}</div>
+                    <div className={stylesBase.data}>{props.fuel}</div>
                 </div>
                 <div>
                     <div className={stylesBase.header}>ДАТА ПОКУПКИ</div>
-                    <div className={stylesBase.data}>{props.BUY_DATE}</div>
+                    <div className={stylesBase.data}>{props.buyDate}</div>
                 </div>
                 <div>
                     <div className={stylesBase.header}>НАЛОГ</div>
-                    <div className={stylesBase.data}>{props.FEES_PAID}</div>
+                    <div className={stylesBase.data}>{props.feesPaid}</div>
                 </div>
                 <div>
                     <div className={stylesBase.header}>ДАТА РЕГИСТРАЦИИ</div>
-                    <div className={stylesBase.data}>{props.REG_DATE}</div>
+                    <div className={stylesBase.data}>{props.regDate}</div>
                 </div> 
             </div>
             <div className={stylesBase.string3}>
                 <div>
                     <div className={stylesBase.header}>ГОД ПЕРВОЙ ПРОДАЖИ</div>
-                    <div className={stylesBase.data}>{props.BODY_TYPE_MODEL}</div>
+                    <div className={stylesBase.data}>{props.yr1stSold}</div>
                 </div>
                 <div>
                     <div className={stylesBase.header}>МЕСЯЦ</div>
-                    <div className={stylesBase.data}>{props.FUEL}</div>
+                    <div className={stylesBase.data}>{props.mo}</div>
                 </div>
                 <div>
                     <div className={stylesBase.header}>ISSUE DATE</div>
-                    <div className={stylesBase.data}>{props.BUY_DATE}</div>
+                    <div className={stylesBase.data}>{props.issueDate}</div>
                 </div>
             </div>
             <img className={stylesBase.logo} src={Rectangle5}></img>
