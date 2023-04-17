@@ -1,0 +1,15 @@
+export const preview = {
+    ID: 43441241244,
+    VEHICLE_ID_NUMBER: '3xwdjf143543fjefjw',
+    MODEL: 'Mercedes-Benz',
+    MAKE: 'huracan',
+    PLATE_NUMBER: '6mbv006',
+    BODY_TYPE_MODEL:'AT',
+    FUEL: 'G',
+    BUY_DATE: '06/30/2005',
+    FEES_PAID: '$21',
+    REG_DATE: '06/30/2005',
+    YR_1ST_SOLD: '2003',
+    MO: 'JU',
+    ISSUE_DATE:'07/09/2005',
+}

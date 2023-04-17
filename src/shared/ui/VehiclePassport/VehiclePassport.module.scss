@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url(//db.onlinewebfonts.com/c/64f21aaf76758c891534fe4808ce12e5?family=OPTIOpus);
+*{color:#000000; box-sizing: border-box; margin:0;	padding:0; border: 0;}
+
+.cardShape{
+    position:relative;
+    width:1040px;
+    height:1208px;
+    background: url(./background.png) center/contain;
+}
+
+.mainTitle{
+    position: absolute;
+    top:54px;
+    left:340px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 40px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #5C517D;
+}
+
+.header{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: #533B4F;
+}
+
+.data{
+    font-family: 'OPTIOpus';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.21em;
+    color: #361F2C;
+}
+
+.id{
+    position: absolute;
+    top:69px;
+    left:87px;
+}
+
+.vehicleStory{
+    position: absolute;
+    top:79px;
+    left:656px;
+    text-align: center;
+}
+.vehicleStory img{
+    width:320px;
+    height:53px;
+}
+
+.string1{
+    position: absolute;
+    top:192px;
+    left:87px;
+    display: flex;
+}
+.string1>div:first-child{
+    width:265px;
+    margin:0px 55px 0px 0px;
+}
+.string1>div:nth-child(2){
+    width:205px;
+    margin:0px 50px 0px 0px;
+}
+.string1>div:nth-child(3){
+    width:105px;
+    margin:0px 60px 0px 0px;
+}
+.string1>div:last-child{
+    width:108px;
+    margin:0px 0px 0px 0px;
+}
+
+.string2{
+    position: absolute;
+    top:257px;
+    left:87px;
+    display: flex;
+}
+.string2>div:first-child{
+    width:71px;
+    margin:0px 249px 0px 0px;
+}
+.string2>div:nth-child(2){
+    width:80px;
+    margin:0px 68px 0px 0px;
+}
+.string2>div:nth-child(3){
+    width:153px;
+    margin:0px 14px 0px 0px;
+}
+.string2>div:nth-child(4){
+    width:45px;
+    margin:0px 61px 0px 0px;
+}
+.string2>div:last-child{
+    width:157px;
+    margin:0px 0px 0px 0px;
+}
+
+.string3{
+    position: absolute;
+    top:312px;
+    left:407px;
+    display: flex;
+}
+.string3>div:first-child{
+    width:191px;
+}
+.string3>div:nth-child(2){
+    width:230px;
+}
+.string3>div:last-child{
+    width:157px;
+}
+
+.logo{
+    position: absolute;
+    top:343px;
+    left:624px;
+    width:262px;
+    aspect-ratio: 1/1;
+}
+
+.line1{
+    position: absolute;
+    top:503px;
+    left:896px;
+    width: 72px;
+    height: 0px;
+    border: 3px dashed #4C3747;
+}
+
+.line2{
+    position: absolute;
+    top:523px;
+    left:896px;
+    width: 72px;
+    height: 0px;
+    border: 3px dashed #4C3747;
+}
+
+.headerOwner{
+    position: absolute;
+    top:392px;
+    left:87px; 
+}
+
+.mainOwnerField{
+    position: absolute;
+    top:410px;
+    left:55px;
+    width:450px;
+    height: 134px;
+    background: rgba(224, 200, 210, 0.9);
+}
+.ownerFieldData{
+    font-family: 'OPTIOpus';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.21em;
+    color: #361F2C;
+    margin:5px 0px 0px 32px;
+}
+
+.headerOwnerHistory{
+    position: absolute;
+    top:576px;
+    left:87px; 
+}
+
+.historyNotes{
+    position: absolute;
+    top:594px;
+    left:55px;
+    width:930px;
+}
+
+.historyNote{
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.ownerField{
+    width:450px;
+    background: rgba(224, 200, 210, 0.9);
+    margin:0px 41px 0px 0px;
+}
+
+.ownerFieldData{
+    margin:10px 0px 10px 32px;
+}
+
+.historyNote>div:nth-child(2){
+    margin:0px 51px 0px 0px;
+}
+
+.historyNote>div:nth-child(3){
+    margin:0px 52px 0px 0px;
+}
