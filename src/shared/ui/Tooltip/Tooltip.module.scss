@@ -1,0 +1,10 @@
+@import "src/shared/styles/pxToRem";
+
+.overlay {
+  background: rgba(56, 56, 56, 0.75);
+  border-radius: pxToRem(2px);
+  width: pxToRem(159px);
+  padding: pxToRem(6px);
+  position: relative;
+  color: #fff;
+}

@@ -1,0 +1,14 @@
+@import "src/shared/styles/pxToRem";
+
+.slots {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: pxToRem(8px);
+  padding: pxToRem(6.5px) 0;
+}
+
+.slotWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

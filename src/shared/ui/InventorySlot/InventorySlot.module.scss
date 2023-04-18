@@ -1,0 +1,40 @@
+@import "src/shared/styles/pxToRem";
+
+.wrapper {
+  width: pxToRem(70px);
+  height: pxToRem(70px);
+  background: rgba(17, 17, 17, 0.8);
+  backdrop-filter: blur(25px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  padding: pxToRem(9px);
+}
+
+.subTitle {
+  position: absolute;
+  bottom: pxToRem(3px);
+  right: pxToRem(5px);
+
+  font-family: 'Brutal Type';
+  font-style: normal;
+  font-weight: 300;
+  font-size: pxToRem(15px);
+  line-height: pxToRem(18px);
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+$iconSize: 45px;
+
+.icon {
+  width: pxToRem($iconSize);
+  height: pxToRem($iconSize);
+  fill: rgba(255, 255, 255, 0.15)
+}
+
+.image {
+  width: 100%;
+}

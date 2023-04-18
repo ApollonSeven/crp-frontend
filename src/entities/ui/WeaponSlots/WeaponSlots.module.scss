@@ -1,0 +1,6 @@
+@import "src/shared/styles/pxToRem";
+
+.wrapper {
+  display: flex;
+  column-gap: pxToRem(5px);
+}

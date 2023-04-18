@@ -12,7 +12,7 @@ const defaultArgs: Partial<SSNCardProps> = {
 }
 
 export default {
-    title: 'crp-kit/SSNCard',
+    title: 'shared/SSNCard',
     component: SSNCard,
 } as Meta<SSNCardProps>
 

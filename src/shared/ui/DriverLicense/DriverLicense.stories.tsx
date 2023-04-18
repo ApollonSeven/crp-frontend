@@ -26,7 +26,7 @@ const defaultArgs: Partial<DriverLicenseProps> = {
 }
 
 export default {
-    title: 'crp-kit/DriverLicense',
+    title: 'shared/DriverLicense',
     component: DriverLicense,
 } as Meta<DriverLicenseProps>
 

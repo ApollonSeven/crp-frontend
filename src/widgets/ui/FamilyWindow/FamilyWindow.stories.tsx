@@ -3,11 +3,10 @@ import { FamilyWindowProps } from 'widgets/ui/FamilyWindow/FamilyWindow.typings'
 import FamilyWindow from 'widgets/ui/FamilyWindow/FamilyWindow'
 import React from 'react'
 
-const defaultArgs: Partial<FamilyWindowProps> = {
-}
+const defaultArgs: Partial<FamilyWindowProps> = {}
 
 export default {
-    title: 'crp-kit/FamilyWindow',
+    title: 'shared/FamilyWindow',
     component: FamilyWindow,
 } as Meta<FamilyWindowProps>
 
