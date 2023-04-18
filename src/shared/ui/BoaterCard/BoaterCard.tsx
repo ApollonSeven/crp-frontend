@@ -2,8 +2,8 @@ import React from 'react'
 import {Props} from './BoaterCard.typings'
 import stylesBase from './BoaterCard.module.scss'
 //import cn from 'classnames'
-import logo_left from "./logo_left.png"
-import logo_right from "./logo_right.png"
+import logo_left from "./assets/logo_left.png"
+import logo_right from "./assets/logo_right.png"
 
 const BoaterCard = (props:Props) =>{
     return(
@@ -21,30 +21,30 @@ const BoaterCard = (props:Props) =>{
             </div>
             <div className={stylesBase.person}>
                 <div>
-                    <p className={stylesBase.pHead}>SEX</p>
-                    <p className={stylesBase.pDescription}>{props.sex}</p>
+                    <div className={stylesBase.pHead}>SEX</div>
+                    <div className={stylesBase.pDescription}>{props.sex}</div>
                 </div>
                 <div>
-                    <p className={stylesBase.pHead}>EYES</p>
-                    <p className={stylesBase.pDescription}>{props.eyes}</p>
+                    <div className={stylesBase.pHead}>EYES</div>
+                    <div className={stylesBase.pDescription}>{props.eyes}</div>
                 </div>
                 <div>
-                    <p className={stylesBase.pHead}>HAIR</p>
-                    <p className={stylesBase.pDescription}>{props.hair}</p>
+                    <div className={stylesBase.pHead}>HAIR</div>
+                    <div className={stylesBase.pDescription}>{props.hair}</div>
                 </div>
             </div>
             <div className={stylesBase.date}>
                 <div>
-                <p className={stylesBase.pHead}>DATE OF BIRTH</p>
-                <p className={stylesBase.pDescription}>{props.dateOfBirth}</p>
+                <div className={stylesBase.pHead}>DATE OF BIRTH</div>
+                <div className={stylesBase.pDescription}>{props.dateOfBirth}</div>
                 </div>
                 <div>
-                <p className={stylesBase.pHead}>DATE OF ISSUE</p>
-                <p className={stylesBase.pDescription}>{props.dateOfIssue}</p>
+                <div className={stylesBase.pHead}>DATE OF ISSUE</div>
+                <div className={stylesBase.pDescription}>{props.dateOfIssue}</div>
                 </div>
                 <div>
-                <p className={stylesBase.pHead}>BOATER ID CARD</p>
-                <p className={stylesBase.pDescription}>{props.boaterIdCard}</p>
+                <div className={stylesBase.pHead}>BOATER ID CARD</div>
+                <div className={stylesBase.pDescription}>{props.boaterIdCard}</div>
                 </div>
             </div>
         </div>

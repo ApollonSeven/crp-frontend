@@ -2,10 +2,10 @@ import React from 'react'
 import {Props} from './FyingCard.typings'
 import stylesBase from './FlyingCard.module.scss'
 //import cn from 'classnames'
-import logo_left from "./logo_left.svg"
-import logo_right from "./logo_right.svg"
-import photo from './photo.png'
-import sign from './sign.png'
+import logo_left from "./assets/logo_left.svg"
+import logo_right from "./assets/logo_right.svg"
+import photo from './assets/photo.png'
+import sign from './assets/sign.png'
 
 const FlyingCard = (props:Props) =>{
     return(

@@ -5,7 +5,7 @@
     position:relative;
     width:1040px;
     height:1208px;
-    background: url(./background.png) center/contain;
+    background: url(./assets/background.png) center/contain;
 }
 
 .mainTitle{
@@ -194,6 +194,7 @@
     display:flex;
     flex-flow: row nowrap;
     align-items: center;
+    margin:0px 0px 15px 0px;
 }
 
 .ownerField{

@@ -6,7 +6,7 @@
     width:344px;
     height:250px;
     border-radius: 15px;
-    background: url(./fon.png) center/contain, url(./logo.png) 43px -5px/286px 260px no-repeat;
+    background: url(./assets/fon.png) center/contain, url(./assets/logo.png) 43px -5px/286px 260px no-repeat;
     border:transparent;
     padding:6px 0px 0px 0px;
 }
@@ -71,6 +71,7 @@
 }
 
 .pHead{
+    box-sizing: border-box;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -81,6 +82,7 @@
 }
 
 .pDescription{
+    box-sizing: border-box;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;

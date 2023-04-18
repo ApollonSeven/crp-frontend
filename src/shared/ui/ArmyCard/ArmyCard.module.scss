@@ -27,7 +27,7 @@
     display: block;
     width:135px;
     height:175px;
-    background:url(./photo.png) no-repeat;
+    background:url(./assets/photo.png) no-repeat;
     background-size: contain;
     margin:12px 0px 0px 12px;
 }
@@ -89,7 +89,7 @@
 .logo_pic{
 	width:84px;
 	height:84px;
-	background:url(./logo.svg) no-repeat;
+	background:url(./assets/logo.svg) no-repeat;
 	background-size:contain;
     margin:8px 0px 0px 0px;
 }
@@ -120,7 +120,7 @@
 .qr_pic{
 	width:53px;
 	height:137px;
-	background:url(./qr_pic.svg);
+	background:url(./assets/qr_pic.svg);
 	background-size:cover;
 }
 
@@ -148,7 +148,7 @@
 .sim_pic{
 	width:58px;
 	height:58px;
-	background:url(./sim.png) no-repeat center;
+	background:url(./assets/sim.png) no-repeat center;
 	background-size:contain;
 }
 
@@ -175,7 +175,7 @@
 .date_date{
 	width:74px;
 	height:84px;
-	background:url(./date_date.png) no-repeat;
+	background:url(./assets/date_date.png) no-repeat;
 	background-size:contain;
     position: relative;
 }

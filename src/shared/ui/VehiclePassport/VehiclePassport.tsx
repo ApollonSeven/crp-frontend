@@ -1,8 +1,8 @@
 import React from 'react'
 import {Props} from './VehiclePassport.typings'
 import stylesBase from './VehiclePassport.module.scss'
-import Rectangle1 from './Rectangle1.png'
-import Rectangle5 from './Rectangle5.svg'
+import Rectangle1 from './assets/Rectangle1.png'
+import Rectangle5 from './assets/Rectangle5.svg'
 
 const VehiclePassport = (props:Props) =>{
     return(
@@ -76,8 +76,7 @@ const VehiclePassport = (props:Props) =>{
             </div>
             <div className={`${stylesBase.header} ${stylesBase.headerOwnerHistory}`}>ИСТОРИЯ ВЛАДЕЛЬЦЕВ</div>
             <div className={stylesBase.historyNotes}>
-                <div className={stylesBase.historyNote}>
-                    <div className={stylesBase.ownerField}>
+                    {/* <div className={stylesBase.ownerField}>
                         <div className={stylesBase.ownerFieldData}>WEAZY BUERO<br/>999 WOODLAND AVE<br/>MENLO PARK CA 94025</div>
                     </div>
                     <div>
@@ -91,8 +90,26 @@ const VehiclePassport = (props:Props) =>{
                     <div>
                         <div className={stylesBase.header}>ДАТА РЕГИСТРАЦИИ</div>
                         <div className={stylesBase.data}>06/30/2005</div>
-                    </div>
-                </div>
+                    </div> */}
+                    {props.ownersList.map((item:any) =>
+                        <div className={stylesBase.historyNote} key={item.id}>
+                            <div className={stylesBase.ownerField}>
+                                <div className={stylesBase.ownerFieldData}>{item.name1}<br/>{item.address1}<br/>{item.address2}</div>
+                            </div>
+                            <div>
+                                <div className={stylesBase.header}>МЕСЯЦ</div>
+                                <div className={stylesBase.data}>{item.month}</div>
+                            </div>
+                            <div>
+                                <div className={stylesBase.header}>ГОД</div>
+                                <div className={stylesBase.data}>{item.year}</div>
+                            </div>
+                            <div>
+                                <div className={stylesBase.header}>ДАТА РЕГИСТРАЦИИ</div>
+                                <div className={stylesBase.data}>{item.regDate}</div>
+                            </div>
+                        </div>
+                    )}
             </div>
         </div>
     )

@@ -1,3 +1,5 @@
+import { any } from "prop-types"
+
 export interface Props {
     id?: number
     vehicleIdNumber?: string
@@ -12,4 +14,5 @@ export interface Props {
     yr1stSold?: string
     mo?: string
     issueDate?:string
+    ownersList:any
 }
