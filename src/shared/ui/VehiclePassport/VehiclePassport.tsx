@@ -56,7 +56,7 @@ const VehiclePassport = (props:Props) =>{
             <div className={stylesBase.string3}>
                 <div>
                     <div className={stylesBase.header}>ГОД ПЕРВОЙ ПРОДАЖИ</div>
-                    <div className={stylesBase.data}>{props.yr1stSold}</div>
+                    <div className={stylesBase.data}>{props.firstYearSold}</div>
                 </div>
                 <div>
                     <div className={stylesBase.header}>МЕСЯЦ</div>
@@ -76,25 +76,11 @@ const VehiclePassport = (props:Props) =>{
             </div>
             <div className={`${stylesBase.header} ${stylesBase.headerOwnerHistory}`}>ИСТОРИЯ ВЛАДЕЛЬЦЕВ</div>
             <div className={stylesBase.historyNotes}>
-                    {/* <div className={stylesBase.ownerField}>
-                        <div className={stylesBase.ownerFieldData}>WEAZY BUERO<br/>999 WOODLAND AVE<br/>MENLO PARK CA 94025</div>
-                    </div>
-                    <div>
-                        <div className={stylesBase.header}>МЕСЯЦ</div>
-                        <div className={stylesBase.data}>JU</div>
-                    </div>
-                    <div>
-                        <div className={stylesBase.header}>ГОД</div>
-                        <div className={stylesBase.data}>2003</div>
-                    </div>
-                    <div>
-                        <div className={stylesBase.header}>ДАТА РЕГИСТРАЦИИ</div>
-                        <div className={stylesBase.data}>06/30/2005</div>
-                    </div> */}
-                    {props.ownersList.map((item:any) =>
+
+                    {props.owners.map((item:any) =>
                         <div className={stylesBase.historyNote} key={item.id}>
                             <div className={stylesBase.ownerField}>
-                                <div className={stylesBase.ownerFieldData}>{item.name1}<br/>{item.address1}<br/>{item.address2}</div>
+                                <div className={stylesBase.ownerFieldData}>{item.firstName}<br/>{item.address}<br/>{item.taxNumber}</div>
                             </div>
                             <div>
                                 <div className={stylesBase.header}>МЕСЯЦ</div>

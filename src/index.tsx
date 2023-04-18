@@ -15,7 +15,7 @@ root.render(
         <ArmyCard number='№9891833' status='Active Duty' firstName='KEVIN' lastName='JOHN ADAMS' pavGrade='E-6' rank='SSG' issueDate='2014 DEC 18' expirationDate='2021 DEC 18'/>
         <BoaterCard sex='M' eyes='BLUE' hair='BRN' dateOfBirth='23/09/1997' dateOfIssue='24/10/2022' boaterIdCard='002549741' />
         <FlyingCard name='WEAZY B. PILOT' nationality='american' dob='23 SEP 1999' sex='M' height={67} weight={200} hair='brown' eyes='green' certNumber={2549741} dateOfIssue='24 OCT 2022' />
-        <VehiclePassport id={43441241244} vehicleIdNumber='3xwdjf143543fjefjw' model='Mercedes-Benz' make='huracan' plateNumber ='6mbv006' bodyTypeModel='AT' fuel='G' buyDate='06/30/2005' feesPaid='$21' regDate='06/30/2005' yr1stSold='2003' mo='JU' issueDate='07/09/2005' ownersList={[{name1:'WEAZY BUERO', address1:'999 WOODLAND AVE', address2:'MENLO PARK CA 94025', month:'JU', year:'2003', regDate:'06/30/2005'}, {name1:'WEAZY BUERO', address1:'999 WOODLAND AVE', address2:'MENLO PARK CA 94025', month:'JU', year:'2003', regDate:'06/30/2005'}]} />
+        <VehiclePassport id={43441241244} vehicleIdNumber='3xwdjf143543fjefjw' model='Mercedes-Benz' make='huracan' plateNumber ='6mbv006' bodyTypeModel='AT' fuel='G' buyDate='06/30/2005' feesPaid='$21' regDate='06/30/2005' firstYearSold='2003' mo='JU' issueDate='07/09/2005' owners={[{firstName:'WEAZY BUERO', address:'999 WOODLAND AVE', taxNumber:'MENLO PARK CA 94025', month:'JU', year:'2003', regDate:'06/30/2005'}, {firstName:'WEAZY BUERO', address:'999 WOODLAND AVE', taxNumber:'MENLO PARK CA 94025', month:'JU', year:'2003', regDate:'06/30/2005'}]} />
     </React.StrictMode>
 )
 

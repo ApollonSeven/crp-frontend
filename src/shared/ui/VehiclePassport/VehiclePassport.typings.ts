@@ -1,4 +1,4 @@
-import { any } from "prop-types"
+import { any, number } from "prop-types"
 
 export interface Props {
     id?: number
@@ -11,8 +11,8 @@ export interface Props {
     buyDate?: string
     feesPaid?: string
     regDate?: string
-    yr1stSold?: string
+    firstYearSold?: string
     mo?: string
     issueDate?:string
-    ownersList:any
+    owners:any
 }
