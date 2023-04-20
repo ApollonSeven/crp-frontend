@@ -1,0 +1,140 @@
+@import "src/shared/styles/pxToRem";
+
+$scale: 1;
+
+.container {
+    position: relative;
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    border-radius: pxToRem(5px, $scale);
+    width: pxToRem(344px, $scale);
+    height: pxToRem(213px, $scale);
+    background-color: #ffffff;
+    font-style: normal;
+    font-size: pxToRem(11px, $scale);
+    line-height: pxToRem(13px, $scale);
+    border-radius: pxToRem(10px, $scale);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border: #ffffff;
+}
+
+.info {
+    position: absolute;
+    display: flex;
+    white-space: nowrap;
+    width: pxToRem(345px, $scale);
+    height: pxToRem(13px, $scale);
+    left: pxToRem(13px, $scale);
+    top: pxToRem(75px, $scale);
+    display: inline-block;
+}
+
+.infoBlock {
+    padding-bottom: pxToRem(5px, $scale);
+    max-width: pxToRem(327px, $scale);
+    text-overflow: clip;
+    overflow: hidden;
+}
+
+.idBlock {
+    padding-bottom: pxToRem(5px, $scale);
+    max-width: pxToRem(138px, $scale);
+    text-overflow: clip;
+    overflow: hidden;
+}
+
+.busCard {
+    position: absolute;
+    border-radius: pxToRem(0px, $scale) pxToRem(0px, $scale) pxToRem(10px, $scale) pxToRem(10px, $scale);
+    width: pxToRem(344px, $scale);
+    height: pxToRem(93px, $scale);
+    left: pxToRem(0px, $scale);
+    float: left;
+    top: pxToRem(120px, $scale);
+    background-color: #a3b4da;
+}
+
+.busBlock {
+    padding-bottom: pxToRem(5px, $scale);
+    white-space: nowrap;
+    max-width: pxToRem(320.5px, $scale);
+    text-overflow: clip;
+    overflow: hidden;
+}
+
+.cardIcon {
+    position: absolute;
+    width: pxToRem(38px, $scale);
+    height: pxToRem(38px, $scale);
+    left: pxToRem(19px, $scale);
+    top: pxToRem(15px, $scale);
+    background-image: url('~/src/shared/images/card-icon.png');
+}
+
+.rectangle {
+    position: absolute;
+    width: pxToRem(291px, $scale);
+    height: pxToRem(6px, $scale);
+    left: pxToRem(0px, $scale);
+    top: pxToRem(114px, $scale);
+    background: linear-gradient(90deg, #58afff 0%, #004584 100%);
+}
+
+.rectangle2 {
+    position: absolute;
+    width: pxToRem(53px, $scale);
+    height: pxToRem(6px, $scale);
+    left: pxToRem(291px, $scale);
+    top: pxToRem(114px, $scale);
+    background: #fba664;
+}
+
+.date {
+    position: absolute;
+    width: pxToRem(175px, $scale);
+    height: pxToRem(13px, $scale);
+    left: pxToRem(158px, $scale);
+    top: pxToRem(99px, $scale);
+}
+
+.names {
+    position: absolute;
+    width: pxToRem(110px, $scale);
+    height: pxToRem(25px, $scale);
+    left: pxToRem(64px, $scale);
+    top: pxToRem(10px, $scale);
+}
+
+.titleText {
+    font-weight: 700;
+    font-weight: bold;
+    font-size: pxToRem(21px, $scale);
+    line-height: pxToRem(25px, $scale);
+}
+
+.redTitleText {
+    font-weight: 500;
+    font-size: pxToRem(19px, $scale);
+    line-height: pxToRem(23px, $scale);
+    color: #fe4545;
+    font-style: italic;
+}
+
+.busCardText {
+    margin-left: pxToRem(15px, $scale);
+    margin-top: pxToRem(15px, $scale);
+    font-size: pxToRem(13px, $scale);
+}
+
+.text {
+    font-weight: bold;
+    font-size: pxToRem(13px, $scale);
+}
+
+.dateText {
+    font-size: pxToRem(9px, $scale);
+    font-weight: bold;
+}

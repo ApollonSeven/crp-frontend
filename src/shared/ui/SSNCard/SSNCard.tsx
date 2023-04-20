@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './SSNCard.module.css'
+import styles from './SSNCard.module.scss'
 import { SSNCardProps } from './SSNCard.typings'
 const SSNCard: React.FC<SSNCardProps> = ({
     docNumber,

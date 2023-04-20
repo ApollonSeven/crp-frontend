@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './MedCard.module.css'
+import styles from './MedCard.module.scss'
 import { MedCardProps } from './MedCard.typings'
 
 const MedCard: React.FC<MedCardProps> = ({

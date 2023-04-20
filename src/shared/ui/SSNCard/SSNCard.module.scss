@@ -1,0 +1,73 @@
+@import "src/shared/styles/pxToRem";
+
+$scale: 1;
+
+.container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'OCR-B 10 BT';
+    font-style: normal;
+    font-weight: 400;
+    background-size: pxToRem(340px, $scale) pxToRem(220px, $scale);
+    width: pxToRem(340px, $scale);
+    height: pxToRem(220px, $scale);
+    background-image: url('~/src/shared/images/ssn-card.png');
+    font-size: pxToRem(18px, $scale);
+    line-height: pxToRem(22px, $scale);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.info {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: pxToRem(261px, $scale);
+    height: pxToRem(22px, $scale);
+    left: pxToRem(45px, $scale);
+    top: pxToRem(80px, $scale);
+}
+
+.text {
+    font-size: pxToRem(18px, $scale);
+    margin-right: pxToRem(6px, $scale);
+    margin-bottom: pxToRem(6px, $scale);
+    line-height: pxToRem(22px, $scale);
+    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: nowrap;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.signature {
+    position: absolute;
+    width: pxToRem(113px, $scale);
+    height: pxToRem(43px, $scale);
+    left: pxToRem(114px, $scale);
+    top: pxToRem(125px, $scale);
+}
+
+.signature img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.givenDate {
+    position: absolute;
+    left: pxToRem(205px, $scale);
+    top: pxToRem(180px, $scale);
+    letter-spacing: pxToRem(3px, $scale);
+}
