@@ -8,6 +8,17 @@ const defaultArgs: Partial<PlayerSelectProps> = {}
 export default {
     title: 'shared/PlayerSelect',
     component: PlayerSelect,
+    args: {
+        playerMembers: [
+            {
+                fullName: 'John Wick',
+                age: 12,
+                rank: 'Rank',
+                id: 12,
+            },
+        ],
+        onChange: () => console.log('change'),
+    },
 } as Meta<PlayerSelectProps>
 
 export const Default: Story<PlayerSelectProps> = (args) => (

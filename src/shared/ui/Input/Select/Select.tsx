@@ -1,8 +1,7 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import cn from 'classnames'
 import React, { useMemo, useState } from 'react'
 import styles from './Select.module.scss'
-import { Props } from './Select.typings'
+import { OptionsType, Props } from './Select.typings'
 import { CarouselArrow } from 'shared/icons/generated'
 
 const Select = ({
@@ -16,7 +15,8 @@ const Select = ({
 
     const label = useMemo(
         () =>
-            options.find(({ value: elValue }: any) => elValue === value)?.label,
+            options.find(({ value: elValue }: OptionsType) => elValue === value)
+                ?.label,
         [value]
     )
 

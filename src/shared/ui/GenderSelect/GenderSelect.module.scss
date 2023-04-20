@@ -1,0 +1,43 @@
+@import "src/shared/styles/pxToRem";
+
+$border-radius: pxToRem(10px);
+
+.container {
+  width: pxToRem(163px);
+  height: pxToRem(86px);
+  background: #000;
+  border-radius: $border-radius;
+  display: flex;
+  flex-direction: row;
+
+  div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:first-child {
+      border-bottom-left-radius: $border-radius;
+      border-top-left-radius: $border-radius;
+    }
+    &:last-child {
+      border-bottom-right-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+    }
+  }
+}
+
+.active {
+  background-color: #FFD80E;
+  .icon {
+    fill: #000
+  }
+}
+
+.icon {
+  width: pxToRem(30px);
+  height: pxToRem(30px);
+  fill: #fff
+}

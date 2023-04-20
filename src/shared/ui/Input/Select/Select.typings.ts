@@ -6,7 +6,7 @@ export type Props = {
     placeholder?: string
 } & InputProps<any>
 
-type OptionsType = {
+export interface OptionsType {
     label: string
     value: any
 }
