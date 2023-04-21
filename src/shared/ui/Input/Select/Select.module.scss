@@ -1,42 +1,24 @@
-
 @import "src/shared/styles/pxToRem";
 
-$container-width: 100px;
-$container-height: 41px;
-$select-padding-left: 10px;
-$select-font-size: 16px;
-$select-line-height: 19px;
-$wrapper-margin-top: 4px;
-$wrapper-padding-right: 4px;
-$option-height: 29px;
-$options-height: calc(27px*4);
-$options-font: 10px;
-$arrow-margin-right: 10px;
-$select-wraper-options-padding: 10px;
-$option-border-bottom: 1px;
-$thumb-height: 3px;
-$thumb-border-radius: 3px;
-$scrollbar-width: 6px;
-$track-margin: 8px;
 $scale: 1;
 
 .container {
   user-select: none;
-  width: pxToRem($container-width, $scale);
-  height: pxToRem($container-height, $scale);
+  width: pxToRem(100px, $scale);
+  height: pxToRem(41px, $scale);
   color: #949494;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: pxToRem($select-font-size, $scale);
-  line-height: pxToRem($select-line-height, $scale);
+  font-size: pxToRem(16px, $scale);
+  line-height: pxToRem(19px, $scale);
 }
 
 .select {
   cursor: pointer;
   line-height: 1;
   outline: 0;
-  padding-left: pxToRem($select-padding-left, $scale);
+  padding-left: pxToRem(10px, $scale);
   height: inherit;
   display: flex;
   align-items: center;
@@ -50,7 +32,7 @@ $scale: 1;
 
 .rounded {
   .select, .wrapper, .options {
-    border-radius: pxToRem($select-wraper-options-padding, $scale);
+    border-radius: pxToRem(10px, $scale);
   }
 }
 
@@ -58,8 +40,9 @@ $scale: 1;
   box-sizing: border-box;
   background: #222223;
   overflow: hidden;
-  padding-right: pxToRem($wrapper-padding-right, $scale);
-  margin-top: pxToRem($wrapper-margin-top, $scale);
+  padding-right: pxToRem(4px, $scale);
+  margin-top: pxToRem(4px, $scale);
+  position: relative;
 }
 
 .options {
@@ -67,15 +50,15 @@ $scale: 1;
   transition: 0.5s all ease;
   overflow: scroll;
   box-sizing: border-box;
-  font-size: pxToRem($options-font, $scale);
+  font-size: pxToRem(10px, $scale);
   color: #fff;
 
   .option {
-    padding-left: pxToRem($select-padding-left, $scale);
+    padding-left: pxToRem(10px, $scale);
     background-color: #222223;
     cursor: pointer;
-    border-bottom: pxToRem($option-border-bottom, $scale) solid #313131;
-    height: pxToRem($option-height, $scale);
+    border-bottom: pxToRem(1px, $scale) solid #313131;
+    height: pxToRem(29px, $scale);
     display: flex;
     align-items: center;
     transition: 0.3s all;
@@ -87,25 +70,25 @@ $scale: 1;
 
   &::-webkit-scrollbar-thumb:vertical {
     background: #aaaaaa;
-    height: pxToRem($thumb-height, $scale);
-    border-radius: pxToRem($thumb-border-radius, $scale);
+    height: pxToRem(3px, $scale);
+    border-radius: pxToRem(3px, $scale);
     width: 0;
   }
 
   &::-webkit-scrollbar {
     height: 0px;
-    width: pxToRem($scrollbar-width, $scale);
+    width: pxToRem(6px, $scale);
     background: rgba(1, 1, 1, 0);
   }
 
   &::-webkit-scrollbar-track {
-    margin: pxToRem($track-margin, $scale) 0;
+    margin: pxToRem(8px, $scale) 0;
   }
 }
 
 .arrow {
   transition: 0.5s transform ease;
-  margin-right: pxToRem($arrow-margin-right, $scale);
+  margin-right: pxToRem(10px, $scale);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,7 +100,7 @@ $scale: 1;
     transform: rotate(270deg);
   }
   .options {
-    height: pxToRem($options-height, $scale);
+    height: pxToRem(calc(27px*4), $scale);
   }
 }
 

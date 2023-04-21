@@ -1,0 +1,34 @@
+@import "src/shared/styles/pxToRem";
+
+.container {
+  width: pxToRem(644px);
+  height: pxToRem(930px);
+  background: #000000;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  padding: pxToRem(16px);
+  display: flex;
+  flex-direction: column;
+  row-gap: pxToRem(16px);
+}
+
+.block {
+  background: #202020;
+  flex-direction: row;
+  display: flex;
+  padding: pxToRem(12px) pxToRem(24px);
+}
+
+.title {
+  font-size: pxToRem(24px);
+  line-height: pxToRem(28px);
+  margin-bottom: pxToRem(12px);
+  color: #FFFFFF;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}

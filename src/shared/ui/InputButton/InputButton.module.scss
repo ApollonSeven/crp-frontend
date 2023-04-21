@@ -1,0 +1,19 @@
+@import "src/shared/styles/pxToRem";
+
+.container {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: pxToRem(10px);
+  width: pxToRem(50px);
+  height: pxToRem(50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+$iconSize: 30px;
+
+.icon {
+  width: pxToRem($iconSize);
+  height: pxToRem($iconSize);
+  fill: #fff
+}

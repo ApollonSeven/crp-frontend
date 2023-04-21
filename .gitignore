@@ -27,3 +27,4 @@ yarn-error.log*
 
 # env files
 .env
+build-storybook.log

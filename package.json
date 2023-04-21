@@ -29,7 +29,8 @@
         "lint": "eslint .",
         "lint:fix": "eslint ./src --fix",
         "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}'",
-        "figma:export": "dotenv npx figma-export use-config scripts/.figmaexportrc.js"
+        "figma:export": "dotenv npx figma-export use-config scripts/.figmaexportrc.js",
+        "chromatic":  "chromatic"
     },
     "husky": {
         "hooks": {
@@ -90,6 +91,7 @@
         "@typescript-eslint/eslint-plugin": "^5.54.0",
         "@typescript-eslint/parser": "^5.54.0",
         "babel-plugin-named-exports-order": "^0.0.2",
+        "chromatic": "^6.17.3",
         "dotenv": "^16.0.3",
         "dotenv-cli": "^7.0.0",
         "eslint": "^8.35.0",
