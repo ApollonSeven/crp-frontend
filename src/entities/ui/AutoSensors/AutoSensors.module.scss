@@ -1,0 +1,99 @@
+@import "src/shared/styles/pxToRem";
+
+.container {
+  width: pxToRem(381px);
+  height: pxToRem(197px);
+  position: relative;
+
+  font-family: 'Brutal Type';
+  font-style: normal;
+}
+
+.tachometer {
+  position: absolute;
+  left: pxToRem(48px);
+  top: pxToRem(59px);
+}
+
+.speedometer {
+  position: absolute;
+  left: pxToRem(154px);
+  bottom: pxToRem(30px);
+  width: pxToRem(196px);
+  height: pxToRem(168px);
+}
+
+
+.fuelGauge {
+  position: absolute;
+  right: pxToRem(10px);
+  bottom: pxToRem(16px);
+  width: pxToRem(40px);
+  height: pxToRem(164px);
+}
+
+.speed {
+  position: absolute;
+  width: pxToRem(190px);
+  height: pxToRem(162.35px);
+  left: pxToRem(157px);
+  top: pxToRem(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sensors {
+  display: flex;
+  gap: pxToRem(10px);
+  align-items: center;
+}
+
+.speedTitle {
+  font-weight: 400;
+  font-size: pxToRem(54px);
+  line-height: pxToRem(60px);
+  color: #fff;
+
+  text-align: center;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+
+  margin-top: pxToRem(12px);
+}
+
+.speedSubtitle {
+  font-weight: 700;
+  font-size: pxToRem(24px);
+  line-height: pxToRem(30px);
+
+  letter-spacing: -0.05em;
+
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: pxToRem(-12px);
+}
+
+.turnSignals {
+  display: flex;
+  gap: pxToRem(40px);
+  margin-top: pxToRem(5px);
+}
+
+.mainSensors {
+  position: absolute;
+  right: pxToRem(56px);
+  bottom: pxToRem(3px);
+}
+
+.transmission {
+  position: absolute;
+  left: pxToRem(121px);
+  bottom: pxToRem(3px);
+}
+
+.autoModes {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

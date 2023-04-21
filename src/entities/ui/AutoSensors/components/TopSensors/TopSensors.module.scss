@@ -1,0 +1,22 @@
+@import "src/shared/styles/pxToRem";
+
+.container {
+  display: flex;
+  gap: pxToRem(10px);
+  align-items: center;
+}
+
+.esp {
+  width: pxToRem(13px);
+  height: pxToRem(13px);
+}
+
+.abs {
+  width: pxToRem(20px);
+  height: pxToRem(15px);
+}
+
+.ars {
+  height: pxToRem(15px);
+  width: pxToRem(15px);
+}

@@ -1,0 +1,28 @@
+@import "src/shared/styles/pxToRem";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: pxToRem(18px);
+}
+
+.icon{
+  fill: rgba(255, 255, 255, 0.5)
+}
+
+.iconL {
+  @extend .icon;
+  width: pxToRem(20px);
+  height: pxToRem(15px);
+}
+
+.iconM {
+  @extend .icon;
+  width: pxToRem(15px);
+  height: pxToRem(15px);
+}
+
+.active {
+  fill: rgba(146, 217, 37, 1)
+}

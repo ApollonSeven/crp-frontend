@@ -1,0 +1,40 @@
+@import "src/shared/styles/pxToRem";
+
+.container {
+  width: pxToRem(111px);
+  height: pxToRem(131px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tachometer {
+  width: pxToRem(99px);
+  height: pxToRem(131px);
+  position: absolute;
+  left: 0;
+}
+
+.rotations {
+  font-weight: 400;
+  font-size: pxToRem(45px);
+  line-height: pxToRem(45px);
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.subTitle {
+  width: pxToRem(45px);
+  height: pxToRem(30px);
+  font-weight: 700;
+  font-size: pxToRem(13px);
+  line-height: pxToRem(15px);
+  text-align: right;
+  letter-spacing: -0.05em;
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: pxToRem(78px);
+  right: pxToRem(3px);
+}
