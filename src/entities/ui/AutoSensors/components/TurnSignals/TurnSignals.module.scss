@@ -1,0 +1,12 @@
+@import "src/shared/styles/pxToRem";
+
+.container {
+  display: flex;
+  gap: pxToRem(40px);
+  margin-top: pxToRem(5px);
+}
+
+.icon {
+  height: pxToRem(15px);
+  width: pxToRem(15px);
+}

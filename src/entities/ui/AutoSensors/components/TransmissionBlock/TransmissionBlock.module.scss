@@ -1,0 +1,19 @@
+@import "src/shared/styles/pxToRem";
+
+.container {
+  display: flex;
+  align-items: flex-end;
+  gap: pxToRem(5px);
+}
+
+.title {
+  font-weight: 700;
+  font-size: pxToRem(24px);
+  line-height: pxToRem(15px);
+  color: #FFFFFF;
+}
+
+.icon {
+  width: pxToRem(15px);
+  height: pxToRem(15px);
+}
