@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.cardShape {
+    box-sizing: border-box;
+    position: relative;
+    width: 662px;
+    height: 458px;
+}
+
+.menuTitle {
+    position: absolute;
+    top: 45px;
+    left: 47px;
+}
+
+.menuTitle div:first-child {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.pinCodeField{
+    position: absolute;
+    top:169px;
+    left:0px;
+    width:638px;
+    height: 54px;
+    margin:0px 12px 0px 12px;
+    background: #2F9356;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.pinCodeFieldChar{
+    margin:0px 15px 0px 0px;
+}
+.pinCodeFieldChar:last-child{
+    margin:0px;
+}
+.pinShape{
+    width:11px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+.pinChar{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.screenAlert{
+    position: absolute;
+    width: 259px;
+    height: 81px;
+    left: 201px;
+    top: 248px;
+    background: rgba(255, 255, 255, 0.1);
+}
+.screenAlertText{
+    width:220px;
+    margin: 12px auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}

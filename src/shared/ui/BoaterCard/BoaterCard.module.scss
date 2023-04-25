@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 .cardShape{
+    box-sizing: border-box;
     position:relative;
     width:344px;
     height:250px;
     border-radius: 15px;
-    background: url(./assets/fon.png) center/contain, url(./assets/logo.png) 43px -5px/286px 260px no-repeat;
+    background: url(./assets/fon.png) center/cover no-repeat, url(./assets/logo.png) 43px -5px/286px 260px no-repeat;
     border:transparent;
     padding:6px 0px 0px 0px;
 }

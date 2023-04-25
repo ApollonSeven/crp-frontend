@@ -7,6 +7,11 @@ import ArmyCard from 'shared/ui/ArmyCard/ArmyCard'
 import BoaterCard from 'shared/ui/BoaterCard/BoaterCard'
 import FlyingCard from 'shared/ui/FlyingCard/FlyingCard'
 import VehiclePassport from 'shared/ui/VehiclePassport/VehiclePassport'
+import ATMMainScreen from 'shared/ui/ATM/components/ATMMainScreen'
+import ATMHistoryScreen from 'shared/ui/ATM/components/ATMHistoryScreen'
+import ATMPinCodeScreen from 'shared/ui/ATM/components/ATMPinCodeScreen'
+import ATMBalanceScreen from 'shared/ui/ATM/components/ATMBalanceScreen'
+import ATM from 'shared/ui/ATM/ATM'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
@@ -77,6 +82,65 @@ root.render(
                 },
             ]}
         />
+        <ATMMainScreen />
+        <ATMPinCodeScreen />
+        <ATMHistoryScreen
+            history={[
+                {
+                    date: '12.09.2020',
+                    operations: [{
+                        shortName: 'Иван Е.',
+                        operation: 'Пополнение',
+                        value: '+ 4 500 $',
+                    },
+                    {
+                        shortName: 'Иван Е.',
+                        operation: 'Перевод',
+                        value: '- 4 500 $',
+                    }]
+                },
+                {
+                    date: '02.09.2020',
+                    operations: [{
+                        shortName: 'Иван Е.',
+                        operation: 'Перевод',
+                        value: '- 4 500 $',
+                    },
+                    {
+                        shortName: 'Иван Е.',
+                        operation: 'Пополнение',
+                        value: '+ 4 500 $',
+                    },
+                    {
+                        shortName: 'Иван Е.',
+                        operation: 'Пополнение',
+                        value: '+ 4 500 $',
+                    }]
+                },
+                {
+                    date: '02.09.2020',
+                    operations: [{
+                        shortName: 'Иван Е.',
+                        operation: 'Перевод',
+                        value: '- 4 500 $',
+                    },
+                    {
+                        shortName: 'Иван Е.',
+                        operation: 'Пополнение',
+                        value: '+ 4 500 $',
+                    },
+                    {
+                        shortName: 'Иван Е.',
+                        operation: 'Пополнение',
+                        value: '+ 4 500 $',
+                    }]
+                }
+            ]}
+        />
+        <ATMBalanceScreen
+            balance='50 000 000$'
+        />
+        <ATM/>
     </React.StrictMode>
 )
 

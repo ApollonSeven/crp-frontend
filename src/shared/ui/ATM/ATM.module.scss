@@ -1,0 +1,139 @@
+.greenBorderPosition{
+    position: relative;
+    width:896px;
+    height:690px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.greenBorderBackground{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:896px;
+    height:690px;
+}
+.greenBorderRight{
+    position: absolute;
+    top:0px;
+    right:0px;
+    box-sizing: border-box;
+    width:70px;
+    height:690px;
+    border:2px solid rgba(0, 0, 0, 0.45);
+    background: url(./assets/greenBorderVertical.svg);
+}
+.greenBorderLeft{
+    position: absolute;
+    top:0px;
+    left:0px;
+    box-sizing: border-box;
+    width:70px;
+    height:690px;
+    border:2px solid rgba(0, 0, 0, 0.45);
+    background: url(./assets/greenBorderVertical.svg);
+}
+.greenBorderTop{
+    position: absolute;
+    top:0px;
+    left:70px;
+    box-sizing: border-box;
+    width:756px;
+    height:70px;
+    border:2px solid rgba(0, 0, 0, 0.45);
+    background: url(./assets/greenBorderHorizontal.svg);
+}
+.greenBorderBottom{
+    position: absolute;
+    bottom:0px;
+    left:70px;
+    box-sizing: border-box;
+    width:756px;
+    height:70px;
+    border:2px solid rgba(0, 0, 0, 0.45);
+    background: url(./assets/greenBorderHorizontal.svg);
+}
+.greenBorderBackground>img{
+    position: absolute;
+    top:20px;
+    left:90px;
+}
+.metalBorder{
+    position: relative;
+    width:756px;
+    height: 550px;
+    background: url(./assets/metalBorderBackground.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blackBackground{
+    position: relative;
+    width:662px;
+    height: 458px;
+    background: #000000, ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.colorBackground{
+    position:absolute;
+    top:15px;
+    left:12px;
+    width:638px;
+    height:428px;
+    background:linear-gradient(90.24deg, #84DDA8 -0.98%, #2F9356 99.79%), url(./assets/colorBackground.svg);
+    background-blend-mode: lighten;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.finishWork {
+    box-sizing: border-box;
+    padding: 0px 15px 0px 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    width: 199px;
+    height: 71px;
+    right: 48px;
+    top: 27px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 19px 4px rgba(0, 0, 0, 0.12);
+}
+.finishWork:hover{
+    cursor:pointer;
+}
+
+.finishWork div:first-child {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #E3AD22;
+    width: 125px;
+}
+
+.finishWork div:last-child {
+    width: 31px;
+    height: 31px;
+    background: #F77248;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.test{
+    width:100px;
+    height: 100px;
+    background: black;
+    position: absolute;
+    top:50%;
+    left:50%;
+    z-index: 20;
+}

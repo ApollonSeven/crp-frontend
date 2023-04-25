@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.cardShape {
+    box-sizing: border-box;
+    position: relative;
+    width: 662px;
+    height: 458px;
+}
+
+.bottomBackground {
+    position: absolute;
+    bottom: 15px;
+    left: 12px;
+    width: 638px;
+    height: 240px;
+    background: #454545;
+    box-shadow: inset 0px 0px 34px 3px rgba(255, 255, 255, 0.25);
+}
+
+.menuTitle {
+    position: absolute;
+    top: 27px;
+    left: 47px;
+}
+
+.menuTitle div:first-child {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.menuTitle div:last-child {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.navigation {
+    position: absolute;
+    top: 146px;
+    left: 47px;
+    display: grid;
+    grid-template-areas:
+        'leftTopNavBlock rightTopNavBlock'
+        'leftBottomNavBlock rightBottomNavBlock';
+    column-gap: 31px;
+    row-gap: 15px;
+}
+
+.leftTopNavBlock{
+    grid-area: leftTopNavBlock;
+}
+.rightTopNavBlock{
+    grid-area: rightTopNavBlock;
+}
+.leftBottomNavBlock{
+    grid-area: leftBottomNavBlock;
+}
+.rightBottomNavBlock{
+    grid-area: rightBottomNavBlock;
+}
+
+.navBlock {
+    width: 268px;
+    height: 121px;
+    background: #ffffff;
+    box-shadow: 0px 0px 19px 4px rgba(0, 0, 0, 0.29);
+    position: relative;
+    overflow: hidden;
+}
+
+.navTitle {
+    position: absolute;
+    top: 16px;
+    left: 18px;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    z-index: 2;
+}
+
+.backgroundBlock {
+    position: absolute;
+    top:-28px;
+    left:93px;
+    width: 70.75px;
+    height: 188.17px;
+    background: linear-gradient(to top, rgba(196, 196, 196, 0.3), #ffffff);
+    transform: rotate(208.18deg);
+}
+
+.navPicTopLeft{
+    position: absolute;
+    bottom: 17px;
+    left:203px;
+    width:fit-content;
+    height: fit-content;
+}
+.navPicTopLeft img:first-child{
+    position: absolute;
+    bottom:20px;
+    left:0px;
+}
+.navPicTopLeft img:last-child{
+    position: absolute;
+    bottom:0px;
+    left:11px;
+}
+
+.navPicTopRight{
+    position: absolute;
+    bottom: 17px;
+    left:203px;
+    width:fit-content;
+    height: fit-content;
+}
+.navPicTopRight img:first-child{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    transform: rotate(180deg);
+}
+.navPicTopRight img:last-child{
+    position: absolute;
+    bottom:12px;
+    left:11px;
+    transform: rotate(180deg);
+}
+
+.navPicBottomLeft{
+    position: absolute;
+    bottom: 17px;
+    left:203px;
+    width:fit-content;
+    height: fit-content;
+}
+.navPicTopRight img:first-child{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+}
+
+.navPicBottomRight{
+    position: absolute;
+    bottom: 17px;
+    left:203px;
+    width:fit-content;
+    height: fit-content;
+}
+.navPicBottomRight img:first-child{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+}
+.navPicBottomRight img:last-child{
+    position: absolute;
+    bottom:6px;
+    left:25px;
+}
