@@ -103,71 +103,10 @@
     transform: rotate(208.18deg);
 }
 
-.navPicTopLeft{
+.navPic{
     position: absolute;
     bottom: 17px;
     left:203px;
     width:fit-content;
     height: fit-content;
-}
-.navPicTopLeft img:first-child{
-    position: absolute;
-    bottom:20px;
-    left:0px;
-}
-.navPicTopLeft img:last-child{
-    position: absolute;
-    bottom:0px;
-    left:11px;
-}
-
-.navPicTopRight{
-    position: absolute;
-    bottom: 17px;
-    left:203px;
-    width:fit-content;
-    height: fit-content;
-}
-.navPicTopRight img:first-child{
-    position: absolute;
-    bottom:0px;
-    left:0px;
-    transform: rotate(180deg);
-}
-.navPicTopRight img:last-child{
-    position: absolute;
-    bottom:12px;
-    left:11px;
-    transform: rotate(180deg);
-}
-
-.navPicBottomLeft{
-    position: absolute;
-    bottom: 17px;
-    left:203px;
-    width:fit-content;
-    height: fit-content;
-}
-.navPicTopRight img:first-child{
-    position: absolute;
-    bottom:0px;
-    left:0px;
-}
-
-.navPicBottomRight{
-    position: absolute;
-    bottom: 17px;
-    left:203px;
-    width:fit-content;
-    height: fit-content;
-}
-.navPicBottomRight img:first-child{
-    position: absolute;
-    bottom:0px;
-    left:0px;
-}
-.navPicBottomRight img:last-child{
-    position: absolute;
-    bottom:6px;
-    left:25px;
 }

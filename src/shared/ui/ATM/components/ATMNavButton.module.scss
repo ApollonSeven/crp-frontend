@@ -1,0 +1,45 @@
+.navBlock {
+    width: 268px;
+    height: 121px;
+    background: #ffffff;
+    box-shadow: 0px 0px 19px 4px rgba(0, 0, 0, 0.29);
+    position: relative;
+    overflow: hidden;
+}
+
+.navBlock:hover{
+    cursor:pointer;
+}
+
+.navTitle {
+    position: absolute;
+    top: 16px;
+    left: 18px;
+    width: 90px;
+    height: fit-content;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    z-index: 2;
+}
+
+.backgroundBlock {
+    position: absolute;
+    top:-28px;
+    left:93px;
+    width: 70.75px;
+    height: 188.17px;
+    background: linear-gradient(to top, rgba(196, 196, 196, 0.3), #ffffff);
+    transform: rotate(208.18deg);
+}
+
+.navPic{
+    position: absolute;
+    bottom: 17px;
+    left:203px;
+    width:fit-content;
+    height: fit-content;
+}

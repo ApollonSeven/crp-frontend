@@ -1,73 +1,18 @@
-.greenBorderPosition{
+.greenBorderBackground{
     position: relative;
     width:896px;
     height:690px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.greenBorderBackground{
-    position: absolute;
-    top:0px;
-    left:0px;
-    width:896px;
-    height:690px;
-}
-.greenBorderRight{
-    position: absolute;
-    top:0px;
-    right:0px;
-    box-sizing: border-box;
-    width:70px;
-    height:690px;
-    border:2px solid rgba(0, 0, 0, 0.45);
-    background: url(./assets/greenBorderVertical.svg);
-}
-.greenBorderLeft{
-    position: absolute;
-    top:0px;
-    left:0px;
-    box-sizing: border-box;
-    width:70px;
-    height:690px;
-    border:2px solid rgba(0, 0, 0, 0.45);
-    background: url(./assets/greenBorderVertical.svg);
-}
-.greenBorderTop{
-    position: absolute;
-    top:0px;
-    left:70px;
-    box-sizing: border-box;
-    width:756px;
-    height:70px;
-    border:2px solid rgba(0, 0, 0, 0.45);
-    background: url(./assets/greenBorderHorizontal.svg);
-}
-.greenBorderBottom{
-    position: absolute;
-    bottom:0px;
-    left:70px;
-    box-sizing: border-box;
-    width:756px;
-    height:70px;
-    border:2px solid rgba(0, 0, 0, 0.45);
-    background: url(./assets/greenBorderHorizontal.svg);
+    background:url(./assets/greenBorders.png), rgba(0, 0, 0, 0.7);
+    background-size: contain;
 }
 .greenBorderBackground>img{
     position: absolute;
     top:20px;
     left:90px;
 }
-.metalBorder{
-    position: relative;
-    width:756px;
-    height: 550px;
-    background: url(./assets/metalBorderBackground.svg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .blackBackground{
     position: relative;
     width:662px;
@@ -89,6 +34,18 @@
     justify-content: center;
     align-items: center;
 }
+
+.header{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left:47px;
+    top: 27px;
+    width:567px;
+    height:71px;
+}
 .finishWork {
     box-sizing: border-box;
     padding: 0px 15px 0px 15px;
@@ -96,12 +53,9 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
     z-index: 10;
     width: 199px;
     height: 71px;
-    right: 48px;
-    top: 27px;
     background: #FFFFFF;
     box-shadow: 0px 0px 19px 4px rgba(0, 0, 0, 0.12);
 }
@@ -126,6 +80,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.menuTitle {
+    //position: absolute;
+    //top: 27px;
+    //left: 47px;
+}
+
+.menuTitle div:first-child {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.menuTitle div:last-child {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
 }
 
 .test{
