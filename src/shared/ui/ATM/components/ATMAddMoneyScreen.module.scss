@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.cardShape {
+    box-sizing: border-box;
+    position: relative;
+    width: 662px;
+    height: 458px;
+}
+
+.title {
+    position: absolute;
+    top: 170px;
+    left: 47px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.mainInfo {
+    position: absolute;
+    top: 198px;
+    left: 47px;
+    width: 566px;
+    height: 78px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.value {
+    width: 299px;
+    height: 78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2F9356;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.info {
+    width: 263px;
+    height: 78px;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info>div {
+    width: 233px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.info>div>div{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.acceptButton{
+    position: absolute;
+    right:48px;
+    top:358px;
+}
