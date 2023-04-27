@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.cardShape {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 19px 4px rgba(0, 0, 0, 0.12);
+    width: 184px;
+    height: 43px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #E3AD22;
+}
+.cardShape:hover{
+    cursor:pointer;
+}

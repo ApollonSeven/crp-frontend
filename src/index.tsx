@@ -12,6 +12,7 @@ import ATMHistoryScreen from 'shared/ui/ATM/components/ATMHistoryScreen'
 import ATMPinCodeScreen from 'shared/ui/ATM/components/ATMPinCodeScreen'
 import ATMBalanceScreen from 'shared/ui/ATM/components/ATMBalanceScreen'
 import ATM from 'shared/ui/ATM/ATM'
+import ATMAcceptButton from 'shared/ui/ATM/components/ATMAcceptButton'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
@@ -140,6 +141,7 @@ root.render(
         <ATMBalanceScreen
             balance='50 000 000$'
         />
+        <ATMAcceptButton title='Пополнить' />
         <ATM/>
     </React.StrictMode>
 )
