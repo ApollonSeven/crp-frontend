@@ -11,19 +11,19 @@ import ATMPinCodeScreen from './components/ATMPinCodeScreen';
 enum Screen { Main, AddMoney, GetCash, History, Balance }
 enum Title { Main, AddMoney, GetCash, History, Balance }
 enum SubTitle { Main, AddMoney, GetCash, History, Balance }
-enum IsVisible { True, False }
+enum IsVisible { Visible, inVisible }
 
 const ATM = () => {
 
     const [screen, setScreen] = useState(Screen.Main)
     const [title, setTitle] = useState(Title.Main)
     const [subTitle, setSubTitle] = useState(SubTitle.Main)
-    const [backButtonVisibility, setBackButtonVisibility] = useState(IsVisible.False)
+    const [backButtonVisibility, setBackButtonVisibility] = useState(IsVisible.inVisible)
     const handleMainScreenSelect = (type: string) => {
-        if (type == 'addMoney') { setScreen(Screen.AddMoney); setTitle(Title.AddMoney); setSubTitle(SubTitle.AddMoney); setBackButtonVisibility(IsVisible.True) }
-        if (type == 'getCash') { setScreen(Screen.GetCash); setTitle(Title.GetCash); setSubTitle(SubTitle.GetCash); setBackButtonVisibility(IsVisible.True) }
-        if (type == 'history') { setScreen(Screen.History); setTitle(Title.History); setSubTitle(SubTitle.History); setBackButtonVisibility(IsVisible.True) }
-        if (type == 'balance') { setScreen(Screen.Balance); setTitle(Title.Balance); setSubTitle(SubTitle.Balance); setBackButtonVisibility(IsVisible.True) }
+        if (type == 'addMoney') { setScreen(Screen.AddMoney); setTitle(Title.AddMoney); setSubTitle(SubTitle.AddMoney); setBackButtonVisibility(IsVisible.Visible) }
+        if (type == 'getCash') { setScreen(Screen.GetCash); setTitle(Title.GetCash); setSubTitle(SubTitle.GetCash); setBackButtonVisibility(IsVisible.Visible) }
+        if (type == 'history') { setScreen(Screen.History); setTitle(Title.History); setSubTitle(SubTitle.History); setBackButtonVisibility(IsVisible.Visible) }
+        if (type == 'balance') { setScreen(Screen.Balance); setTitle(Title.Balance); setSubTitle(SubTitle.Balance); setBackButtonVisibility(IsVisible.Visible) }
     }
 
     return (
@@ -33,7 +33,7 @@ const ATM = () => {
                 <div className={stylesBase.colorBackground}></div>
                 <div className={stylesBase.header}>
                     <div className={stylesBase.menuTitle}>
-                        <div className={`${backButtonVisibility == IsVisible.True&& 'stylesBase.backButton'}`}>
+                        <div className={`${backButtonVisibility == IsVisible.Visible&& 'stylesBase.backButton'}`}>
                             <img src={vector6}></img>
                         </div>
                         <div>
@@ -41,8 +41,8 @@ const ATM = () => {
                                 {title == Title.Main && 'Главное меню'}
                                 {title == Title.AddMoney && 'Введите PIN код'}
                                 {title == Title.GetCash && 'Введите PIN код'}
-                                {title == Title.History && 'История операций'}
-                                {title == Title.Balance && 'Запросить баланс'}
+                                {title == Title.History && 'Операции'}
+                                {title == Title.Balance && 'Баланс'}
                             </div>
                             <div className={stylesBase.subTitle}>
                                 {subTitle == SubTitle.Main && 'Выберите нужный Вам пункт'}

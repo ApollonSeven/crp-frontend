@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.cardShape {
+    box-sizing: border-box;
+    position: relative;
+    width: 662px;
+    height: 458px;
+    background-color: red;
+}
+
+.title {
+    position: absolute;
+    top: 144px;
+    left: 47px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.mainGrid {
+    position: absolute;
+    top: 190px;
+    left: 47px;
+    display: grid;
+    grid-template-columns: repeat(3, 184px);
+    grid-template-rows: 78px 78px 43px;
+    gap: 8px;
+}
+
+.withdrawalValue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: #2F9356;
+}
+
+.otherValue {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.input {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 184px;
+    height: 43px;
+    background: #2F9356;
+    box-shadow: 0px 0px 19px 4px rgba(0, 0, 0, 0.12);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    border:none;
+    padding: 10px;
+}
