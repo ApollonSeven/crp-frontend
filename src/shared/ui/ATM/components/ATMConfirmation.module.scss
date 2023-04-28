@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.cardShape {
+    box-sizing: border-box;
+    position: relative;
+    width: 662px;
+    height: 458px;
+    background-color:orange;
+}
+
+.mainInfo{
+    position: absolute;
+    top:152px;
+    left:198px;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 265px;
+    height: 226px;
+    background: #FFFFFF;
+}
+.mainInfo div:nth-child(2){
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #2F9356;
+    margin-top:13px;
+}
+.mainInfo div:last-child{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: #2F9356;
+}

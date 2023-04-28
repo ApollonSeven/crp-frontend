@@ -1,0 +1,17 @@
+.cardShape {
+    box-sizing: border-box;
+    position: relative;
+    width: 662px;
+    height: 458px;
+    background-color:blue;
+}
+
+.mainInfo{
+    position: absolute;
+    top:144px;
+    left:47px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    width:567px;
+}
