@@ -7,23 +7,18 @@ import ATMMainScreen from './components/ATMMainScreen';
 import ATMBalanceScreen from './components/ATMBalanceScreen';
 import ATMHistoryScreen from './components/ATMHistoryScreen';
 import ATMPinCodeScreen from './components/ATMPinCodeScreen';
+import { ATM_TITLES, Screen } from './ATM.config'
 
-enum Screen { Main, AddMoney, GetCash, History, Balance }
-enum Title { Main, AddMoney, GetCash, History, Balance }
-enum SubTitle { Main, AddMoney, GetCash, History, Balance }
 
 const ATM = () => {
 
     const [screen, setScreen] = useState(Screen.Main)
-    const [title, setTitle] = useState(Title.Main)
-    const [subTitle, setSubTitle] = useState(SubTitle.Main)
-    const [backButtonVisibility, setBackButtonVisibility] = useState(false)
-    const handleMainScreenSelect = (type: string) => {
-        if (type == 'addMoney') { setScreen(Screen.AddMoney); setTitle(Title.AddMoney); setSubTitle(SubTitle.AddMoney); setBackButtonVisibility(true) }
-        if (type == 'getCash') { setScreen(Screen.GetCash); setTitle(Title.GetCash); setSubTitle(SubTitle.GetCash); setBackButtonVisibility(true) }
-        if (type == 'history') { setScreen(Screen.History); setTitle(Title.History); setSubTitle(SubTitle.History); setBackButtonVisibility(true) }
-        if (type == 'balance') { setScreen(Screen.Balance); setTitle(Title.Balance); setSubTitle(SubTitle.Balance); setBackButtonVisibility(true) }
+    const hasBackButton = screen != Screen.Main && screen != Screen.AddMoney && screen != Screen.GetCash
+    const handleMainScreenSelect = (activeScreen: Screen) => {
+        setScreen(activeScreen)
     }
+
+
 
     return (
         <div className={stylesBase.greenBorderBackground}>
@@ -32,23 +27,15 @@ const ATM = () => {
                 <div className={stylesBase.colorBackground}></div>
                 <div className={stylesBase.header}>
                     <div className={stylesBase.menuTitle}>
-                        <div className={(backButtonVisibility ? `${stylesBase.backButton}` : `${stylesBase.backButtonHide}`)}>
+                        <div className={(hasBackButton ? `${stylesBase.backButton}` : `${stylesBase.backButtonHide}`)}>
                             <img src={vector6}></img>
                         </div>
                         <div>
                             <div className={stylesBase.title}>
-                                {title == Title.Main && 'Главное меню'}
-                                {title == Title.AddMoney && 'Введите PIN код'}
-                                {title == Title.GetCash && 'Введите PIN код'}
-                                {title == Title.History && 'Операции'}
-                                {title == Title.Balance && 'Баланс'}
+                                {ATM_TITLES[screen]}
                             </div>
                             <div className={stylesBase.subTitle}>
-                                {subTitle == SubTitle.Main && 'Выберите нужный Вам пункт'}
-                                {subTitle == SubTitle.AddMoney}
-                                {subTitle == SubTitle.GetCash}
-                                {subTitle == SubTitle.History}
-                                {subTitle == SubTitle.Balance}
+                                {screen == Screen.Main && 'Выберите нужный Вам пункт'}
                             </div>
                         </div>
                     </div>
