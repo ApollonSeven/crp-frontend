@@ -11,19 +11,18 @@ import ATMPinCodeScreen from './components/ATMPinCodeScreen';
 enum Screen { Main, AddMoney, GetCash, History, Balance }
 enum Title { Main, AddMoney, GetCash, History, Balance }
 enum SubTitle { Main, AddMoney, GetCash, History, Balance }
-enum IsVisible { Visible, inVisible }
 
 const ATM = () => {
 
     const [screen, setScreen] = useState(Screen.Main)
     const [title, setTitle] = useState(Title.Main)
     const [subTitle, setSubTitle] = useState(SubTitle.Main)
-    const [backButtonVisibility, setBackButtonVisibility] = useState(IsVisible.inVisible)
+    const [backButtonVisibility, setBackButtonVisibility] = useState(false)
     const handleMainScreenSelect = (type: string) => {
-        if (type == 'addMoney') { setScreen(Screen.AddMoney); setTitle(Title.AddMoney); setSubTitle(SubTitle.AddMoney); setBackButtonVisibility(IsVisible.Visible) }
-        if (type == 'getCash') { setScreen(Screen.GetCash); setTitle(Title.GetCash); setSubTitle(SubTitle.GetCash); setBackButtonVisibility(IsVisible.Visible) }
-        if (type == 'history') { setScreen(Screen.History); setTitle(Title.History); setSubTitle(SubTitle.History); setBackButtonVisibility(IsVisible.Visible) }
-        if (type == 'balance') { setScreen(Screen.Balance); setTitle(Title.Balance); setSubTitle(SubTitle.Balance); setBackButtonVisibility(IsVisible.Visible) }
+        if (type == 'addMoney') { setScreen(Screen.AddMoney); setTitle(Title.AddMoney); setSubTitle(SubTitle.AddMoney); setBackButtonVisibility(true) }
+        if (type == 'getCash') { setScreen(Screen.GetCash); setTitle(Title.GetCash); setSubTitle(SubTitle.GetCash); setBackButtonVisibility(true) }
+        if (type == 'history') { setScreen(Screen.History); setTitle(Title.History); setSubTitle(SubTitle.History); setBackButtonVisibility(true) }
+        if (type == 'balance') { setScreen(Screen.Balance); setTitle(Title.Balance); setSubTitle(SubTitle.Balance); setBackButtonVisibility(true) }
     }
 
     return (
@@ -33,7 +32,7 @@ const ATM = () => {
                 <div className={stylesBase.colorBackground}></div>
                 <div className={stylesBase.header}>
                     <div className={stylesBase.menuTitle}>
-                        <div className={`${backButtonVisibility == IsVisible.Visible&& 'stylesBase.backButton'}`}>
+                        <div className={(backButtonVisibility ? `${stylesBase.backButton}` : `${stylesBase.backButtonHide}`)}>
                             <img src={vector6}></img>
                         </div>
                         <div>

@@ -17,6 +17,7 @@ import ATMAddMoneyScreen from 'shared/ui/ATM/components/ATMAddMoneyScreen'
 import ATMWithdrawalCash from 'shared/ui/ATM/components/ATMWithdrawalCash'
 import ATMPaymentsAndTransfers from 'shared/ui/ATM/components/ATMPaymentsAndTransfers'
 import ATMConfirmation from 'shared/ui/ATM/components/ATMConfirmation'
+import ATMTransfer from 'shared/ui/ATM/components/ATMTransfer'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
@@ -149,6 +150,7 @@ root.render(
         <ATMAddMoneyScreen value='50 000 000$' gas='456$' toAdding='50 000 456$'/>
         <ATMWithdrawalCash/>
         <ATMPaymentsAndTransfers/>
+        <ATMTransfer />
         <ATMConfirmation value='5 000$'/>
         <ATM/>
     </React.StrictMode>
