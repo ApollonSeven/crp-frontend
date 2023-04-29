@@ -49,10 +49,27 @@
     left: 201px;
     top: 248px;
     background: rgba(255, 255, 255, 0.1);
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
+.screenAlertError{
+    box-sizing: border-box;
+    padding: 0px 41px 0px 41px;
+    position: absolute;
+    width: 198px;
+    height: 66px;
+    left: 232px;
+    top: 248px;
+    background: rgba(255, 255, 255, 0.1);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .screenAlertText{
     width:220px;
-    margin: 12px auto;
+    //margin: 12px auto;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -60,4 +77,15 @@
     line-height: 19px;
     text-align: center;
     color: #FFFFFF;
+}
+.screenAlertTextError{
+    width:220px;
+   // margin: 12px auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #D13030;
 }

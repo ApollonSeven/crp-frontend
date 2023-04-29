@@ -18,8 +18,6 @@ const ATM = () => {
         setScreen(activeScreen)
     }
 
-
-
     return (
         <div className={stylesBase.greenBorderBackground}>
             <img src={logo} />

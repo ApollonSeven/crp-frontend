@@ -1,9 +1,11 @@
-import React/*, {useState, KeyboardEvent}*/ from 'react'
-//import {Props} from './ATMPinCodeScreen.typings'
+import React, {useState} from 'react'
 import stylesBase from './ATMPinCodeScreen.module.scss'
 import classNames from 'classnames'
 
-const ATMPinCodeScreen = (/* props:Props */) =>{
+const ATMPinCodeScreen = () =>{
+
+    const [isError] = useState(true)
+
     return(
         <div className={stylesBase.cardShape}>
             <div id = 'pinCodeField' className={stylesBase.pinCodeField} /*onKeyUp={() => keyDownHandler()}*/>
@@ -12,8 +14,8 @@ const ATMPinCodeScreen = (/* props:Props */) =>{
                 <div className={classNames(stylesBase.pinCodeFieldChar, stylesBase.pinShape)}></div>
                 <div className={classNames(stylesBase.pinCodeFieldChar, stylesBase.pinShape)}></div>
             </div>
-            <div className={stylesBase.screenAlert}>
-                <div className={stylesBase.screenAlertText}>Для отказа операции нажмите кнопку "Завершить обслуживание"</div>
+            <div className={(isError? `${stylesBase.screenAlertError}` : `${stylesBase.screenAlert}`)}>
+                <div className={(isError? `${stylesBase.screenAlertTextError}` : `${stylesBase.screenAlertText}`)}>{isError? 'Пароль введен неверно' : 'Для отказа операции нажмите кнопку "Завершить обслуживание'}</div>
             </div>
         </div>
     )
