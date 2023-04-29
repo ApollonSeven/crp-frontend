@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import stylesBase from './ATM.module.scss'
+import styles from './ATM.module.scss'
 import logo from './assets/logo.svg'
-import vector from './assets/Vector.png'
-import vector6 from './assets/Vector6.svg'
-import ATMMainScreen from './components/ATMMainScreen';
-import ATMBalanceScreen from './components/ATMBalanceScreen';
-import ATMHistoryScreen from './components/ATMHistoryScreen';
-import ATMPinCodeScreen from './components/ATMPinCodeScreen';
+import closePic from './assets/ClosePic.png'
+import backButtonPic from './assets/backButtonPic.svg'
+import ATMMainScreen from './screens/MainScreen';
+import ATMBalanceScreen from './screens/BalanceScreen';
+import ATMHistoryScreen from './screens/HistoryScreen';
+import ATMPinCodeScreen from './screens/PinCodeScreen';
 import { ATM_TITLES, Screen } from './ATM.config'
 
 
@@ -19,28 +19,28 @@ const ATM = () => {
     }
 
     return (
-        <div className={stylesBase.greenBorderBackground}>
+        <div className={styles.greenBorderBackground}>
             <img src={logo} />
-            <div className={stylesBase.blackBackground}>
-                <div className={stylesBase.colorBackground}></div>
-                <div className={stylesBase.header}>
-                    <div className={stylesBase.menuTitle}>
-                        <div className={(hasBackButton ? `${stylesBase.backButton}` : `${stylesBase.backButtonHide}`)}>
-                            <img src={vector6}></img>
+            <div className={styles.blackBackground}>
+                <div className={styles.colorBackground}></div>
+                <div className={styles.header}>
+                    <div className={styles.menuTitle}>
+                        <div className={(hasBackButton ? `${styles.backButton}` : `${styles.backButtonHide}`)}>
+                            <img src={backButtonPic}></img>
                         </div>
                         <div>
-                            <div className={stylesBase.title}>
+                            <div className={styles.title}>
                                 {ATM_TITLES[screen]}
                             </div>
-                            <div className={stylesBase.subTitle}>
+                            <div className={styles.subTitle}>
                                 {screen == Screen.Main && 'Выберите нужный Вам пункт'}
                             </div>
                         </div>
                     </div>
-                    <div className={stylesBase.finishWork}>
+                    <div className={styles.finishWork}>
                         <div>Завершить обслуживание</div>
                         <div>
-                            <img src={vector} />
+                            <img src={closePic} />
                         </div>
                     </div>
                 </div>

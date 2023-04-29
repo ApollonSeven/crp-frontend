@@ -7,17 +7,17 @@ import ArmyCard from 'shared/ui/ArmyCard/ArmyCard'
 import BoaterCard from 'shared/ui/BoaterCard/BoaterCard'
 import FlyingCard from 'shared/ui/FlyingCard/FlyingCard'
 import VehiclePassport from 'shared/ui/VehiclePassport/VehiclePassport'
-import ATMMainScreen from 'shared/ui/ATM/components/ATMMainScreen'
-import ATMHistoryScreen from 'shared/ui/ATM/components/ATMHistoryScreen'
-import ATMPinCodeScreen from 'shared/ui/ATM/components/ATMPinCodeScreen'
-import ATMBalanceScreen from 'shared/ui/ATM/components/ATMBalanceScreen'
+import MainScreen from 'shared/ui/ATM/screens/MainScreen'
+import HistoryScreen from 'shared/ui/ATM/screens/HistoryScreen'
+import PinCodeScreen from 'shared/ui/ATM/screens/PinCodeScreen'
+import ATMBalanceScreen from 'shared/ui/ATM/screens/BalanceScreen'
 import ATM from 'shared/ui/ATM/ATM'
-import ATMAcceptButton from 'shared/ui/ATM/components/ATMAcceptButton'
-import ATMAddMoneyScreen from 'shared/ui/ATM/components/ATMAddMoneyScreen'
-import ATMWithdrawalCash from 'shared/ui/ATM/components/ATMWithdrawalCash'
-import ATMPaymentsAndTransfers from 'shared/ui/ATM/components/ATMPaymentsAndTransfers'
-import ATMConfirmation from 'shared/ui/ATM/components/ATMConfirmation'
-import ATMTransfer from 'shared/ui/ATM/components/ATMTransfer'
+import AcceptButton from 'shared/ui/ATM/components/AcceptButton'
+import AddMoneyScreen from 'shared/ui/ATM/screens/AddMoneyScreen'
+import WithdrawalCashScreen from 'shared/ui/ATM/screens/WithdrawalCashScreen'
+import PaymentsAndTransfersScreen from 'shared/ui/ATM/screens/PaymentsAndTransfersScreen'
+import ConfirmationScreen from 'shared/ui/ATM/screens/ConfirmationScreen'
+import TransferScreen from 'shared/ui/ATM/screens/TransferScreen'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
@@ -88,9 +88,9 @@ root.render(
                 },
             ]}
         />
-        <ATMMainScreen />
-        <ATMPinCodeScreen />
-        <ATMHistoryScreen
+        <MainScreen />
+        <PinCodeScreen />
+        <HistoryScreen
             history={[
                 {
                     date: '12.09.2020',
@@ -146,12 +146,12 @@ root.render(
         <ATMBalanceScreen
             balance='50 000 000$'
         />
-        <ATMAcceptButton title='Пополнить' />
-        <ATMAddMoneyScreen value='50 000 000$' gas='456$' toAdding='50 000 456$'/>
-        <ATMWithdrawalCash/>
-        <ATMPaymentsAndTransfers/>
-        <ATMTransfer />
-        <ATMConfirmation value='5 000$'/>
+        <AcceptButton title='Пополнить' />
+        <AddMoneyScreen value='50 000 000$' gas='456$' toAdding='50 000 456$'/>
+        <WithdrawalCashScreen/>
+        <PaymentsAndTransfersScreen/>
+        <TransferScreen />
+        <ConfirmationScreen value='5 000$'/>
         <ATM/>
     </React.StrictMode>
 )

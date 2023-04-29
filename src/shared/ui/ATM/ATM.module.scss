@@ -28,7 +28,8 @@
     left:12px;
     width:638px;
     height:428px;
-    background:linear-gradient(90.24deg, #84DDA8 -0.98%, #2F9356 99.79%), url(./assets/colorBackground.svg);
+    background:linear-gradient(90.24deg, #84DDA8 -0.98%, #2F9356 99.79%), url(./assets/colorBackground.png) no-repeat;
+    background-size: cover;
     background-blend-mode: lighten;
     display: flex;
     justify-content: center;
