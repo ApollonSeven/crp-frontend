@@ -14,6 +14,7 @@
         "rc-tooltip": "^6.0.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "react-imask": "^6.6.1",
         "react-modal": "^3.16.1",
         "react-scripts": "5.0.1",
         "sass": "^1.58.3",
@@ -30,7 +31,7 @@
         "lint:fix": "eslint ./src --fix",
         "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}'",
         "figma:export": "dotenv npx figma-export use-config scripts/.figmaexportrc.js",
-        "chromatic":  "chromatic"
+        "chromatic": "chromatic"
     },
     "husky": {
         "hooks": {

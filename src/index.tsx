@@ -150,7 +150,7 @@ root.render(
         <AddMoneyScreen value='50 000 000$' gas='456$' toAdding='50 000 456$'/>
         <WithdrawalCashScreen/>
         <PaymentsAndTransfersScreen/>
-        <TransferScreen />
+        <TransferScreen cardBalance='50 000 000$' />
         <ConfirmationScreen value='5 000$'/>
         <ATM/>
     </React.StrictMode>
