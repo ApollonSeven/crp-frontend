@@ -5,52 +5,56 @@
     height: 458px;
 }
 
-.pinCodeField{
+.pinCodeInput {
+    box-sizing: border-box;
+    border: none;
     position: absolute;
-    top:169px;
-    left:0px;
-    width:638px;
-    height: 54px;
-    margin:0px 12px 0px 12px;
+    top: 169px;
+    left: 0px;
+    margin: 0px 12px 0px 12px;
     background: #2F9356;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-.pinCodeFieldChar{
-    margin:0px 15px 0px 0px;
-}
-.pinCodeFieldChar:last-child{
-    margin:0px;
-}
-.pinShape{
-    width:11px;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    background-color: #FFFFFF;
-}
-.pinChar{
+    display: block;
+    width: 638px;
+    height: 54px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 35px;
+    letter-spacing: 15px;
     color: #FFFFFF;
+    text-align: center;
 }
 
-.screenAlert{
+.pinCodeInput:focus{
+    outline: none;
+    caret-color: transparent;
+}
+
+.pinCodeInput::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 15px;
+    color:rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+.screenAlert {
     position: absolute;
     width: 259px;
     height: 81px;
     left: 201px;
     top: 248px;
     background: rgba(255, 255, 255, 0.1);
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.screenAlertError{
+
+.screenAlertError {
     box-sizing: border-box;
     padding: 0px 41px 0px 41px;
     position: absolute;
@@ -59,14 +63,13 @@
     left: 232px;
     top: 248px;
     background: rgba(255, 255, 255, 0.1);
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.screenAlertText{
-    width:220px;
-    //margin: 12px auto;
+.screenAlertText {
+    width: 220px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -75,9 +78,9 @@
     text-align: center;
     color: #FFFFFF;
 }
-.screenAlertTextError{
-    width:220px;
-   // margin: 12px auto;
+
+.screenAlertTextError {
+    width: 220px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
