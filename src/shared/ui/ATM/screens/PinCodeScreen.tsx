@@ -4,15 +4,16 @@ import styles from './PinCodeScreen.module.scss'
 const PinCodeScreen = () =>{
 
     const [pin, setPin] = useState('')
-    const [pinMask, setPinMask] = useState(pin)
+    const [pinMask, setPinMask] = useState('\u00B7\u00B7\u00B7\u00B7')
     const [isError, setIsError] = useState(false)
     
-    const sendPin = (pin:string) => {
+    const sendPin = () => {
         setIsError(pin == '0000' ? false : true) //тут будет отправка на бэкэнд
         setPin('')
+        setPinMask('\u00B7\u00B7\u00B7\u00B7')
     }
 
-    const getPinMask = (pin:string) => {
+    const getPinMask = () => {
         setPinMask(pin + '\u00b7'.repeat(4 - pin.length))
     }
 
@@ -23,9 +24,9 @@ const PinCodeScreen = () =>{
 
     const handlePinChange = (event:any) => {
         if (getCharValidation(event.target.value[event.target.value.length - 1])) {
-            setPin(pin + event.target.value[event.target.value.length - 1])
-            getPinMask(pin)
-            pin.length == 4 && sendPin(pin)
+            setPin((prevPin) => prevPin + event.target.value[event.target.value.length - 1])
+            getPinMask
+            pin.length == 4 && sendPin
         } else {
             setPin('')
             getPinMask
@@ -33,7 +34,7 @@ const PinCodeScreen = () =>{
     }
 
     return(
-        <div className={styles.cardShape}>
+        <div className={styles.cardShape} >
             <input
                 id='input'
                 className={styles.pinCodeInput}

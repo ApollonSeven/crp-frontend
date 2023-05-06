@@ -6,14 +6,14 @@ import backButtonPic from './assets/backButtonPic.svg'
 import ATMMainScreen from './screens/MainScreen';
 import ATMBalanceScreen from './screens/BalanceScreen';
 import ATMHistoryScreen from './screens/HistoryScreen';
-import ATMPinCodeScreen from './screens/PinCodeScreen';
+import AddMoneyScreen from './screens/AddMoneyScreen'
+import WithdrawalCashScreen from './screens/WithdrawalCashScreen'
 import { ATM_TITLES, Screen } from './ATM.config'
-
 
 const ATM = () => {
 
     const [screen, setScreen] = useState(Screen.Main)
-    const hasBackButton = screen != Screen.Main && screen != Screen.AddMoney && screen != Screen.GetCash
+    const hasBackButton = screen != Screen.Main && screen
     const handleMainScreenSelect = (activeScreen: Screen) => {
         setScreen(activeScreen)
     }
@@ -25,7 +25,7 @@ const ATM = () => {
                 <div className={styles.colorBackground}></div>
                 <div className={styles.header}>
                     <div className={styles.menuTitle}>
-                        <div className={(hasBackButton ? `${styles.backButton}` : `${styles.backButtonHide}`)}>
+                        <div className={(hasBackButton ? `${styles.backButton}` : `${styles.backButtonHide}`)} onClick = {() => setScreen(Screen.Main)}>
                             <img src={backButtonPic}></img>
                         </div>
                         <div>
@@ -37,7 +37,7 @@ const ATM = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={styles.finishWork}>
+                    <div className={styles.finishWork} onClick = {(() => setScreen(Screen.Main))}>
                         <div>Завершить обслуживание</div>
                         <div>
                             <img src={closePic} />
@@ -45,8 +45,8 @@ const ATM = () => {
                     </div>
                 </div>
                 {screen == Screen.Main && <ATMMainScreen onSelect={handleMainScreenSelect} />}
-                {screen == Screen.AddMoney && <ATMPinCodeScreen />}
-                {screen == Screen.GetCash && <ATMPinCodeScreen />}
+                {screen == Screen.AddMoney && <AddMoneyScreen value='50 000 000$' gas='456$' toAdding='50 000 456$' />}
+                {screen == Screen.GetCash && <WithdrawalCashScreen />}
                 {
                     screen == Screen.History && <ATMHistoryScreen
                         history={[

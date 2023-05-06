@@ -30,6 +30,8 @@
 }
 
 .value {
+    box-sizing: border-box;
+    border:none;
     width: 299px;
     height: 78px;
     display: flex;
@@ -43,6 +45,10 @@
     line-height: 42px;
     text-align: center;
     color: #FFFFFF;
+}
+
+.value:focus{
+    outline: none;
 }
 
 .info {

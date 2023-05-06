@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from 'app'
 import reportWebVitals from 'reportWebVitals'
-import ArmyCard from 'shared/ui/ArmyCard/ArmyCard'
-import BoaterCard from 'shared/ui/BoaterCard/BoaterCard'
-import FlyingCard from 'shared/ui/FlyingCard/FlyingCard'
-import VehiclePassport from 'shared/ui/VehiclePassport/VehiclePassport'
+// import ArmyCard from 'shared/ui/ArmyCard/ArmyCard'
+// import BoaterCard from 'shared/ui/BoaterCard/BoaterCard'
+// import FlyingCard from 'shared/ui/FlyingCard/FlyingCard'
+// import VehiclePassport from 'shared/ui/VehiclePassport/VehiclePassport'
 import MainScreen from 'shared/ui/ATM/screens/MainScreen'
 import HistoryScreen from 'shared/ui/ATM/screens/HistoryScreen'
 import PinCodeScreen from 'shared/ui/ATM/screens/PinCodeScreen'
@@ -23,7 +23,7 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
     <React.StrictMode>
         <App />
-        <ArmyCard
+        {/* <ArmyCard
             number="№9891833"
             status="Active Duty"
             firstName="KEVIN"
@@ -87,7 +87,7 @@ root.render(
                     id: 'id2',
                 },
             ]}
-        />
+        /> */}
         <MainScreen />
         <PinCodeScreen />
         <HistoryScreen
@@ -150,7 +150,7 @@ root.render(
         <AddMoneyScreen value='50 000 000$' gas='456$' toAdding='50 000 456$'/>
         <WithdrawalCashScreen/>
         <PaymentsAndTransfersScreen/>
-        <TransferScreen cardBalance='50 000 000$' />
+        <TransferScreen cardBalance='50 000 000$' recipient='Анастасия З.' />
         <ConfirmationScreen value='5 000$'/>
         <ATM/>
     </React.StrictMode>
