@@ -31,6 +31,7 @@
 
 .value {
     box-sizing: border-box;
+    z-index: 2;
     border:none;
     width: 299px;
     height: 78px;
@@ -45,10 +46,32 @@
     line-height: 42px;
     text-align: center;
     color: #FFFFFF;
+    opacity:0;
 }
 
 .value:focus{
     outline: none;
+}
+
+.mask {
+    box-sizing: border-box;
+    position: absolute;
+    top:0px;
+    left:0px;
+    border:none;
+    width: 299px;
+    height: 78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2F9356;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .info {
