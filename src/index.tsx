@@ -147,7 +147,7 @@ root.render(
             balance='50 000 000$'
         />
         <AcceptButton title='Пополнить' />
-        <AddMoneyScreen value='50 000 000$' gas='456$' toAdding='50 000 456$'/>
+        <AddMoneyScreen />
         <WithdrawalCashScreen/>
         <PaymentsAndTransfersScreen/>
         <TransferScreen cardBalance='50 000 000$' recipient='Анастасия З.' />

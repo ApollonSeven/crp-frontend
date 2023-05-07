@@ -9,6 +9,7 @@
     box-sizing: border-box;
     border: none;
     position: absolute;
+    z-index:2;
     top: 169px;
     left: 0px;
     margin: 0px 12px 0px 12px;
@@ -24,6 +25,7 @@
     letter-spacing: 15px;
     color: #FFFFFF;
     text-align: center;
+    opacity: 0;
 }
 
 .pinCodeInput:focus{
@@ -39,6 +41,30 @@
     line-height: 35px;
     letter-spacing: 15px;
     color:rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+.mask {
+    box-sizing: border-box;
+    position: absolute;
+    z-index:1;
+    top: 169px;
+    left: 0px;
+    margin: 0px 12px 0px 12px;
+    padding-left: 10px;
+    background: #2F9356;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 638px;
+    height: 54px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 15px;
+    color: #FFFFFF;
     text-align: center;
 }
 

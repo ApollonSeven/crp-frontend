@@ -1,17 +1,24 @@
-import React, {useState} from 'react'
+import React, {useState, ChangeEvent, useEffect} from 'react'
 import styles from './AddMoneyScreen.module.scss'
-import { Props } from './AddMoneyScreen.typings'
+//import { Props } from './AddMoneyScreen.typings'
 import AcceptButton from '../components/AcceptButton'
 
-const AddMoneyScreen = (props: Props) => {
+const AddMoneyScreen = (/*props: Props*/): JSX.Element => {
 
-    const [inputValue, setInputValue] = useState('');
+    const [inputValue, setInputValue] = useState('')
+    const [gas, setGas] = useState<number>(0)
+    const [toAdding, setToAdding] = useState(0)
 
-    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        const numericValue = event.target.value.replace(/\D/g, ''); // Фильтрация только цифр
-        setInputValue(numericValue);
+    const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+        const newValue = event.currentTarget.value.replace(/\D/g, ''); // Фильтрация только цифр
+        setInputValue(() => newValue);
+    }
+
+    useEffect(() => {
         console.log(inputValue)
-    };
+        setGas(Number(inputValue) * 0.05)
+        setToAdding(Number(inputValue) + gas)
+    })
 
     return (
         <div className={styles.cardShape}>
@@ -27,11 +34,11 @@ const AddMoneyScreen = (props: Props) => {
                 <div className={styles.info}>
                     <div>
                         <div>Комиссия:</div>
-                        <div>{props.gas}</div>
+                        <div>{gas}</div>
                     </div>
                     <div>
                         <div>К пополнению:</div>
-                        <div>{props.toAdding}</div>
+                        <div>{toAdding/*props.toAdding*/}</div>
                     </div>
                 </div>
             </div>

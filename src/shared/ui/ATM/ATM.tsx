@@ -45,7 +45,7 @@ const ATM = () => {
                     </div>
                 </div>
                 {screen == Screen.Main && <ATMMainScreen onSelect={handleMainScreenSelect} />}
-                {screen == Screen.AddMoney && <AddMoneyScreen value='50 000 000$' gas='456$' toAdding='50 000 456$' />}
+                {screen == Screen.AddMoney && <AddMoneyScreen />}
                 {screen == Screen.GetCash && <WithdrawalCashScreen />}
                 {
                     screen == Screen.History && <ATMHistoryScreen
