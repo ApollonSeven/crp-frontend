@@ -1,26 +1,26 @@
 import React, {useState, useEffect} from 'react'
 import styles from './PinCodeScreen.module.scss'
+import { sendPin } from '../modules/sendPin'
 
 const PinCodeScreen = () =>{
 
     const [pin, setPin] = useState('')
     const [isError, setIsError] = useState(false)
-    const [pinMask, setPinMask] = useState('')
     
     const handlePinChange = (event:any) => {
         const newPin = event.currentTarget.value.replace(/\D/g, ''); // Фильтрация только цифр
-        setPin(() => newPin)
+        setPin(newPin)
     }
 
+    const pinMask = pin + '\u00b7'.repeat(4 - pin.length)
+
     useEffect(() =>{
-        console.log(pin)
-        setPinMask(pin + '\u00b7'.repeat(4 - pin.length))
-        const sendPin = () => {
-            setIsError(pin == '0000' ? false : true) //тут будет отправка на бэкэнд
+        if (pin.length == 4){
+            if(!sendPin(pin)){setIsError(true)}
+            else setIsError(false)
             setPin('')
         }
-        pin.length == 4 && sendPin()
-    })
+    }, [pin])
 
     return(
         <div className={styles.cardShape} >
