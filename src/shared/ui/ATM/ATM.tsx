@@ -5,9 +5,11 @@ import closePic from './assets/ClosePic.png'
 import backButtonPic from './assets/backButtonPic.svg'
 import ATMMainScreen from './screens/MainScreen';
 import ATMBalanceScreen from './screens/BalanceScreen';
-import ATMHistoryScreen from './screens/HistoryScreen';
+import PaymentsAndTransfersScreen from './screens/PaymentsAndTransfersScreen'
 import AddMoneyScreen from './screens/AddMoneyScreen'
 import WithdrawalCashScreen from './screens/WithdrawalCashScreen'
+import ConfirmationScreen from './screens/ConfirmationScreen'
+import PinCodeScreen from './screens/PinCodeScreen'
 import { ATM_TITLES, Screen } from './ATM.config'
 
 const ATM = () => {
@@ -47,62 +49,10 @@ const ATM = () => {
                 {screen == Screen.Main && <ATMMainScreen onSelect={handleMainScreenSelect} />}
                 {screen == Screen.AddMoney && <AddMoneyScreen />}
                 {screen == Screen.GetCash && <WithdrawalCashScreen />}
-                {
-                    screen == Screen.History && <ATMHistoryScreen
-                        history={[
-                            {
-                                date: '12.09.2020',
-                                operations: [{
-                                    shortName: 'Иван Е.',
-                                    operation: 'Пополнение',
-                                    value: '+ 4 500 $',
-                                },
-                                {
-                                    shortName: 'Иван Е.',
-                                    operation: 'Перевод',
-                                    value: '- 4 500 $',
-                                }]
-                            },
-                            {
-                                date: '02.09.2020',
-                                operations: [{
-                                    shortName: 'Иван Е.',
-                                    operation: 'Перевод',
-                                    value: '- 4 500 $',
-                                },
-                                {
-                                    shortName: 'Иван Е.',
-                                    operation: 'Пополнение',
-                                    value: '+ 4 500 $',
-                                },
-                                {
-                                    shortName: 'Иван Е.',
-                                    operation: 'Пополнение',
-                                    value: '+ 4 500 $',
-                                }]
-                            },
-                            {
-                                date: '02.09.2020',
-                                operations: [{
-                                    shortName: 'Иван Е.',
-                                    operation: 'Перевод',
-                                    value: '- 4 500 $',
-                                },
-                                {
-                                    shortName: 'Иван Е.',
-                                    operation: 'Пополнение',
-                                    value: '+ 4 500 $',
-                                },
-                                {
-                                    shortName: 'Иван Е.',
-                                    operation: 'Пополнение',
-                                    value: '+ 4 500 $',
-                                }]
-                            }
-                        ]}
-                    />
-                }
+                {screen == Screen.PaymentsAndTransfers && <PaymentsAndTransfersScreen />}
                 {screen == Screen.Balance && <ATMBalanceScreen balance='50 000 000$' />}
+                {screen == Screen.Confirmation && <ConfirmationScreen/>}
+                {screen == Screen.PinCode && <PinCodeScreen/>}
             </div >
         </div >
     )

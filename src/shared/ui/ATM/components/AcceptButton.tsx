@@ -4,7 +4,7 @@ import {Props} from './AcceptButton.typings'
 
 const AcceptButton = (props:Props) => {
     return(
-        <div className={styles.cardShape}>{props.title}</div>
+        <div className={styles.cardShape} onClick = {() => props.onSelect()}>{props.title}</div>
     )
 }
 

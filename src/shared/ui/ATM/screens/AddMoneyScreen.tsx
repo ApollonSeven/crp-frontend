@@ -1,8 +1,10 @@
 import React, {useState, ChangeEvent} from 'react'
 import styles from './AddMoneyScreen.module.scss'
 import AcceptButton from '../components/AcceptButton'
+import {addMoney} from '../modules/addMoney'
+import { Screen } from '../ATM.config'
 
-const AddMoneyScreen = (): JSX.Element => {
+const AddMoneyScreen = ({ onSelect }: any): JSX.Element => {
 
     const [inputValue, setInputValue] = useState('')
     const gas = Math.floor(Number(inputValue) * 0.05)
@@ -14,6 +16,12 @@ const AddMoneyScreen = (): JSX.Element => {
     const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
         const newValue = event.currentTarget.value.replace(/\D/g, ''); // Фильтрация только цифр
         setInputValue(newValue);
+    }
+
+    const addingMoney = () =>{
+        addMoney(Number(inputValue))
+        onSelect(Screen.Confirmation)
+        
     }
 
     return (
@@ -40,7 +48,7 @@ const AddMoneyScreen = (): JSX.Element => {
                 </div>
             </div>
             <div className={styles.acceptButton}>
-                <AcceptButton title='Пополнить' />
+                <AcceptButton title='Пополнить' onSelect={addingMoney}/>
             </div>
         </div>
     )
