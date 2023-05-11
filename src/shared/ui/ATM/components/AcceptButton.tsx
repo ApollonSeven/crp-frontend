@@ -3,6 +3,7 @@ import styles from './AcceptButton.module.scss'
 import {Props} from './AcceptButton.typings'
 
 const AcceptButton = (props:Props) => {
+
     return(
         <div className={styles.cardShape} onClick = {() => props.onSelect()}>{props.title}</div>
     )

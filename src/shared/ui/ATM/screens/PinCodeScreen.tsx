@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import styles from './PinCodeScreen.module.scss'
 import { sendPin } from '../modules/sendPin'
+import { Screen } from '../ATM.config'
 
-const PinCodeScreen = () =>{
+const PinCodeScreen = ({onSelect}:any) =>{
 
     const [pin, setPin] = useState('')
     const [isError, setIsError] = useState(false)
@@ -17,7 +18,10 @@ const PinCodeScreen = () =>{
     useEffect(() =>{
         if (pin.length == 4){
             if(!sendPin(pin)){setIsError(true)}
-            else setIsError(false)
+            else {
+                setIsError(false)
+                onSelect(Screen.GetCash)
+            }
             setPin('')
         }
     }, [pin])

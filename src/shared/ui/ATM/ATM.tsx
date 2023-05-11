@@ -16,8 +16,12 @@ const ATM = () => {
 
     const [screen, setScreen] = useState(Screen.Main)
     const hasBackButton = screen != Screen.Main && screen
-    const handleMainScreenSelect = (activeScreen: Screen) => {
+    const [addingValue, setAddingValue] = useState('')
+    const [confirmationScreenMessage, setConfirmationScreenMessage] = useState('')
+    const handleMainScreenSelect = (activeScreen: Screen, message:string, inputValue:string) => {
         setScreen(activeScreen)
+        setAddingValue(inputValue)
+        setConfirmationScreenMessage(message)
     }
 
     return (
@@ -47,12 +51,12 @@ const ATM = () => {
                     </div>
                 </div>
                 {screen == Screen.Main && <ATMMainScreen onSelect={handleMainScreenSelect} />}
-                {screen == Screen.AddMoney && <AddMoneyScreen />}
-                {screen == Screen.GetCash && <WithdrawalCashScreen />}
+                {screen == Screen.AddMoney && <AddMoneyScreen onSelect={handleMainScreenSelect}/>}
+                {screen == Screen.GetCash && <WithdrawalCashScreen onSelect={handleMainScreenSelect}/>}
                 {screen == Screen.PaymentsAndTransfers && <PaymentsAndTransfersScreen />}
                 {screen == Screen.Balance && <ATMBalanceScreen balance='50 000 000$' />}
-                {screen == Screen.Confirmation && <ConfirmationScreen/>}
-                {screen == Screen.PinCode && <PinCodeScreen/>}
+                {screen == Screen.Confirmation && <ConfirmationScreen message = {confirmationScreenMessage} value={addingValue}/>}
+                {screen == Screen.PinCode && <PinCodeScreen onSelect={handleMainScreenSelect}/>}
             </div >
         </div >
     )

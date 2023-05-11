@@ -20,7 +20,7 @@ const AddMoneyScreen = ({ onSelect }: any): JSX.Element => {
 
     const addingMoney = () =>{
         addMoney(Number(inputValue))
-        onSelect(Screen.Confirmation)
+        onSelect(Screen.Confirmation, 'Вы положили на счет', `${Number(inputValue).toLocaleString()} $`)
         
     }
 

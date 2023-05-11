@@ -8,7 +8,7 @@ const Confirmation = (props:Props) => {
         <div className={styles.cardShape}>
             <div className={styles.mainInfo}>
                 <img src={successPic}/>
-                <div>Вы сняли со счета</div>
+                <div>{props.message}</div>
                 <div>{props.value}</div>
             </div>
         </div>
