@@ -3,7 +3,6 @@
     position: relative;
     width: 662px;
     height: 458px;
-    background-color: lightblue;
 }
 
 .mainInfo {
@@ -63,6 +62,7 @@
     line-height: 19px;
     text-align: center;
     color: #2F9356;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .cardOrPhoneSelect:hover {
@@ -85,6 +85,7 @@
     flex-flow: row nowrap;
     align-items: center;
     justify-content: flex-start;
+    position: relative;
 }
 
 .cardLogo {
@@ -113,6 +114,23 @@
     align-items: center;
 }
 
+.recipientInputHide {
+    margin-left: 15px;
+    background: transparent;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    opacity: 0;
+    z-index: 4;
+}
+
 .recipientInput::placeholder,
 .valueTransfer::placeholder {
     font-family: 'Roboto';
@@ -137,6 +155,31 @@
 }
 
 .phoneBookLogoHide {
+    display: none;
+}
+
+.phoneMaskBlock{
+    margin-left: 15px;
+    background:url(../assets/phoneBookPic.svg) no-repeat right center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:351px;
+    height:43px;
+    z-index: 3;
+}
+
+.phoneMaskBlockHide{
     display: none;
 }
 

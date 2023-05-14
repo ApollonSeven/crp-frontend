@@ -8,7 +8,7 @@ const BalanceScreen = (props:Props) =>{
         <div className={styles.cardShape}>
             <div className={styles.mainInfo}>
                 <div>На Вашем счету:</div>
-                <div>{props.balance}</div>
+                <div>{props.balance} $</div>
             </div>
          </div>
     )

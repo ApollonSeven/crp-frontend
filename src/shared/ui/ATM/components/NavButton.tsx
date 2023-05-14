@@ -4,7 +4,7 @@ import styles from './NavButton.module.scss'
 
 const NavButton = (props:Props) => {
     return (
-        <div className={styles.navBlock}>
+        <div className={styles.navBlock} onClick = {() => props.onSelect()}>
             <div className={styles.navTitle}>{props.title}</div>
             <div className={styles.backgroundBlock}></div>
             <div className={styles.navPic}>

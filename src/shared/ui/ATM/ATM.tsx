@@ -10,7 +10,9 @@ import AddMoneyScreen from './screens/AddMoneyScreen'
 import WithdrawalCashScreen from './screens/WithdrawalCashScreen'
 import ConfirmationScreen from './screens/ConfirmationScreen'
 import PinCodeScreen from './screens/PinCodeScreen'
+import TransferScreen from './screens/TransferScreen'
 import { ATM_TITLES, Screen } from './ATM.config'
+import { getBalance } from './modules/getBalance'
 
 const ATM = () => {
 
@@ -53,10 +55,11 @@ const ATM = () => {
                 {screen == Screen.Main && <ATMMainScreen onSelect={handleMainScreenSelect} />}
                 {screen == Screen.AddMoney && <AddMoneyScreen onSelect={handleMainScreenSelect}/>}
                 {screen == Screen.GetCash && <WithdrawalCashScreen onSelect={handleMainScreenSelect}/>}
-                {screen == Screen.PaymentsAndTransfers && <PaymentsAndTransfersScreen />}
-                {screen == Screen.Balance && <ATMBalanceScreen balance='50 000 000$' />}
+                {screen == Screen.PaymentsAndTransfers && <PaymentsAndTransfersScreen onSelect={handleMainScreenSelect} />}
+                {screen == Screen.Balance && <ATMBalanceScreen balance={getBalance()} />}
                 {screen == Screen.Confirmation && <ConfirmationScreen message = {confirmationScreenMessage} value={addingValue}/>}
                 {screen == Screen.PinCode && <PinCodeScreen onSelect={handleMainScreenSelect}/>}
+                {screen == Screen.Transfer && <TransferScreen onSelect={handleMainScreenSelect}/>}
             </div >
         </div >
     )

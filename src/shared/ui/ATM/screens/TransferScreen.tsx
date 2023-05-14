@@ -4,6 +4,8 @@ import cardLogo from '../assets/cardLogo.png'
 import phoneBookPic from '../assets/phoneBookPic.svg'
 import { Props } from './TransferScreen.typings'
 import classNames from 'classnames'
+import { setTransfer } from '../modules/setTransfer'
+import {Screen} from '../ATM.config'
 
 enum InputSelect { card, phone }
 
@@ -13,8 +15,9 @@ const TransferScreen = (props: Props) => {
     const [transferValue, setTransferValue] = useState('')
     const [recipient, setRecipient] = useState('')
     const transferValueMask = Number(transferValue).toLocaleString()
-    const cardOrPhoneSelectedMaxLength = inputSelect == InputSelect.card ? 19 : 17
-    const countryCode = '+'; // Префикс номера телефона
+    const cardOrPhoneSelectedMaxLength = inputSelect == InputSelect.card ? 19 : 10
+    let maskPhoneNumber = ''
+  
 
     const handleClick = (type: any) => {
         if (type == 'card') {
@@ -23,7 +26,7 @@ const TransferScreen = (props: Props) => {
         }
         if (type == 'phone') {
             setInputSelect(InputSelect.phone)
-            setRecipient('+7')
+            setRecipient('')
         }
     }
     /*--------------chars validation-----------------*/
@@ -41,10 +44,21 @@ const TransferScreen = (props: Props) => {
 
     /*------------------------phone mask block----------------------*/
 
-    const formatPhoneNumber = (phoneNumber: string) => {
-        const formattedPhoneNumber = phoneNumber.replace(/(\d{1,3})(\d{3})(\d{3})(\d{2})(\d{2})/, `${countryCode} $1 ($2)-$3-$4-$5`);
-        return formattedPhoneNumber.trim();
-    };
+    // const formatPhoneNumber = (phoneNumber: string) => {
+    //     const formattedPhoneNumber = phoneNumber.replace(/(\d{1,3})?(\d{0,3})?(\d{0,3})?(\d{0,2})?(\d{0,2})?/, (match, p1, p2, p3, p4, p5)
+    // };
+
+    const formatPhoneNumber = (phoneNumber:string) => {
+        const digitsOnly = phoneNumber.replace(/\D/g, ''); // Фильтрация только цифр
+        const areaCode = digitsOnly.slice(0, 3).padEnd(3, '_');
+        const firstPart = digitsOnly.slice(3, 6).padEnd(3, '_');
+        const secondPart = digitsOnly.slice(6, 8).padEnd(2, '_');
+        const thirdPart = digitsOnly.slice(8, 10).padEnd(2, '_');
+        const formattedNumber = `(${areaCode}) ${firstPart}-${secondPart}-${thirdPart}`;
+        maskPhoneNumber = formattedNumber
+        return recipient;
+      };
+
 
     /*------------------------transfer value block------------------*/
 
@@ -58,6 +72,22 @@ const TransferScreen = (props: Props) => {
     const selectorValueFunction = (recipient: string) => {
         if (inputSelect == InputSelect.card) return formatRecipientNumber(recipient)
         else return formatPhoneNumber(recipient)
+    }
+
+    const doTransfer = () =>{
+        if (inputSelect == InputSelect.card){
+            if (recipient.length == 16){
+                setTransfer(recipient, transferValue)
+                props.onSelect(Screen.Confirmation, 'Перевод успешно совершен')
+            }
+        }
+        if (inputSelect == InputSelect.phone){
+            if (recipient.length == 10){
+                setTransfer(`+7 ${recipient}`, transferValue)
+                props.onSelect(Screen.Confirmation, 'Перевод успешно совершен')
+            }
+        }
+
     }
 
     return (
@@ -74,15 +104,15 @@ const TransferScreen = (props: Props) => {
                 <div className={styles.recipient}>
                     <img className={classNames(`${inputSelect == InputSelect.phone ? styles.cardLogoHide : styles.cardLogo}`)} src={cardLogo} />
                     <input
-                        className={styles.recipientInput}
+                        className={inputSelect == InputSelect.phone ? styles.recipientInputHide : styles.recipientInput}
                         type='text'
                         placeholder={inputSelect == InputSelect.card ? 'Карта получателя' : 'Телефон получателя'}
                         onChange={handleRecipientNumberChange}
                         value={selectorValueFunction(recipient)}
                         maxLength={cardOrPhoneSelectedMaxLength}
-                    //onFocus={handleRecipientFocus}
-                    //onBlur={handleRecipientBlur}
+                        autoFocus
                     />
+                    <div className={inputSelect == InputSelect.phone ? styles.phoneMaskBlock : styles.phoneMaskBlockHide}>+7 {maskPhoneNumber}</div>
                     <img className={inputSelect == InputSelect.card ? styles.phoneBookLogoHide : styles.phoneBookLogo} src={phoneBookPic} />
                 </div>
                 {inputSelect == InputSelect.phone &&
@@ -100,7 +130,7 @@ const TransferScreen = (props: Props) => {
                 />
                 <div className={styles.transferValueMask}>{transferValueMask} $</div>
             </div>
-            <div className={styles.transferButton}>Перевести {transferValueMask} $</div>
+            <div className={styles.transferButton} onClick={doTransfer}>Перевести {transferValueMask} $</div>
         </div>
     )
 

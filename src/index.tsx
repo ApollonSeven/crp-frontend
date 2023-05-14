@@ -7,17 +7,17 @@ import reportWebVitals from 'reportWebVitals'
 // import BoaterCard from 'shared/ui/BoaterCard/BoaterCard'
 // import FlyingCard from 'shared/ui/FlyingCard/FlyingCard'
 // import VehiclePassport from 'shared/ui/VehiclePassport/VehiclePassport'
-import MainScreen from 'shared/ui/ATM/screens/MainScreen'
-import HistoryScreen from 'shared/ui/ATM/screens/HistoryScreen'
-import PinCodeScreen from 'shared/ui/ATM/screens/PinCodeScreen'
-import ATMBalanceScreen from 'shared/ui/ATM/screens/BalanceScreen'
+// import MainScreen from 'shared/ui/ATM/screens/MainScreen'
+// import HistoryScreen from 'shared/ui/ATM/screens/HistoryScreen'
+// import PinCodeScreen from 'shared/ui/ATM/screens/PinCodeScreen'
+// import ATMBalanceScreen from 'shared/ui/ATM/screens/BalanceScreen'
 import ATM from 'shared/ui/ATM/ATM'
-import AcceptButton from 'shared/ui/ATM/components/AcceptButton'
-import AddMoneyScreen from 'shared/ui/ATM/screens/AddMoneyScreen'
-import WithdrawalCashScreen from 'shared/ui/ATM/screens/WithdrawalCashScreen'
-import PaymentsAndTransfersScreen from 'shared/ui/ATM/screens/PaymentsAndTransfersScreen'
-import ConfirmationScreen from 'shared/ui/ATM/screens/ConfirmationScreen'
-import TransferScreen from 'shared/ui/ATM/screens/TransferScreen'
+// import AcceptButton from 'shared/ui/ATM/components/AcceptButton'
+// import AddMoneyScreen from 'shared/ui/ATM/screens/AddMoneyScreen'
+// import WithdrawalCashScreen from 'shared/ui/ATM/screens/WithdrawalCashScreen'
+// import PaymentsAndTransfersScreen from 'shared/ui/ATM/screens/PaymentsAndTransfersScreen'
+// import ConfirmationScreen from 'shared/ui/ATM/screens/ConfirmationScreen'
+// import TransferScreen from 'shared/ui/ATM/screens/TransferScreen'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
@@ -87,7 +87,7 @@ root.render(
                     id: 'id2',
                 },
             ]}
-        /> */}
+        /> 
         <MainScreen />
         <PinCodeScreen />
         <HistoryScreen
@@ -151,7 +151,7 @@ root.render(
         <WithdrawalCashScreen/>
         <PaymentsAndTransfersScreen/>
         <TransferScreen cardBalance='50 000 000$' recipient='Анастасия З.' />
-        <ConfirmationScreen value='5 000$'/>
+        <ConfirmationScreen value='5 000$'/>*/}
         <ATM/>
     </React.StrictMode>
 )

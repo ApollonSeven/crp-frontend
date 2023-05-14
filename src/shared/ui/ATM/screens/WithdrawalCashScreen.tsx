@@ -1,7 +1,7 @@
 import React, {useState, ChangeEvent} from 'react'
 import styles from './WithdrawalCashScreen.module.scss'
 import AcceptButton from '../components/AcceptButton'
-//import { Props } from './ATMWithdrawalCash.typings'
+import { getCash } from '../modules/getCash'
 import {Screen} from '../ATM.config'
 
 const WithdrawalCashScreen = ({onSelect}:any) => {
@@ -13,10 +13,12 @@ const WithdrawalCashScreen = ({onSelect}:any) => {
         setValue(newValue);
     }
 
-    const withdrawMoneyButtons = (value:string) =>{
-        onSelect(Screen.Confirmation, 'Вы сняли со счета', value)
+    const withdrawMoneyButtons = (value:number) =>{
+        getCash(value.toString())
+        onSelect(Screen.Confirmation, 'Вы сняли со счета', `${value.toLocaleString()} $`)
     }
     const withdrawMoneyInput = () =>{
+        getCash(value)
         onSelect(Screen.Confirmation, 'Вы сняли со счета', `${Number(value).toLocaleString()} $`)
     }
 
@@ -27,13 +29,13 @@ const WithdrawalCashScreen = ({onSelect}:any) => {
             <div className={styles.title}>Выберите нужную сумму</div>
             <div className={styles.mainGrid}>
             {[
-                {value:'100 $'},
-                {value:'500 $'},
-                {value:'1 000 $'},
-                {value:'3 000 $'},
-                {value:'5 000 $'},
-                {value:'10 000 $'}].map(button =>(
-                    <div key = {button.value} className={styles.withdrawalValue} onClick={() => withdrawMoneyButtons(button.value)}>{button.value}</div>
+                {value:100},
+                {value:500},
+                {value:1000},
+                {value:3000},
+                {value:5000},
+                {value:10000}].map(button =>(
+                    <div key = {button.value} className={styles.withdrawalValue} onClick={() => withdrawMoneyButtons(button.value)}>{button.value} $</div>
                 ))}
                 <div className={styles.otherValue}>Другая сумма</div>
                 <div style={{position:'relative'}}>
