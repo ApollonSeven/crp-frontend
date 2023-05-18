@@ -12,17 +12,17 @@ const MainScreen = ({ onSelect }: any) => {
         <div className={styles.cardShape}>
             <div className={styles.bottomBackground}></div>
             <div className={styles.navigation}>
-                <div className={styles.leftTopNavBlock} onClick={() => onSelect(Screen.AddMoney)}>
-                    <NavButton title='Положить на счет' pic={addMoneyPic} />
+                <div className={styles.leftTopNavBlock}>
+                    <NavButton title='Положить на счет' pic={addMoneyPic} onSelect={() => onSelect(Screen.AddMoney)}/>
                 </div>
-                <div className={styles.rightTopNavBlock} onClick={() => onSelect(Screen.PinCode)}>
-                    <NavButton title='Снять наличные' pic={withdrawalMoneyPic} />
+                <div className={styles.rightTopNavBlock}>
+                    <NavButton title='Снять наличные' pic={withdrawalMoneyPic} onSelect={() => onSelect(Screen.PinCode)}/>
                 </div>
-                <div className={styles.leftBottomNavBlock} onClick={() => onSelect(Screen.PaymentsAndTransfers)}>
-                    <NavButton title='Платежи и переводы' pic={transfersPic} />
+                <div className={styles.leftBottomNavBlock}>
+                    <NavButton title='Платежи и переводы' pic={transfersPic} onSelect={() => onSelect(Screen.PaymentsAndTransfers)}/>
                 </div>
-                <div className={styles.rightBottomNavBlock} onClick={() => onSelect(Screen.Balance)}>
-                    <NavButton title='Запросить баланс' pic={balancePic} />
+                <div className={styles.rightBottomNavBlock}>
+                    <NavButton title='Запросить баланс' pic={balancePic} onSelect={() => onSelect(Screen.Balance)}/>
                 </div>
             </div>
         </div>
