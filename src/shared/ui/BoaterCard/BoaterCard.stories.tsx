@@ -11,4 +11,3 @@ export default {
 } as Meta<Props>
 
 export const Default: Story<Props> = (args) => <BoaterCard {...args}>Title</BoaterCard>
-//export {}

@@ -1,5 +1,5 @@
 export interface Props {
     cardBalance?:string
-    recipient?:string
+    recipientForTransfer?:string
     onSelect?:any
 }

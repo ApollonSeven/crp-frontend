@@ -3,13 +3,13 @@ import styles from './ConfirmationScreen.module.scss'
 import successPic from '../assets/successPic.svg'
 import {Props} from './ConfirmationScreen.typings'
 
-const Confirmation = (props:Props) => {
+const Confirmation = ({message, value}:Props) => {
     return (
         <div className={styles.cardShape}>
             <div className={styles.mainInfo}>
                 <img src={successPic}/>
-                <div>{props.message}</div>
-                <div>{props.value}</div>
+                <div>{message}</div>
+                <div>{value}</div>
             </div>
         </div>
     )

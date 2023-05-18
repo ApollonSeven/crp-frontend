@@ -2,12 +2,12 @@ import React from 'react'
 import { Props } from './HistoryScreen.typings'
 import styles from './HistoryScreen.module.scss'
 
-const HistoryScreen = (props: Props) => {
+const HistoryScreen = ({history}: Props) => {
 
     return (
         <div className={styles.cardShape}>
             <div className={styles.mainInfo}>
-                {props.history?.map((block) => (
+                {history?.map((block) => (
                     <div className={styles.day} key={block.id}>
                         <div className={styles.operationDate}>
                             <div>{block.date}</div>

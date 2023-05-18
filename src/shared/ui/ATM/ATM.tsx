@@ -33,9 +33,9 @@ const ATM = () => {
                 <div className={styles.colorBackground}></div>
                 <div className={styles.header}>
                     <div className={styles.menuTitle}>
-                        <div className={(hasBackButton ? `${styles.backButton}` : `${styles.backButtonHide}`)} onClick = {() => setScreen(Screen.Main)}>
+                        {hasBackButton && <div className={styles.backButton} onClick = {() => setScreen(Screen.Main)}>
                             <img src={backButtonPic}></img>
-                        </div>
+                        </div>}
                         <div>
                             <div className={styles.title}>
                                 {ATM_TITLES[screen]}
