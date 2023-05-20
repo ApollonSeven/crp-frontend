@@ -1,0 +1,40 @@
+.container {
+    width: 500px;
+    height: 140px;
+    padding: 12px 22px;
+    background: #181A1D;
+}
+
+.title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #FFFFFF;
+}
+
+.description {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 22px;
+
+    color: #B0B0B0;
+
+    margin-top: 12px
+}
+
+.red {
+    color: #DD5757;
+}
+
+.green {
+    color: #6AA84F;
+}
+
+.yellow {
+    color: #FFF449;
+}
