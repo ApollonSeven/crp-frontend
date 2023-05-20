@@ -45,6 +45,7 @@ const WithdrawalCashScreen = ({onSelect}:any) => {
                         className={styles.input}
                         onChange={handleKeyDown}
                         autoFocus
+                        maxLength={7}
                     />
                     <div className={styles.mask} style = {!value ? {fontSize:12, color: 'rgba(255, 255, 255, 0.5)'}: {}}>{maskValue}</div>
                 </div>

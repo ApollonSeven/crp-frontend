@@ -34,6 +34,7 @@ const AddMoneyScreen = ({ onSelect }: any): JSX.Element => {
                     value={inputValue}
                     className={styles.value}
                     onChange={handleChange}
+                    maxLength={11}
                 />
                 <div className={styles.mask}>{maskInput} $</div>
                 <div className={styles.info}>

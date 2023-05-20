@@ -74,7 +74,7 @@ const TransferScreen = ({cardBalance, recipientForTransfer, onSelect}: Props) =>
                     />
                     {inputSelect == InputSelect.phone && <div className={styles.phoneMaskBlock}>+7 {maskedRecipient}</div>} 
                 </div>
-                {(inputSelect == InputSelect.phone && recipient.length == 10) &&
+                {(inputSelect == InputSelect.phone && recipient.length == 10 || inputSelect == InputSelect.card && recipient.length == 16) &&
                     <div className={styles.phoneBookContainer}>
                         <div>{recipientForTransfer}</div>
                         <div>Деньги поступят на карту</div>
@@ -86,6 +86,7 @@ const TransferScreen = ({cardBalance, recipientForTransfer, onSelect}: Props) =>
                     value={transferValue}
                     className={transferValue == '' ? styles.valueTransfer : styles.valueTransferHide}
                     onChange={handleChangeValue}
+                    maxLength={10}
                 />
                 <div className={styles.transferValueMask}>{transferValueMask} $</div>
             </div>
